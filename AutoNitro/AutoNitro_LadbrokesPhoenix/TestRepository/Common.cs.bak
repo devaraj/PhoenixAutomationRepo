@@ -1,0 +1,2053 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using MbUnit.Framework;
+using Selenium;
+using OpenQA.Selenium;
+using Framework;
+using System.Configuration;
+using System.Globalization;
+using TestRepository.ControlsRepository;
+using System.Collections.ObjectModel;
+using System.Threading;
+using OpenQA.Selenium.Interactions;
+
+namespace TestRepository
+{
+    public class Common : BaseTest
+    {
+
+        CustomerInformation customerInfo = TestRepository.Globals.GetCustomerCredentials(Globals.CustomerTypes.DefaultBetaCustomer);
+
+         /// <summary>
+        /// This method Logons to application and does a basic verification in homepage
+        /// </summary>
+        /// <Author>Pradeep</Author>
+        /// <Date>26 July 2012</Date>
+        /// <param name="browser">Browser instance of Selenium RC</param>
+        /// <param name="customerInfo">Customer Information object which contains customer credentials</param>
+        public void Login(ISelenium browser, TestRepository.CustomerInformation customerInfo)
+        {
+            AddTestStep("Login into MComm Application", "Login Successful");
+            AddTestStep("Verify homepage after login successful", "Verification of homepage after Login Successful");
+
+            try
+            {
+                if (browser.GetLocation().ToLower(CultureInfo.InvariantCulture).Contains(FrameGlobals.LadbrokesSplashPage.ToLower(CultureInfo.InvariantCulture)))
+                {
+                    browser.Type(TestRepository.ControlsRepository.LoginPage.loginUsernameTextBoxBetaPage, customerInfo.CustomerName);
+                    browser.Type(TestRepository.ControlsRepository.LoginPage.loginPasswordTextBoxBetaPage, customerInfo.Password);
+                    browser.Focus(TestRepository.ControlsRepository.LoginPage.submitButtonForBetaPage);
+                    browser.Highlight(TestRepository.ControlsRepository.LoginPage.submitButtonForBetaPage);
+                    browser.Click(TestRepository.ControlsRepository.LoginPage.submitButtonForBetaPage);
+                    browser.WaitForPageToLoad(FrameGlobals.PageLoadTimeout);
+                }
+                else
+                {
+                    // Click on Login/Register Link to Navigate to Login Page
+                    browser.Click(TestRepository.ControlsRepository.LoginPage.loginOrRegisterLink);
+                    browser.WaitForPageToLoad(FrameGlobals.PageLoadTimeout);                    
+                    browser.Refresh();
+                    browser.WaitForPageToLoad(FrameGlobals.PageLoadTimeout);                    
+                    browser.Type(TestRepository.ControlsRepository.LoginPage.loginUsernameTextBox, customerInfo.CustomerName);
+                    browser.Type(TestRepository.ControlsRepository.LoginPage.loginPasswordTextBox, customerInfo.Password);
+                    browser.Click(TestRepository.ControlsRepository.LoginPage.loginSubmitButton);
+                    browser.WaitForPageToLoad(FrameGlobals.PageLoadTimeout);
+                }
+                // wait untill page loads internally with a loading icon
+                WaitForLoadingIcon(browser, 90);
+                Pass("Login Successful");
+                //Checking for header items in Home page
+                Assert.IsTrue(browser.IsElementPresent(TestRepository.ControlsRepository.HomePage.backLink), "Back link is not present in the Home page Header");
+                Assert.IsTrue(browser.IsElementPresent(TestRepository.ControlsRepository.HomePage.menuLink), "Menu Link is not present in the Home page Header");
+                //Checking for Footer Items in Home page
+                Assert.IsTrue(browser.IsElementPresent(TestRepository.ControlsRepository.HomePage.searchLink), "Search link is not present in the Home page Footer");
+                Assert.IsTrue(browser.IsElementPresent(TestRepository.ControlsRepository.HomePage.balanceLink), "Balance link is not present in the Home page Footer");
+                Assert.IsTrue(browser.IsElementPresent(TestRepository.ControlsRepository.HomePage.betslipLinkID), "Betslip button is not present in the Home page Footer");
+                Pass("Verification of homepage after Login Successful");
+            }
+            catch (Exception ex)
+            {
+                Fail(ex.Message);
+            }
+        }
+
+
+        /// <summary>
+        /// This method will logout from the application
+        /// </summary>
+        /// <Author>Kiran</Author>
+        /// <Date>27 July 2012</Date>
+        /// <param name="browser">Browser Instance</param>
+        /// <example>Logout(browser)</example>      
+        public void Logout(ISelenium browser)
+        {
+            try
+            {
+                AddTestStep("Logout from MComm Application", "Logout Successful");
+                // Click on balnce link 
+                Assert.IsTrue(browser.IsElementPresent(TestRepository.ControlsRepository.HomePage.balanceLink), "Balance Link is not present/User is not logged in");
+                browser.Click(TestRepository.ControlsRepository.HomePage.balanceLink);
+                // Click on Logout Link
+                Assert.IsTrue(browser.IsElementPresent(TestRepository.ControlsRepository.HomePage.logoutLink), "Logout Link is not present in the Account Panel");
+                browser.Click(TestRepository.ControlsRepository.HomePage.logoutLink);
+                WaitForLoadingIcon(browser, 90);
+                // Check for the Logout message
+                Assert.IsTrue(browser.IsElementPresent(TestRepository.ControlsRepository.HomePage.logoutMsg), "Logout was unsuccessful");
+
+                //Checking for header items in Home page
+                Assert.IsFalse(browser.IsElementPresent(TestRepository.ControlsRepository.HomePage.backLink), "Back link is present in the Home page Header after logout");
+                Assert.IsFalse(browser.IsElementPresent(TestRepository.ControlsRepository.HomePage.menuLink), "Menu Link is present in the Home page Header after logout");
+                //Checking for Footer Items in Home page
+                Assert.IsFalse(browser.IsElementPresent(TestRepository.ControlsRepository.HomePage.searchLink), "Search link is present in the Home page Footer after logout");
+                Assert.IsFalse(browser.IsElementPresent(TestRepository.ControlsRepository.HomePage.balanceLink), "Balance link is present in the Home page Footer after logout");
+                Assert.IsFalse(browser.IsElementPresent(TestRepository.ControlsRepository.HomePage.betslipLinkID), "Betslip button is present in the Home page Footer after logout");
+				
+				//Checking for the Ladbrokes Logo                
+                Assert.IsTrue(browser.IsElementPresent(TestRepository.ControlsRepository.HomePage.sectionTitleLink), "Ladbrokes Logo is not present in the Logout page");
+
+                // Click on the close link
+                Assert.IsTrue(browser.IsElementPresent(TestRepository.ControlsRepository.HomePage.logoutCloseButton), "Close button is not present in the Logout page");
+                browser.Click(TestRepository.ControlsRepository.HomePage.logoutCloseButton);
+                WaitForLoadingIcon(browser, 90);
+                browser.WaitForPageToLoad(FrameGlobals.PageLoadTimeout);
+                WaitForLoadingIcon(browser, 90);
+                // Check for the Login/Register link on the home page
+                Assert.IsTrue(browser.IsElementPresent(TestRepository.ControlsRepository.LoginPage.loginOrRegisterLink), "login/Register Link is not displayed after logout");
+                // Check if the balance link is present
+                Assert.IsFalse(browser.IsElementPresent(TestRepository.ControlsRepository.HomePage.balanceLink), "Balance Link is displayed after logout");
+
+
+                Pass("Logout Successful");
+            }
+            catch (Exception ex)
+            {                
+                Fail(ex.Message);
+            }
+        }
+
+        
+
+        /// <summary>
+        /// This method will wait for loader icon to complete loading
+        /// </summary>
+        /// <Author>Pradeep</Author>
+        /// <Date>26 July 2012</Date>
+        /// <param name="browserObj">Browser Instance</param>
+        /// <param name="timeout">Timeout in seconds</param>
+        /// <example>WaitForLoadingIcon(browser,60)</example>      
+        public void WaitForLoadingIcon(ISelenium browserObj, int timeout)
+        {
+            DateTime now;
+            DateTime delay = DateTime.Now.AddSeconds(timeout);
+            while (browserObj.IsVisible(TestRepository.ControlsRepository.HomePage.loadingIcon))
+            {
+                now = DateTime.Now;
+                if (now < delay)
+                {
+                    continue;
+                }
+                else
+                {
+                    break;
+                }
+            }
+        }
+
+
+        /// <summary>
+        /// This method will wait till betslip Count updated in the Footer
+        /// </summary>
+        /// <Author>Pradeep</Author>
+        /// <Date>08 Aug 2012</Date>
+        /// <param name="browserObj">Browser Instance</param>
+        /// <<param name="expectedCount">Expected Count</param>
+        /// <param name="timeout">Timeout in seconds</param>
+        /// <example>WaitTillCountAppearOnBetSlipFooter(browser,1,60)</example>      
+        public bool WaitTillBetslipCountAppearOnBetSlipFooter(ISelenium browserObj, int expectedCount, int timeout)
+        {
+            bool isCountApeeared = true;
+            string numberOfItemsInBetSlip = "//a[@id='betslip-footer']/span/sup[contains(number()," + expectedCount + ")]";
+            DateTime now = new DateTime();
+            DateTime delay = DateTime.Now.AddSeconds(timeout);
+            while (now < delay)
+            {
+                now = DateTime.Now;
+                if (browserObj.IsElementPresent(numberOfItemsInBetSlip))
+                {
+                    isCountApeeared = true;
+                    break;
+                }
+                else
+                {
+                    isCountApeeared = false;
+                }
+            }
+            return isCountApeeared;
+        }
+
+        /// <summary>
+        /// This method adds the desired selection to Betslip for all Non HorseRacing events
+        /// </summary>
+        /// <Author>Pradeep</Author>
+        /// <Date>26 July 2012</Date>
+        /// <param name="browser">browser Instance</param>
+        /// <param name="marketName">Desired MarketName</param>
+        /// <param name="selectionName">SelectionName</param>
+        /// <param name="odds">Desired Odd</param>
+        /// <returns>true - if selection is added to beslip
+        ///          false- if selection is not added to betslip
+        /// </returns>
+        public bool AddingSelectionToBetslip(ISelenium browser, string marketName, string selectionName, string odds)
+        {
+            int initialCount = 0;
+            int expectedCount = 0;
+            int actualCount = 0;
+            string numberOfItemsInBetSlip = "";
+            bool isSelectionPresent = false;
+            string xpath = "";
+         //   string xpathForMarketNameCollapseLink = "//div[@class='lb-accordion-head']/h2[contains(text(),normalize-space('" + marketName + "'))]/a//ancestor::div[@class='lb-accordion-head']/span";
+            xpath = "//div[contains(@class,'lb-accordion-content lb-culist-wrapper')]/ul/li[contains(string(),'" + selectionName + "')]/a[contains(string(),'" + odds + "')]";
+            Framework.Common.Common frameworkCommon = new Framework.Common.Common();
+            IWebDriver driver = ((WebDriverBackedSelenium)browser).UnderlyingWebDriver;
+            TimeSpan ts = new TimeSpan(0, 0, 7);
+            try
+            {
+                //Getting intial betslip count
+                initialCount = GetBetslipCountFromFooter(browser);
+                //Clicking on Market HeaderCollapse Link
+                if ((browser.IsElementPresent(TestRepository.ControlsRepository.SearchControls.marketHeadingCollapseLink) == true) && (browser.IsElementPresent("//li[@class='lb-accordion on']") == false))
+                {
+                    browser.Focus(TestRepository.ControlsRepository.SearchControls.marketHeadingCollapseLink);
+                    browser.Click(TestRepository.ControlsRepository.SearchControls.marketHeadingCollapseLink);
+                    driver.Manage().Timeouts().ImplicitlyWait(ts);
+                }
+                //Clicking on Collapse Link of Market Name if it present
+                if ((browser.IsElementPresent(TestRepository.ControlsRepository.SearchControls.marketHeadingCollapseLink) == true) && (browser.IsElementPresent("//li[@class='lb-accordion lb-accordion-higher on']") == false))
+                {
+                    browser.Focus(TestRepository.ControlsRepository.SearchControls.marketNameCollapseLink);
+                    browser.Click(TestRepository.ControlsRepository.SearchControls.marketNameCollapseLink);
+                }
+                if (browser.IsElementPresent(xpath))
+                {
+                    browser.Click(xpath);
+                    browser.Click("//div[@class='lb-accordion-head']");
+                    WaitForLoadingIcon(browser, 90);
+                    expectedCount = initialCount + 1;
+                    numberOfItemsInBetSlip = "//a[@id='betslip-footer']/span/sup[contains(number()," + expectedCount + ")]";
+                    if (WaitTillBetslipCountAppearOnBetSlipFooter(browser, expectedCount, 90))
+                    {
+                        //Getting new count
+                        actualCount = GetBetslipCountFromFooter(browser);
+                        if (actualCount == expectedCount)
+                        {
+                            isSelectionPresent = true;
+                            Console.WriteLine("Actual Count =" + actualCount + " and Expected Count " + expectedCount + " in Betslip are shown correctly");
+                        }
+                        else
+                        {
+                            Console.WriteLine("Actual Count =" + actualCount + " and Expected Count " + expectedCount + " in Betslip are not correct");
+                            return false;
+                        }
+                    }
+                    else
+                    {
+                        Console.WriteLine("Betslip count not Incremented on adding Events to betslip");
+                        return false;
+                    }
+                }
+                else
+                {
+                    isSelectionPresent = false;
+                }
+                return isSelectionPresent;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+                return false;
+            }
+        }
+
+
+        /// <summary>
+        /// This methods add Selection From HorseRacing Events to Betslip
+        /// </summary>
+        /// <Author>Pradeep</Author>
+        /// <Date>26 July 2012</Date>
+        /// <param name="browser">BrowserInstance</param>
+        /// <returns>
+        /// true - if Selection added to betslip
+        /// false- if selection not added to bteslip
+        /// </returns>
+        /// <example>
+        /// AddSelectionToBetslipFromRaceCard(browser,"selection1");
+        /// </example>
+        public bool AddSelectionToBetslipFromRaceCard(ISelenium browser, string selectioName)
+        {
+            bool isSelectionPresent = false;
+            int initialCount = 0;
+            int expectedCount = 0;
+            string numberOfItemsInBetSlip = "";
+            int actualCount = 0;
+            IWebDriver driver = ((WebDriverBackedSelenium)browser).UnderlyingWebDriver;
+            TimeSpan ts = new TimeSpan(0, 0, 7);
+            //string xpathForLocatingSelection = "//div[@class='racecard-win tab-content active']/ul[@class='racecard-runners']/li[descendant::div[@class='details']/h3/a[text()='Horse1'] and descendant::div[@class='odds']/a/strong[text()='510/1000']]";
+
+            // This hard code will be removed once the Defect related to this is fixed
+            string xpathForLocatingSelection = "//div[@class='racecard-win tab-content active']/ul[@class='racecard-runners']/li[descendant::div[@class='details']/h3/a[text()='Horse1']] /div[@class='odds']/a[descendant::strong[text()='"+selectioName+"']]";
+            try
+            {
+                //Getting intial betslip count
+                initialCount = GetBetslipCountFromFooter(browser);
+
+                //Check whether Selection present is there or not
+                if (browser.IsElementPresent(xpathForLocatingSelection))
+                {
+                    browser.Focus(xpathForLocatingSelection);
+                    browser.Click(xpathForLocatingSelection);
+                    browser.WaitForPageToLoad(FrameGlobals.PageLoadTimeout);
+                    WaitForLoadingIcon(browser, 90);
+                    expectedCount = initialCount + 1;
+                    numberOfItemsInBetSlip = "//a[@id='betslip-footer']/span/sup[contains(number()," + expectedCount + ")]";
+                    if (WaitTillBetslipCountAppearOnBetSlipFooter(browser, expectedCount, 90))
+                    {
+                        //Getting new count
+                        actualCount = GetBetslipCountFromFooter(browser);
+                        if (actualCount == expectedCount)
+                        {
+                            isSelectionPresent = true;
+                            Console.WriteLine("Actual Count =" + actualCount + " and Expected Count " + expectedCount + " in Betslip are shown correctly");
+                        }
+                        else
+                        {
+                            Console.WriteLine("Actual Count =" + actualCount + " and Expected Count " + expectedCount + " in Betslip are not correct");
+                            return false;
+                        }
+                    }
+                    else
+                    {
+                        Console.WriteLine("Betslip count not Incremented on adding Events to betslip");
+                        return false;
+                    }
+
+
+                }
+                else
+                {
+                    return isSelectionPresent;
+                }
+                // Clicking on Betslip Link present in the Footer
+                browser.Click(TestRepository.ControlsRepository.BetslipControl.betslipLinkID);
+                //Wait till page loads completely
+                WaitForLoadingIcon(browser, 90);
+                return isSelectionPresent;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+                return false;
+
+            }
+        }
+
+
+        /// <summary>
+        /// This function adds selection to betslip and Verify the selection betslip
+        /// </summary>
+        /// <Author>Pradeep</Author>
+        /// <Date>26 July 2012</Date>
+        /// <param name="browser">browser Instance</param>
+        /// <param name="eventName">Event Name</param>
+        /// <param name="marketName">Market Name</param>
+        /// <param name="selectionName">Selection Name</param>
+        /// <param name="odds">odds Name</param>
+        /// <returns>
+        ///  true - if selection present in Betslip
+        ///  false- if selection not present in betslip
+        /// </returns>
+        /// <example>
+        /// AddAndVerifySelectionInBetslip(browser,"Atevent1","marke1","selectionName1","1.33");
+        /// </example>
+        /// <exception> This method can not be used in For Loop, that case 'CloseBetskipWindow' should be used </exception>
+        public bool AddAndVerifySelectionInBetslip(ISelenium browser, string eventName, string marketName, string selectionName, string odds)
+        {
+            int initialCount = 0;
+            int expectedCount = 0;
+            int actualCount = 0;
+            bool isSelectionPresent = false;
+            string xpath = "";
+            string xpathForVerifyingSelectionInBetslip = "";
+            string numberOfItemsInBetSlip = "";
+            Framework.Common.Common frameworkCommon = new Framework.Common.Common();
+            IWebDriver driver = ((WebDriverBackedSelenium)browser).UnderlyingWebDriver;
+            TimeSpan ts = new TimeSpan(0, 0, 7);
+
+          //  xpathForMarketNameCollapseLink = "//div[@class='lb-accordion-head']/h2[contains(text(),normalize-space('" + marketName + "'))]/a//ancestor::div[@class='lb-accordion-head']/span";
+
+            xpath = "//div[contains(@class,'lb-accordion-content lb-culist-wrapper')]/ul/li[contains(string(),'" + selectionName + "')]/a[contains(string(),'" + odds + "')]";
+            xpathForVerifyingSelectionInBetslip = "//div[@class='row']/div[@class='cell cell-detail cell-detail-single']/div[@class='detail-content data-content-info']/div[@class='event' and descendant::strong[contains(text(),'" + selectionName + "')] and descendant::div[@class='market' and contains(string(),'" + marketName + ": " + eventName + "')]]//ancestor::div[@class='row']/div[@class='cell cell-detail cell-detail-single' and descendant::p[contains(string(),'Price or SP')] and descendant::div[@class='odds number slider']/p[contains(string(),'" + odds + "')]]//ancestor::div[@class='row']";
+            try
+            {
+                //Getting intial betslip count
+                initialCount = GetBetslipCountFromFooter(browser);
+                //Clicking on Market HeaderCollapse Link
+                if ((browser.IsElementPresent(TestRepository.ControlsRepository.SearchControls.marketHeadingCollapseLink) == true) && (browser.IsElementPresent("//li[@class='lb-accordion on']") == false))
+                {
+                    browser.Focus(TestRepository.ControlsRepository.SearchControls.marketHeadingCollapseLink);
+                    browser.Click(TestRepository.ControlsRepository.SearchControls.marketHeadingCollapseLink);
+                    driver.Manage().Timeouts().ImplicitlyWait(ts);
+                }
+                //Clicking on Collapse Link of Market Name if it present
+                if ((browser.IsElementPresent(TestRepository.ControlsRepository.SearchControls.marketHeadingCollapseLink) == true) && (browser.IsElementPresent("//li[@class='lb-accordion lb-accordion-higher on']") == false))
+                {
+                    browser.Focus(TestRepository.ControlsRepository.SearchControls.marketNameCollapseLink);
+                    browser.Click(TestRepository.ControlsRepository.SearchControls.marketNameCollapseLink);
+                    browser.Click("//div[@class='lb-accordion-head']");
+                    frameworkCommon.WaitUntilElementPresent(browser, TestRepository.ControlsRepository.BetslipControl.betslipCountInTheFooter, "4000");
+                }
+                if (browser.IsElementPresent(xpath))
+                {
+                    browser.Click(xpath);
+                    browser.Click("//div[@class='lb-accordion-head']");
+                    WaitForLoadingIcon(browser, 90);
+                    System.Threading.Thread.Sleep(2000);
+                    //Getting new count
+                    expectedCount = initialCount + 1;
+                    numberOfItemsInBetSlip = "//a[@id='betslip-footer']/span/sup[contains(number()," + expectedCount + ")]";
+                    if (WaitTillBetslipCountAppearOnBetSlipFooter(browser, expectedCount, 90))
+                    {
+                        //Getting new count
+                        actualCount = GetBetslipCountFromFooter(browser);
+                        if (actualCount == expectedCount)
+                        {
+                            isSelectionPresent = true;
+                            Console.WriteLine("Actual Count =" + actualCount + " and Expected Count " + expectedCount + " in Betslip are shown correctly");
+                        }
+                        else
+                        {
+                            Console.WriteLine("Actual Count =" + actualCount + " and Expected Count " + expectedCount + " in Betslip are wrong");
+                            return false;
+                        }
+                    }
+                    else
+                    {
+                        Console.WriteLine("Betslip count not Incremented on adding Events to betslip");
+                        return false;
+                    }
+                    // Clicking on Betslip Link present in the Footer
+                    browser.Focus(TestRepository.ControlsRepository.BetslipControl.betslipLinkID);
+                    browser.Click(TestRepository.ControlsRepository.BetslipControl.betslipLinkID);
+                    //Wait till page loads completely
+                    WaitForLoadingIcon(browser, 90);
+                    driver.Manage().Timeouts().ImplicitlyWait(ts);
+                }
+                else
+                {
+                    return isSelectionPresent;
+                }
+                // Verify the Selection Present in Betslip
+                if (browser.IsElementPresent(xpathForVerifyingSelectionInBetslip))
+                {
+                    isSelectionPresent = true;
+                }
+                else
+                {
+                    isSelectionPresent = false;
+                }
+                return isSelectionPresent;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+                return false;
+            }
+        }
+
+        /// <summary>
+        /// Enter the Stake into Perticular/Desired Selction
+        /// </summary>
+        /// <Author>Pradeep</Author>
+        /// <Date>26 July 2012</Date>
+        /// <<param name="multibetType"> Type of Bet</param>
+        /// <param name="browser">Selenium browser instance</param>
+        /// <param name="eventName">Event Name</param>
+        /// <param name="marketName">Market Name</param>
+        /// <param name="selectionName">Selection</param>
+        /// <param name="stake">Stake to be entered</param>
+        /// <example>EnterStake(browser,"event1","market1","selection1","odds1",2,"Double")</example>
+        /// <example2>EnterStake(browser,"event1","market1","selection1","odds1",2,"Accumulator (4)")</example2>
+        /// <example3>EnterStake(browser,"event1","market1","selection1","odds1",2,"")--For Sigle bet</example3>
+        public bool EnterStake(ISelenium browser, string eventName, string marketName, string selectionName, string odds, double stake, string multibetType)
+        {
+            bool isStakeEntered = false;
+            double initialStake = 0;
+            long selectionID = new long();
+            double updatedStake = 0.00;
+            double expectedStake = 0.00;
+            int betslipCount = 0;
+            string xpathName;
+            string stakeboxId;
+
+            IWebDriver driver = ((WebDriverBackedSelenium)browser).UnderlyingWebDriver;
+            try
+            {
+                betslipCount = GetBetslipCountFrmBetslipPage(browser);
+                if (betslipCount > 0)
+                {
+                    //Getting Intial stake if already any selection present in betslip and stake entered for this
+                    initialStake = GetTotalStake(browser);
+                }
+                else
+                {
+                    Console.WriteLine("Enter Stake Failed as there are" + betslipCount + " Selections in betslip.");
+                    return false;
+                }
+
+                if (String.IsNullOrEmpty(multibetType))
+                {   //Get Event ID 
+                    selectionID = GetSelectionID(browser, eventName, marketName, selectionName);
+                    IWebElement stakeElement = driver.FindElement(By.Id("LBSStake-" + Convert.ToString(selectionID)));
+                    browser.Highlight("id=LBSStake-" + Convert.ToString(selectionID));
+                    stakeElement.Clear();
+                    stakeElement.Click();
+                    browser.Type("id=LBSStake-" + Convert.ToString(selectionID), stake.ToString());
+                    //((IJavaScriptExecutor)driver).ExecuteScript("arguments[0].setAttribute('value',arguments[1]);", stakeElement, 2);
+                    //browser.Click("//div[@class='cell cell-detail input']/div[@class='label line']");
+                    WaitForLoadingIcon(browser, 90);
+                    updatedStake = GetTotalStake(browser);
+                    expectedStake = initialStake + stake;
+                }
+                else
+                {
+                    xpathName = "//div[@class='cell cell-detail cell-multiple-detail cell-detail-single']/div[@class='event' and descendant::strong[contains(text(),'Singles')]]//ancestor::div[@class='row']/div[@class='cell cell-detail input']/div[@class='odds number slider stake']";
+                    stakeboxId = driver.FindElement(By.XPath(xpathName)).FindElement(By.TagName("Input")).GetAttribute("id");
+                    driver.FindElement(By.Id(stakeboxId)).Clear();
+                    browser.Focus(stakeboxId);
+                    driver.FindElement(By.Id(stakeboxId)).SendKeys(stake.ToString(CultureInfo.InvariantCulture));
+                    WaitForLoadingIcon(browser, 90);
+                    updatedStake = GetTotalStake(browser);
+                    //Calculating ExpectedStake for Multibet
+                    expectedStake = initialStake + CalculateTotalStake(browser, multibetType, stake);
+                }
+                //Checking if Expected and ActualStake matches
+                if (expectedStake == updatedStake)
+                {
+                    isStakeEntered = true;
+                }
+                return isStakeEntered;
+            }
+
+            catch (Exception)
+            {
+                Console.WriteLine("Stake is not Entered properly");
+                return false;
+
+            }
+        }
+
+        /// <summary>
+        /// This methods returns the selection ID of the desired Multibet
+        /// </summary>
+        /// <Author>Pradeep</Author>
+        /// <Date>26 July 2012</Date>
+        /// <param name="browser">Selenium browserInstance</param>
+        /// <param name="eventName">EventName</param>
+        /// <param name="marketName">Market Name</param>
+        /// <param name="selectionName">Selection Name</param>
+        /// <param name="odds">odds</param>
+        /// <returns>
+        /// selection ID of the selection -if found
+        /// returns "" if ID not found
+        /// </returns>
+        /// <example>
+        /// GetSelectionID(browser,Globals.MultiBetType.accumulator5BetString)
+        /// </example>
+        public string GetSelectionID(ISelenium browser, string multiBetType)
+        {
+            string xpathName = "";
+            string selectionID = "";
+            IWebDriver driver = ((WebDriverBackedSelenium)browser).UnderlyingWebDriver;
+            xpathName = "//div[@class='cell cell-detail cell-multiple-detail cell-detail-single']/div[@class='event' and descendant::strong[contains(text(),'" + multiBetType + "')]]//ancestor::div[@class='row']/div[@class='cell cell-detail input']/div[@class='odds number slider stake']//ancestor::div[@class='row']";
+            try
+            {
+                if (browser.IsElementPresent(xpathName))
+                {
+                    selectionID = driver.FindElement(By.XPath(xpathName)).GetAttribute("id");
+                }
+                else
+                {
+                    selectionID = "";
+                }
+                return selectionID;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+                return "";
+            }
+        }
+
+        /// <summary>
+        /// This methods returns the selection ID of the selection Present in Betslip
+        /// </summary>
+        /// <Author>Pradeep</Author>
+        /// <Date>26 July 2012</Date>
+        /// <param name="browser">Selenium browserInstance</param>
+        /// <param name="eventName">EventName</param>
+        /// <param name="marketName">Market Name</param>
+        /// <param name="selectionName">Selection Name</param>
+        /// <param name="odds">odds</param>
+        /// <returns>
+        /// selection ID of the selection -if found
+        /// returns "" if ID not found
+        /// </returns>
+        /// <example>
+        /// GetSelectionID(browser,"event1","selection1","market1","selectionName1","1.33")
+        /// </example>
+        public long GetSelectionID(ISelenium browser, string eventName, string marketName, string selectionName)
+        {
+            string xpath = "";
+            string selectionID = "";
+            long selectionID_long = new long();
+            string[] selectionIdArray = new string[2];
+            IWebDriver driver = ((WebDriverBackedSelenium)browser).UnderlyingWebDriver;
+            xpath = "//div[starts-with(@class,'row')]/div[@class='cell cell-detail cell-detail-single']/div[@class='detail-content data-content-info']/div[@class='event' and descendant::strong[contains(text(),'" + selectionName + "')] and descendant::div[@class='market' and contains(string(),'" + marketName + ": " + eventName + "')]]//ancestor::div[starts-with(@class,'row')]";
+            try
+            {
+                if (browser.IsElementPresent(xpath))
+                {
+                    selectionID = driver.FindElement(By.XPath(xpath)).GetAttribute("id");
+                    selectionIdArray = selectionID.Split('-');
+                    selectionID_long = Convert.ToInt64(selectionIdArray[1]);
+                }
+                else
+                {
+                    selectionID_long = 0;
+                }
+                return selectionID_long;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+                return 0;
+            }
+
+        }
+
+        /// <summary>
+        /// This methods returns the selection ID of the desired Multibet
+        /// </summary>
+        /// <Author>Pradeep</Author>
+        /// <Date>26 July 2012</Date>
+        public bool CloseBetslipWindow(ISelenium browser)
+        {
+            bool isWindowExist = true;
+
+            if (browser.IsElementPresent(TestRepository.ControlsRepository.BetslipControl.closeButtonInBetslipPageHeager))
+            {
+                browser.Click(TestRepository.ControlsRepository.BetslipControl.closeButtonInBetslipPageHeager);
+            }
+            else
+            {
+                Console.WriteLine("Close window does not present in Betslip Header");
+                isWindowExist = false;
+            }
+            return isWindowExist;
+        }
+
+        /// <summary>
+        /// Excludes the perticular selection from the betslip
+        /// </summary>
+        /// <Author>Pradeep</Author>
+        /// <Date>26 July 2012</Date>
+        /// <param name="browser">Selenium browser Instance</param>
+        /// <param name="eventName">Event Name</param>
+        /// <param name="marketName">Market Name</param>
+        /// <param name="selectionName">Selection Name</param>
+        /// <returns>
+        /// true - if selection excluded
+        /// false- if selection not excluded
+        /// 
+        /// </returns>
+        /// <example>ExcludeSelectionFromBetslip(browser,eventName,marketName,selectionName)</example>
+        public bool ExcludeSelectionFromBetslip(ISelenium browser, string eventName, string marketName, string selectionName)
+        {
+            IWebDriver driver = ((WebDriverBackedSelenium)browser).UnderlyingWebDriver;
+            IWebElement linkElement = null;
+            string xpathForLocationgExcludeLink = "";
+            bool isSelectionExcluded = false;
+            long selectionID = 0;
+            try
+            {
+                selectionID = GetSelectionID(browser, eventName, marketName, selectionName);
+                if (selectionID > 0)
+                {
+                    xpathForLocationgExcludeLink = "//div[@id='LBSItem-" + selectionID + "' and @class='row']/div[@class='cell cell-detail input' and descendant::div[text()='Multiple']]/div[@class='odds number slider']//a[@class='ui-slider-handle ui-btn ui-btn-up-a ui-shadow ui-btn-corner-all ui-slider-handle-snapping' and @aria-labelledby='LBSMulti-" + selectionID + "-label' ]";
+                    linkElement = driver.FindElement(By.XPath(xpathForLocationgExcludeLink));
+                    Actions builder = new Actions(driver);
+                    builder.MoveToElement(linkElement).Click().Perform();
+                    isSelectionExcluded = Convert.ToBoolean(driver.FindElement(By.XPath("//div[@id='LBSItem-" + selectionID + "' and @class='row']/div[@class='cell cell-detail input' and descendant::div[text()='Multiple']]/div[@class='odds number slider']//a")).GetAttribute("aria-valuenow"));
+                    if (isSelectionExcluded == false)
+                    {
+                        isSelectionExcluded = true;
+                    }
+                }
+                else
+                {
+                    Console.WriteLine("Failed to Retrieve Selection ID ");
+                }
+                return isSelectionExcluded;
+            }
+            catch (Exception)
+            {
+                return false;
+            }
+        }
+
+        /// <summary>
+        /// This method Select/Unselects Eachway for HorseRacing Events
+        /// </summary>
+        /// <Author>Pradeep</Author>
+        /// <Date>17 Aug 2012</Date>
+        /// <param name="browser">Selenium Browser Instance</param>
+        /// <param name="eventName">Event Name</param>
+        /// <param name="marketName">Market Name</param>
+        /// <param name="selectionName">Selection Name</param>
+        /// <returns>
+        /// true- if each way selected
+        /// false if eachway unselected
+        /// </returns>
+        /// <example>SelectEachWay(browser,event1,market1,selection1)</example>
+        public bool SelectEachWay(ISelenium browser, string eventName, string marketName, string selectionName)
+        {
+            bool isEachwayClicked = false;
+
+            long selectionID = 0;
+            IWebDriver driver = ((WebDriverBackedSelenium)browser).UnderlyingWebDriver;
+            //Creating ActionBuilder
+            Actions builder = new Actions(driver);
+            string xpathForLocatingEachwayLink = "";
+            try
+            {
+                selectionID = GetSelectionID(browser, eventName, marketName, selectionName);
+                //Getting selection ID
+                if (selectionID > 0)
+                {
+                    // xpathForLocatingEachwayLink = "//div[@id='LBSItem-" + selectionID + "' and @class='row']/div[@class='cell cell-detail input' and descendant::div[@class='label' and text()='Win or E/W ']]/div[@class='odds number slider']/div[@class='ui-slider ui-slider-switch ui-btn-down-c ui-btn-corner-all']/div[@class='ui-slider-inneroffset']/a[@class='ui-slider-handle ui-btn ui-shadow ui-btn-corner-all ui-slider-handle-snapping ui-btn-up-a' and @aria-labelledby='LBSEachway-" + selectionID + "-label']";
+                    xpathForLocatingEachwayLink = "//div[@id='LBSItem-" + selectionID + "' and @class='row']/div[@class='cell cell-detail input' and descendant::div[@class='label' and text()='Win or E/W ']]/div[@class='odds number slider']/div[@class='ui-slider ui-slider-switch ui-btn-down-c ui-btn-corner-all']/div[@class='ui-slider-inneroffset']/a[@class='ui-slider-handle ui-btn ui-btn-up-a ui-shadow ui-btn-corner-all ui-slider-handle-snapping' and @aria-labelledby='LBSEachway-" + selectionID + "-label']";
+                    IWebElement LinkEle = driver.FindElement(By.XPath(xpathForLocatingEachwayLink));
+                    builder.MoveToElement(LinkEle).Click().Perform();
+                    WaitForLoadingIcon(browser, 120);
+                    isEachwayClicked = Convert.ToBoolean(driver.FindElement(By.XPath("//div[@id='LBSItem-" + selectionID + "' and @class='row']/div[@class='cell cell-detail input' and descendant::div[@class='label' and text()='Win or E/W ']]/div[@class='odds number slider']/div[@class='ui-slider ui-slider-switch ui-btn-down-c ui-btn-corner-all']/div[@class='ui-slider-inneroffset']/a")).GetAttribute("aria-valuenow"));
+                }
+                else
+                {
+                    isEachwayClicked = false;
+                    Console.WriteLine("Failed to Click on Eachway Link");
+                }
+
+                return isEachwayClicked;
+            }
+            catch (Exception)
+            {
+
+                return false;
+            }
+        }
+
+        /// <summary> To remove events from Betslip
+        ///  Author: Pradeep
+        /// <Author>Pradeep</Author>
+        /// <Date>26 July 2012</Date>
+        /// </summary>
+        /// <param name="browser">Selenium Browser</param>
+        /// <param name="eventName">EventName</param>
+        /// <param name="marketName">MarketName</param>
+        /// <param name="selectioName">SelectionName</param>
+        /// <param name="removeAll">true - To remove all the selections in the betslip
+        ///                         false -To remove individual selections
+        /// </param>
+        /// <param name="multipleBetType">Single</param>
+        /// <example>RemoveEventsFromBetslip(browser, eventName[1], marketName[1], selectionsName[1], false, Globals.MultiBetType.doubleBetString);</example>
+
+        public bool RemoveEventsFromBetslip(ISelenium browser, string eventName, string marketName, string selectioName, bool removeAll, string multipleBetType)
+        {
+            bool isSelectionRemoved = false;
+            long selectionId = 0;
+            string xpathForRemoveLink = "";
+            string stakeEntered = "";
+            double stakeValue;
+            double expectedTotalStakeAfterRemove = 0;
+            double actualTotalStakeAfterRemove = 0;
+            IWebDriver driver = ((WebDriverBackedSelenium)browser).UnderlyingWebDriver;
+            //Creating ActionBuilder
+            Actions builder = new Actions(driver);
+
+            string xpath = "";
+            // Getting BetSlipCount
+            int betSlipCount = GetBetslipCountFrmBetslipPage(browser);
+            if (betSlipCount > 0)
+            {
+                #region Remove All selections if removeAll variable is true
+                if (removeAll == true)
+                {
+                    driver.FindElement(By.XPath(TestRepository.ControlsRepository.BetslipControl.removeAllLink)).Click();
+                    WaitForLoadingIcon(browser, 120);
+
+                    if (GetBetslipCountFrmBetslipPage(browser) == 0)
+                    {
+                        return true;
+                    }
+                }
+                #endregion
+                #region Remove particular selection
+                double intialTotalstake = GetTotalStake(browser);
+                selectionId = GetSelectionID(browser, eventName, marketName, selectioName);
+                xpath = "\'{\"id\":\"" + selectionId + "\", \"action\":\"remove\", \"type\":\"SGL\"}\'";
+                if (selectionId != 0)
+                {
+                    stakeEntered = driver.FindElement(By.Id("LBSStake-" + selectionId)).GetAttribute("value");
+                    xpathForRemoveLink = "//a[@class='remove ui-link' and @data-betaction=" + xpath + "]";
+                    IWebElement Element = driver.FindElement(By.XPath(xpathForRemoveLink));
+                    builder.MoveToElement(Element).Click().Perform();
+                    //   browser.Focus(xpathForRemoveLink);
+                    //browser.Highlight(xpathForRemoveLink);
+                    browser.Click(xpathForRemoveLink);
+                    // browser.Click("//div[@id='LBSItem-"+selectionId+"']/div/div/div/a");
+                    WaitForLoadingIcon(browser, 90);
+                    //Check if the selection present after removal;
+                    if (browser.IsElementPresent("id=LBSItem-" + selectionId + "") == false)
+                    {
+                        isSelectionRemoved = true;
+                    }
+                    #region Verifying Betslip Count update after desired selection removal
+                    int expectedSelectionsCountInBetSlip = betSlipCount - 1;
+                    betSlipCount = GetBetslipCountFrmBetslipPage(browser);
+                    if (expectedSelectionsCountInBetSlip == betSlipCount)
+                    {
+                        Console.WriteLine("Events count is correctly displayed in BetSlip after removing selection.");
+                    }
+                    else
+                    {
+                        isSelectionRemoved = false;
+                        Console.WriteLine("Events count " + expectedSelectionsCountInBetSlip + " and " + betSlipCount + "is not correctly displayed in BetSlip after removing selection.");
+                    }
+                    #endregion
+                    #region Verifying Total Stake update after desired selection removal
+                    // Getting updated Total stake after selection removal
+                    actualTotalStakeAfterRemove = GetTotalStake(browser);
+                    if (stakeEntered == "")
+                    {
+                        stakeValue = 0;
+                    }
+                    else
+                    {
+                        stakeValue = Convert.ToDouble(stakeEntered, CultureInfo.CurrentCulture);
+                    }
+                    expectedTotalStakeAfterRemove = intialTotalstake - stakeValue;
+
+                    if (expectedTotalStakeAfterRemove == actualTotalStakeAfterRemove)
+                    {
+                        Console.WriteLine(" Stake is displayed correctly after removal of Event");
+                        isSelectionRemoved = true;
+                    }
+                    else
+                    {
+                        isSelectionRemoved = false;
+                        Console.WriteLine("Stake " + expectedTotalStakeAfterRemove + " and " + actualTotalStakeAfterRemove + " is not displayed correctly after removal of Event");
+                    }
+                    #endregion
+
+                    #region Verify the desired betType removal after removing a selection
+
+                    if (multipleBetType != "")
+                    {
+                        Assert.IsFalse(browser.IsElementPresent("//div[@class='cell cell-detail cell-multiple-detail cell-detail-single']/div[@class='event' and descendant::strong[contains(text(),'" + multipleBetType + "')]]"), "BetType is still present after removal of Event");
+                    }
+                    #endregion
+
+                #endregion
+                }
+                else
+                {
+                    Console.WriteLine("Unable to retrive the Selection ID");
+                    return false;
+                }
+            }
+            else if (betSlipCount == 0)
+            {
+                Console.WriteLine("TestRepository.Common.Common.RemoveEventsFromBetslip: No Selections to remove in betslip as the count is 0");
+                return false;
+            }
+            return isSelectionRemoved;
+        }
+
+
+        /// <summary>
+        /// This function will remove "|" symbols from test data values
+        /// This is because in portal "|" will be excluded in the display
+        /// </summary>
+        /// Authour: Sudhir
+        /// <param name="stringName">string value</param>
+
+        public void RemovePipeSymbolsFromString(ref string stringName)
+        {
+            stringName = stringName.Replace("|", "").Trim();
+        }
+
+        ///<summary>
+        ///Search with Search Query and navigate to search results page
+        /// </summary>
+        /// <Author>Vamsi Krishna Boyapati</Author>
+        /// <Date>26th-July-2012</Date>
+        /// <param Name = myBrowser>Browser Instance</param>
+        /// <param Name = searchQuery>Keyword to search</param>
+        /// <example>TypeAndNavigateToSearchResultsPage(browserObj,"AtEventQ_78_1058")</example>
+        public void TypeAndNavigateToSearchResultsPage(ISelenium objSelenium, string searchQuery)
+        {
+            try
+            {
+                AddTestStep("Type and Navigate to Search results page", "Results are populating as Expected for the given search query");
+                // Variables declarations
+                string searchResultsrtext;
+
+                // Validating the Existence of Search icon in home page
+                Assert.IsTrue(objSelenium.IsElementPresent(TestRepository.ControlsRepository.SearchControls.searchIconInHomePage), "Search link is not present in home page as expected");
+                // Clicking the search icon
+                objSelenium.Click(TestRepository.ControlsRepository.SearchControls.searchIconInHomePage);
+                //Sync
+                objSelenium.WaitForPageToLoad(FrameGlobals.PageLoadTimeout);
+                WaitForLoadingIcon(objSelenium, 60);
+                // Validating the Existence of Search input field
+                objSelenium.Highlight(TestRepository.ControlsRepository.SearchControls.searchInputField);
+                Assert.IsTrue(objSelenium.IsElementPresent(TestRepository.ControlsRepository.SearchControls.searchInputField), "Search input field is not present as expected");
+                // Validationg the Editable behaviour of Search input field 
+                Assert.IsTrue(objSelenium.IsEditable(TestRepository.ControlsRepository.SearchControls.searchInputField), "Search Input field is not Editable as Expected");
+                // Validating the Existence of remove icon in search input field
+                objSelenium.Highlight(TestRepository.ControlsRepository.SearchControls.searchRemoveIcon);
+                Assert.IsTrue(objSelenium.IsElementPresent(TestRepository.ControlsRepository.SearchControls.searchRemoveIcon), "Remove icon is not present in search input field as expected");
+                objSelenium.Click(TestRepository.ControlsRepository.SearchControls.searchInputField);
+                // Setting Search text to the input field
+                objSelenium.Type(TestRepository.ControlsRepository.SearchControls.searchInputField, searchQuery);
+                // Hitting the enter
+                objSelenium.TypeKeys(TestRepository.ControlsRepository.SearchControls.searchInputField, Keys.Enter);
+                //Sync
+                objSelenium.WaitForPageToLoad(FrameGlobals.PageLoadTimeout);
+                WaitForLoadingIcon(objSelenium, 90);
+                // Validating whether user can be navigate to search results page on hitthing the enter
+                Assert.IsTrue(objSelenium.IsElementPresent(TestRepository.ControlsRepository.SearchControls.searchResultsFilter), "User is not able to navigate to search results page as expected on hitting the enter");
+                //Reading the text in search results page
+                searchResultsrtext = objSelenium.GetText(TestRepository.ControlsRepository.SearchControls.searchResultsStaticText).ToLower().Trim();
+                // Validating whether results are populated for the search query that we entered or not
+                Assert.IsTrue(searchResultsrtext.Contains(searchQuery.ToLower().Trim()), "Search results are not found for the search term" + searchQuery + "in search results page");
+                Pass("Results are populating as Expected for the given search query");
+            }
+            catch (Exception ex)
+            {
+                CaptureScreenshot(objSelenium);
+                Fail(ex.Message);
+            }
+        }
+
+
+        ///<summary>
+        /// Validates user cab be able to navigate to Event detail page from search results page on clicking on Event name link.
+        /// </summary>
+        /// <Author>Vamsi Krishna Boyapati</Author>
+        /// <Date>26th-July-2012</Date>
+        /// <param Name = myBrowser>Browser Instance</param>
+        /// <param Name = searchQuery>Keyword to search</param>
+        /// <example>verifyEventDetailPageContent(seleniumObj,"AtEventQ_78_1058")</example>
+        public void SearchAndNavigateToEventDetailPage(ISelenium objSelenium, string searchQuery)
+        {
+            try
+            {
+                AddTestStep("Search and navigate to Event detail page", "Search and navigate to Event detail page is successull");
+                // Variables declarations
+                string searchResultsrtext;
+                
+                // Validating the Existence of Search icon in home page
+                Assert.IsTrue(objSelenium.IsElementPresent(TestRepository.ControlsRepository.SearchControls.searchIconInHomePage), "Search link is not present in home page as expected");
+                // Clicking the search icon
+                objSelenium.Click(TestRepository.ControlsRepository.SearchControls.searchIconInHomePage);
+                //Sync
+                objSelenium.WaitForPageToLoad(FrameGlobals.PageLoadTimeout);
+                WaitForLoadingIcon(objSelenium, 60);
+                // Validating the Existence of Search input field
+                objSelenium.Highlight(TestRepository.ControlsRepository.SearchControls.searchInputField);
+                Assert.IsTrue(objSelenium.IsElementPresent(TestRepository.ControlsRepository.SearchControls.searchInputField), "Search input field is not present as expected");
+                // Validationg the Editable behaviour of Search input field 
+                Assert.IsTrue(objSelenium.IsEditable(TestRepository.ControlsRepository.SearchControls.searchInputField), "Search Input field is not Editable as Expected");
+                // Validating the Existence of remove icon in search input field
+                objSelenium.Highlight(TestRepository.ControlsRepository.SearchControls.searchRemoveIcon);
+                Assert.IsTrue(objSelenium.IsElementPresent(TestRepository.ControlsRepository.SearchControls.searchRemoveIcon), "Remove icon is not present in search input field as expected");
+                objSelenium.Click(TestRepository.ControlsRepository.SearchControls.searchInputField);
+                // Setting Search text to the input field
+                objSelenium.Type(TestRepository.ControlsRepository.SearchControls.searchInputField, searchQuery);
+                // Hitting the enter
+                objSelenium.TypeKeys(TestRepository.ControlsRepository.SearchControls.searchInputField, Keys.Enter);
+                //Sync
+                objSelenium.WaitForPageToLoad(FrameGlobals.PageLoadTimeout);
+                WaitForLoadingIcon(objSelenium, 90);
+                // Validating whether user can be navigate to search results page on hitthing the enter
+                Assert.IsTrue(objSelenium.IsElementPresent(TestRepository.ControlsRepository.SearchControls.searchResultsFilter), "User is not able to navigate to search results page as expected on hitting the enter");
+                //Reading the text in search results page
+                searchResultsrtext = objSelenium.GetText(TestRepository.ControlsRepository.SearchControls.searchResultsStaticText);
+                // Validating whether results are populated for the search query that we entered or not
+                Assert.IsTrue(searchResultsrtext.Contains(searchQuery), "Search results are not found for the search term" + searchQuery + "in search results page");
+                //Validating the Existence of Event name as Link in search results page
+                Assert.IsTrue(objSelenium.IsElementPresent(TestRepository.ControlsRepository.SearchControls.eventNameLink), "Event name is not appearing as a Link in Search results page");
+                // Clicking the Event name link
+                objSelenium.Highlight(TestRepository.ControlsRepository.SearchControls.eventNameLink);
+                objSelenium.Click(TestRepository.ControlsRepository.SearchControls.eventNameLink);
+                //Sync
+                objSelenium.WaitForPageToLoad(FrameGlobals.PageLoadTimeout);
+                WaitForLoadingIcon(objSelenium, 60);
+                // Validating whether user can be able to navigate to Event Detail page on clicking the link in search results page
+                Assert.IsTrue(objSelenium.IsElementPresent(TestRepository.ControlsRepository.SearchControls.inplayGradient), "User not able to navigate to event detail page on clicking on event name link in search results page as Expected");
+                // Validating Event detail page content
+                Assert.IsTrue(objSelenium.GetText(TestRepository.ControlsRepository.SearchControls.inplayGradient).Contains(searchQuery), "Data related to search query" + searchQuery + " not displaying as expected in event detail page");
+                Pass("Search and navigate to Event detail page is successull");
+            }
+            catch (Exception ex)
+            {
+                CaptureScreenshot(objSelenium);
+                Fail(ex.Message);
+            }
+        }
+        /// <summary>
+        ///This method Returns No of Selections present in betslip.
+        /// </summary>
+        /// <Author>Pradeep</Author>
+        /// <Date>26 July 2012</Date>
+        /// <param name="browser">Selenium Browser</param>
+        /// <returns>Selection count in Betslip if, on Exception returns -1 /// </returns>
+        /// <example>GetBetslipCount(browser) </example>
+        public int GetBetslipCountFrmBetslipPage(ISelenium browser)
+        {
+            string betSlipCount = null;
+            try
+            {
+                IWebDriver driver = ((WebDriverBackedSelenium)browser).UnderlyingWebDriver;
+                betSlipCount = driver.FindElement(By.XPath(ControlsRepository.BetslipControl.betslipCountInBetslipPg)).Text;
+                return Convert.ToInt32(betSlipCount);
+            }
+            catch (Exception)
+            {
+
+                return -1;
+            }
+        }
+        /// <summary>
+        ///This method Returns No of Selections present in betslip Footer
+        /// </summary>
+        /// <Author>Pradeep</Author>
+        /// <Date>07-August-2012</Date>
+        /// <param name="browser">Selenium Browser</param>
+        /// <returns>Selection count in Betslip if, on Exception returns -1 /// </returns>
+        /// <example>GetBetslipCount(browser) </example>
+        public int GetBetslipCountFromFooter(ISelenium browser)
+        {
+            string betSlipCount = null;
+            try
+            {
+                IWebDriver driver = ((WebDriverBackedSelenium)browser).UnderlyingWebDriver;
+                betSlipCount = driver.FindElement(By.XPath(ControlsRepository.BetslipControl.betslipCountInTheFooter)).Text;
+                return Convert.ToInt32(betSlipCount);
+            }
+            catch (Exception)
+            {
+
+                return -1;
+            }
+        }
+        /// <summary>
+        /// Calculate the Expected Totalstake
+        /// </summary>
+        /// <Author>Pradeep</Author>
+        /// <Date>26 July 2012</Date>
+        /// <param name="browser">Browser Instance</param>
+        /// <param name="betType">Type of theBet</param>
+        /// <param name="stake">Stake Entered</param>
+        /// <returns>Expected Stake </returns>
+        /// <example>CalculateTotalStake(browser,"double",2)</example>
+
+        public double CalculateTotalStake(ISelenium browser, string betType, double stake)
+        {
+            try
+            {
+                double totalStake = 0.00;
+                int numberofSelections = 0;
+                int numberOfLines;
+                numberOfLines = CalculateBetLines(browser, betType.ToUpper());
+                numberofSelections = GetBetslipCountFrmBetslipPage(browser);
+
+                totalStake = numberOfLines * stake;
+
+                return totalStake;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+                return 0.00;
+            }
+        }
+
+        /// <summary>
+        /// Generates the odds in actual format
+        /// </summary>
+        /// <Author>Pradeep</Author>
+        /// <Date>26 July 2012</Date>
+        /// <param name="oddsArray">List of odds </param>
+        public void FGenerateOdds(ref string[] oddsArray)
+        {
+            int cnt = 0;
+            double ActualOdd = 0;
+            cnt = 0;
+            Type arraytype;
+            bool isArrayFlag;
+            string[] odds;
+
+            arraytype = oddsArray.GetType();
+            isArrayFlag = arraytype.IsArray;
+
+            if (!isArrayFlag)
+            {
+                Console.WriteLine("GetPotentialReturnForMultiples : Error: No Odds provided. Please provide Odd(s) in array format for calculating potential return.");
+                return;
+            }
+
+            foreach (string str in oddsArray)
+            {
+                int indexvalue = str.ToString(CultureInfo.InvariantCulture).IndexOf("/", System.StringComparison.Ordinal);
+                if (indexvalue != -1)
+                {
+                    odds = str.Split('/');
+                    ActualOdd = Convert.ToDouble(odds[0], CultureInfo.InvariantCulture) / Convert.ToDouble(odds[1], CultureInfo.CurrentCulture);
+                    oddsArray[cnt] = Convert.ToString((ActualOdd) + Convert.ToDouble(1));
+                }
+                else
+                {
+                    oddsArray[cnt] = Convert.ToString(str);
+                }
+                cnt = cnt + 1;
+            }
+        }
+        /// <summary>
+        /// Gets the expected potential return for multi bets or for a single bet.
+        /// </summary>
+        /// <Author>Sudhir</Author>
+        /// <Date>26 July 2012</Date>
+        /// <param name="oddsArray">odds values as array</param>
+        /// <param name="stake">Stake entered</param>
+        /// <param name="betType">Bet Type</param>
+        /// <returns>Potential value in double rounded to 2 decimals</returns>
+        public double GetPotentialReturnForMultiples(string[] oddsArray, double stake, string betType)
+        {
+            int cnt, oddsCount;
+            double potentialRet = 0.00, dbl1, dbl2, dbl3, dbl4, dbl5, dbl6, dbl7, dbl8, dbl9, dbl10, dbl11, dbl12, dbl13, dbl14, dbl15;
+            double trbl1, trbl2, trbl3, trbl4, trbl5, trbl6, trbl7, trbl8, trbl9, trbl10, trbl11, trbl12, trbl13, trbl14, trbl15, trbl16, trbl17, trbl18, trbl19, trbl20;
+            double acc4 = 0.00, acc4_1, acc4_2, acc4_3, acc4_4, acc4_5, acc4_6, acc4_7, acc4_8, acc4_9, acc4_10, acc4_11, acc4_12, acc4_13, acc4_14, acc4_15;
+            double acc5 = 0.00, acc6 = 0.00, acc5_1, acc5_2, acc5_3, acc5_4, acc5_5, acc5_6 = 0.00;
+            double singles = 0.00;
+            double trebles = 0.00;
+            double dbls = 0.00;
+
+            // Getting array type
+            Type arraytype = oddsArray.GetType();
+            bool isArrayFlag = arraytype.IsArray;
+
+            if (!isArrayFlag)
+            {
+                Console.WriteLine("GetPotentialReturnForMultiples : Error: No Odds provided. Please provide Odd(s) in array format for calculating potential return.");
+            }
+
+            // Converting the fractional odds strings to its actual value(+1)
+            FGenerateOdds(ref oddsArray);
+            oddsCount = (oddsArray.GetUpperBound(0)) + 1;
+
+            //Calculating the total singles of all the odds
+            for (cnt = 0; cnt <= oddsArray.GetUpperBound(0); cnt++)
+            {
+                singles = singles + stake * (Convert.ToDouble(oddsArray[cnt], CultureInfo.InvariantCulture));
+            }
+
+            // Gathering the required multi (s) based on number of odds provided
+            if (oddsCount == 2)
+            {
+                dbls = (stake * Convert.ToDouble(oddsArray[0])) * Convert.ToDouble(oddsArray[1], CultureInfo.InvariantCulture);
+            }
+            else if (oddsCount == 3)
+            {
+                dbl1 = (stake * Convert.ToDouble(oddsArray[0])) * Convert.ToDouble(oddsArray[1], CultureInfo.InvariantCulture);
+                dbl2 = (stake * Convert.ToDouble(oddsArray[1])) * Convert.ToDouble(oddsArray[2], CultureInfo.InvariantCulture);
+                dbl3 = (stake * Convert.ToDouble(oddsArray[2])) * Convert.ToDouble(oddsArray[0], CultureInfo.InvariantCulture);
+                dbls = dbl1 + dbl2 + dbl3;
+                trebles = ((stake * Convert.ToDouble(oddsArray[0], CultureInfo.InvariantCulture)) * Convert.ToDouble(oddsArray[1], CultureInfo.InvariantCulture)) * Convert.ToDouble(oddsArray[2], CultureInfo.InvariantCulture);
+            }
+            else if (oddsCount == 4)
+            {
+                dbl1 = (stake * Convert.ToDouble(oddsArray[0])) * Convert.ToDouble(oddsArray[1], CultureInfo.InvariantCulture);
+                dbl2 = (stake * Convert.ToDouble(oddsArray[1])) * Convert.ToDouble(oddsArray[2], CultureInfo.InvariantCulture);
+                dbl3 = (stake * Convert.ToDouble(oddsArray[2])) * Convert.ToDouble(oddsArray[3], CultureInfo.InvariantCulture);
+                dbl4 = (stake * Convert.ToDouble(oddsArray[3])) * Convert.ToDouble(oddsArray[0], CultureInfo.InvariantCulture);
+                dbl5 = (stake * Convert.ToDouble(oddsArray[3])) * Convert.ToDouble(oddsArray[1], CultureInfo.InvariantCulture);
+                dbl6 = (stake * Convert.ToDouble(oddsArray[2])) * Convert.ToDouble(oddsArray[0], CultureInfo.InvariantCulture);
+                dbls = dbl1 + dbl2 + dbl3 + dbl4 + dbl5 + dbl6;
+
+                trbl1 = ((stake * Convert.ToDouble(oddsArray[0], CultureInfo.InvariantCulture)) * Convert.ToDouble(oddsArray[1], CultureInfo.InvariantCulture)) * Convert.ToDouble(oddsArray[2], CultureInfo.InvariantCulture);
+                trbl2 = ((stake * Convert.ToDouble(oddsArray[1], CultureInfo.InvariantCulture)) * Convert.ToDouble(oddsArray[2], CultureInfo.InvariantCulture)) * Convert.ToDouble(oddsArray[3], CultureInfo.InvariantCulture);
+                trbl3 = ((stake * Convert.ToDouble(oddsArray[2], CultureInfo.InvariantCulture)) * Convert.ToDouble(oddsArray[3])) * Convert.ToDouble(oddsArray[0], CultureInfo.InvariantCulture);
+                trbl4 = ((stake * Convert.ToDouble(oddsArray[3], CultureInfo.InvariantCulture)) * Convert.ToDouble(oddsArray[0], CultureInfo.InvariantCulture)) * Convert.ToDouble(oddsArray[1], CultureInfo.InvariantCulture);
+                trebles = trbl1 + trbl2 + trbl3 + trbl4;
+
+                acc4 = (((stake * Convert.ToDouble(oddsArray[0], CultureInfo.InvariantCulture)) * Convert.ToDouble(oddsArray[1])) * Convert.ToDouble(oddsArray[2])) * Convert.ToDouble(oddsArray[3]);
+            }
+            else if (oddsCount == 5)
+            {
+                dbl1 = (stake * Convert.ToDouble(oddsArray[0], CultureInfo.InvariantCulture)) * Convert.ToDouble(oddsArray[1], CultureInfo.InvariantCulture);
+                dbl2 = (stake * Convert.ToDouble(oddsArray[0], CultureInfo.InvariantCulture)) * Convert.ToDouble(oddsArray[2], CultureInfo.InvariantCulture);
+                dbl3 = (stake * Convert.ToDouble(oddsArray[0], CultureInfo.InvariantCulture)) * Convert.ToDouble(oddsArray[3], CultureInfo.InvariantCulture);
+                dbl4 = (stake * Convert.ToDouble(oddsArray[0], CultureInfo.InvariantCulture)) * Convert.ToDouble(oddsArray[4], CultureInfo.InvariantCulture);
+                dbl5 = (stake * Convert.ToDouble(oddsArray[1], CultureInfo.InvariantCulture)) * Convert.ToDouble(oddsArray[2], CultureInfo.InvariantCulture);
+                dbl6 = (stake * Convert.ToDouble(oddsArray[1], CultureInfo.InvariantCulture)) * Convert.ToDouble(oddsArray[3], CultureInfo.InvariantCulture);
+                dbl7 = (stake * Convert.ToDouble(oddsArray[1], CultureInfo.InvariantCulture)) * Convert.ToDouble(oddsArray[4], CultureInfo.InvariantCulture);
+                dbl8 = (stake * Convert.ToDouble(oddsArray[2], CultureInfo.InvariantCulture)) * Convert.ToDouble(oddsArray[3], CultureInfo.InvariantCulture);
+                dbl9 = (stake * Convert.ToDouble(oddsArray[2], CultureInfo.InvariantCulture)) * Convert.ToDouble(oddsArray[4], CultureInfo.InvariantCulture);
+                dbl10 = (stake * Convert.ToDouble(oddsArray[3], CultureInfo.InvariantCulture)) * Convert.ToDouble(oddsArray[4], CultureInfo.InvariantCulture);
+                dbls = dbl1 + dbl2 + dbl3 + dbl4 + dbl5 + dbl6 + dbl7 + dbl8 + dbl9 + dbl10;
+
+                trbl1 = ((stake * Convert.ToDouble(oddsArray[0])) * Convert.ToDouble(oddsArray[1])) * Convert.ToDouble(oddsArray[2]);
+                trbl2 = ((stake * Convert.ToDouble(oddsArray[0])) * Convert.ToDouble(oddsArray[2])) * Convert.ToDouble(oddsArray[3]);
+                trbl3 = ((stake * Convert.ToDouble(oddsArray[0])) * Convert.ToDouble(oddsArray[3])) * Convert.ToDouble(oddsArray[4]);
+                trbl4 = ((stake * Convert.ToDouble(oddsArray[1])) * Convert.ToDouble(oddsArray[2])) * Convert.ToDouble(oddsArray[3]);
+                trbl5 = ((stake * Convert.ToDouble(oddsArray[1])) * Convert.ToDouble(oddsArray[3])) * Convert.ToDouble(oddsArray[4]);
+                trbl6 = ((stake * Convert.ToDouble(oddsArray[1])) * Convert.ToDouble(oddsArray[4])) * Convert.ToDouble(oddsArray[0]);
+                trbl7 = ((stake * Convert.ToDouble(oddsArray[2])) * Convert.ToDouble(oddsArray[3])) * Convert.ToDouble(oddsArray[4]);
+                trbl8 = ((stake * Convert.ToDouble(oddsArray[2])) * Convert.ToDouble(oddsArray[4])) * Convert.ToDouble(oddsArray[0]);
+                trbl9 = ((stake * Convert.ToDouble(oddsArray[2])) * Convert.ToDouble(oddsArray[4])) * Convert.ToDouble(oddsArray[1]);
+                trbl10 = ((stake * Convert.ToDouble(oddsArray[3])) * Convert.ToDouble(oddsArray[4])) * Convert.ToDouble(oddsArray[0]);
+                trebles = trbl1 + trbl2 + trbl3 + trbl4 + trbl5 + trbl6 + trbl7 + trbl8 + trbl9 + trbl10;
+
+                acc4_1 = (((stake * Convert.ToDouble(oddsArray[0])) * Convert.ToDouble(oddsArray[1])) * Convert.ToDouble(oddsArray[2])) * Convert.ToDouble(oddsArray[3]);
+                acc4_2 = (((stake * Convert.ToDouble(oddsArray[0])) * Convert.ToDouble(oddsArray[2])) * Convert.ToDouble(oddsArray[3])) * Convert.ToDouble(oddsArray[4]);
+                acc4_3 = (((stake * Convert.ToDouble(oddsArray[1])) * Convert.ToDouble(oddsArray[2])) * Convert.ToDouble(oddsArray[3])) * Convert.ToDouble(oddsArray[4]);
+                acc4_4 = (((stake * Convert.ToDouble(oddsArray[1])) * Convert.ToDouble(oddsArray[3])) * Convert.ToDouble(oddsArray[4])) * Convert.ToDouble(oddsArray[0]);
+                acc4_5 = (((stake * Convert.ToDouble(oddsArray[2])) * Convert.ToDouble(oddsArray[4])) * Convert.ToDouble(oddsArray[0])) * Convert.ToDouble(oddsArray[1]);
+                acc4 = acc4_1 + acc4_2 + acc4_3 + acc4_4 + acc4_5;
+
+                acc5 = ((((stake * Convert.ToDouble(oddsArray[0])) * Convert.ToDouble(oddsArray[1])) * Convert.ToDouble(oddsArray[2])) * Convert.ToDouble(oddsArray[3])) * Convert.ToDouble(oddsArray[4]);
+            }
+            else if (oddsCount == 6)
+            {
+                dbl1 = (stake * Convert.ToDouble(oddsArray[0])) * Convert.ToDouble(oddsArray[1]);
+                dbl2 = (stake * Convert.ToDouble(oddsArray[0])) * Convert.ToDouble(oddsArray[2]);
+                dbl3 = (stake * Convert.ToDouble(oddsArray[0])) * Convert.ToDouble(oddsArray[3]);
+                dbl4 = (stake * Convert.ToDouble(oddsArray[0])) * Convert.ToDouble(oddsArray[4]);
+                dbl5 = (stake * Convert.ToDouble(oddsArray[0])) * Convert.ToDouble(oddsArray[5]);
+                dbl6 = (stake * Convert.ToDouble(oddsArray[1])) * Convert.ToDouble(oddsArray[2]);
+                dbl7 = (stake * Convert.ToDouble(oddsArray[1])) * Convert.ToDouble(oddsArray[3]);
+                dbl8 = (stake * Convert.ToDouble(oddsArray[1])) * Convert.ToDouble(oddsArray[4]);
+                dbl9 = (stake * Convert.ToDouble(oddsArray[1])) * Convert.ToDouble(oddsArray[5]);
+                dbl10 = (stake * Convert.ToDouble(oddsArray[2])) * Convert.ToDouble(oddsArray[3]);
+                dbl11 = (stake * Convert.ToDouble(oddsArray[2])) * Convert.ToDouble(oddsArray[4]);
+                dbl12 = (stake * Convert.ToDouble(oddsArray[2])) * Convert.ToDouble(oddsArray[5]);
+                dbl13 = (stake * Convert.ToDouble(oddsArray[3])) * Convert.ToDouble(oddsArray[4]);
+                dbl14 = (stake * Convert.ToDouble(oddsArray[3])) * Convert.ToDouble(oddsArray[5]);
+                dbl15 = (stake * Convert.ToDouble(oddsArray[4])) * Convert.ToDouble(oddsArray[5]);
+                dbls = dbl1 + dbl2 + dbl3 + dbl4 + dbl5 + dbl6 + dbl7 + dbl8 + dbl9 + dbl10 + dbl11 + dbl12 + dbl13 + dbl14 + dbl15;
+
+                trbl1 = ((stake * Convert.ToDouble(oddsArray[0])) * Convert.ToDouble(oddsArray[1])) * Convert.ToDouble(oddsArray[2]);
+                trbl2 = ((stake * Convert.ToDouble(oddsArray[0])) * Convert.ToDouble(oddsArray[2])) * Convert.ToDouble(oddsArray[3]);
+                trbl3 = ((stake * Convert.ToDouble(oddsArray[0])) * Convert.ToDouble(oddsArray[3])) * Convert.ToDouble(oddsArray[4]);
+                trbl4 = ((stake * Convert.ToDouble(oddsArray[0])) * Convert.ToDouble(oddsArray[4])) * Convert.ToDouble(oddsArray[5]);
+                trbl5 = ((stake * Convert.ToDouble(oddsArray[1])) * Convert.ToDouble(oddsArray[2])) * Convert.ToDouble(oddsArray[3]);
+                trbl6 = ((stake * Convert.ToDouble(oddsArray[1])) * Convert.ToDouble(oddsArray[3])) * Convert.ToDouble(oddsArray[4]);
+                trbl7 = ((stake * Convert.ToDouble(oddsArray[1])) * Convert.ToDouble(oddsArray[4])) * Convert.ToDouble(oddsArray[5]);
+                trbl8 = ((stake * Convert.ToDouble(oddsArray[1])) * Convert.ToDouble(oddsArray[5])) * Convert.ToDouble(oddsArray[0]);
+                trbl9 = ((stake * Convert.ToDouble(oddsArray[2])) * Convert.ToDouble(oddsArray[3])) * Convert.ToDouble(oddsArray[4]);
+                trbl10 = ((stake * Convert.ToDouble(oddsArray[2])) * Convert.ToDouble(oddsArray[4])) * Convert.ToDouble(oddsArray[5]);
+                trbl11 = ((stake * Convert.ToDouble(oddsArray[2])) * Convert.ToDouble(oddsArray[5])) * Convert.ToDouble(oddsArray[0]);
+                trbl12 = ((stake * Convert.ToDouble(oddsArray[2])) * Convert.ToDouble(oddsArray[5])) * Convert.ToDouble(oddsArray[1]);
+                trbl13 = ((stake * Convert.ToDouble(oddsArray[3])) * Convert.ToDouble(oddsArray[4])) * Convert.ToDouble(oddsArray[5]);
+                trbl14 = ((stake * Convert.ToDouble(oddsArray[3])) * Convert.ToDouble(oddsArray[5])) * Convert.ToDouble(oddsArray[0]);
+                trbl15 = ((stake * Convert.ToDouble(oddsArray[3])) * Convert.ToDouble(oddsArray[0])) * Convert.ToDouble(oddsArray[1]);
+                trbl16 = ((stake * Convert.ToDouble(oddsArray[4])) * Convert.ToDouble(oddsArray[0])) * Convert.ToDouble(oddsArray[1]);
+                trbl17 = ((stake * Convert.ToDouble(oddsArray[4])) * Convert.ToDouble(oddsArray[1])) * Convert.ToDouble(oddsArray[2]);
+                trbl18 = ((stake * Convert.ToDouble(oddsArray[3])) * Convert.ToDouble(oddsArray[5])) * Convert.ToDouble(oddsArray[1]);
+                trbl19 = ((stake * Convert.ToDouble(oddsArray[3])) * Convert.ToDouble(oddsArray[5])) * Convert.ToDouble(oddsArray[2]);
+                trbl20 = ((stake * Convert.ToDouble(oddsArray[4])) * Convert.ToDouble(oddsArray[0])) * Convert.ToDouble(oddsArray[2]);
+                trebles = trbl1 + trbl2 + trbl3 + trbl4 + trbl5 + trbl6 + trbl7 + trbl8 + trbl9 + trbl10 + trbl11 + trbl12 + trbl13 + trbl14 + trbl15 + trbl16 + trbl17 + trbl18 + trbl19 + trbl20;
+
+                acc4_1 = (((stake * Convert.ToDouble(oddsArray[0])) * Convert.ToDouble(oddsArray[1])) * Convert.ToDouble(oddsArray[2])) * Convert.ToDouble(oddsArray[3]);
+                acc4_2 = (((stake * Convert.ToDouble(oddsArray[0])) * Convert.ToDouble(oddsArray[1])) * Convert.ToDouble(oddsArray[2])) * Convert.ToDouble(oddsArray[4]);
+                acc4_3 = (((stake * Convert.ToDouble(oddsArray[0])) * Convert.ToDouble(oddsArray[1])) * Convert.ToDouble(oddsArray[2])) * Convert.ToDouble(oddsArray[5]);
+                acc4_4 = (((stake * Convert.ToDouble(oddsArray[0])) * Convert.ToDouble(oddsArray[1])) * Convert.ToDouble(oddsArray[3])) * Convert.ToDouble(oddsArray[4]);
+                acc4_5 = (((stake * Convert.ToDouble(oddsArray[0])) * Convert.ToDouble(oddsArray[1])) * Convert.ToDouble(oddsArray[3])) * Convert.ToDouble(oddsArray[5]);
+                acc4_6 = (((stake * Convert.ToDouble(oddsArray[0])) * Convert.ToDouble(oddsArray[1])) * Convert.ToDouble(oddsArray[4])) * Convert.ToDouble(oddsArray[5]);
+                acc4_7 = (((stake * Convert.ToDouble(oddsArray[0])) * Convert.ToDouble(oddsArray[2])) * Convert.ToDouble(oddsArray[3])) * Convert.ToDouble(oddsArray[4]);
+                acc4_8 = (((stake * Convert.ToDouble(oddsArray[0])) * Convert.ToDouble(oddsArray[2])) * Convert.ToDouble(oddsArray[3])) * Convert.ToDouble(oddsArray[5]);
+                acc4_9 = (((stake * Convert.ToDouble(oddsArray[0])) * Convert.ToDouble(oddsArray[2])) * Convert.ToDouble(oddsArray[4])) * Convert.ToDouble(oddsArray[5]);
+                acc4_10 = (((stake * Convert.ToDouble(oddsArray[0])) * Convert.ToDouble(oddsArray[3])) * Convert.ToDouble(oddsArray[4])) * Convert.ToDouble(oddsArray[5]);
+                acc4_11 = (((stake * Convert.ToDouble(oddsArray[1])) * Convert.ToDouble(oddsArray[2])) * Convert.ToDouble(oddsArray[3])) * Convert.ToDouble(oddsArray[4]);
+                acc4_12 = (((stake * Convert.ToDouble(oddsArray[1])) * Convert.ToDouble(oddsArray[2])) * Convert.ToDouble(oddsArray[3])) * Convert.ToDouble(oddsArray[5]);
+                acc4_13 = (((stake * Convert.ToDouble(oddsArray[1])) * Convert.ToDouble(oddsArray[2])) * Convert.ToDouble(oddsArray[4])) * Convert.ToDouble(oddsArray[5]);
+                acc4_14 = (((stake * Convert.ToDouble(oddsArray[1])) * Convert.ToDouble(oddsArray[3])) * Convert.ToDouble(oddsArray[4])) * Convert.ToDouble(oddsArray[5]);
+                acc4_15 = (((stake * Convert.ToDouble(oddsArray[2])) * Convert.ToDouble(oddsArray[3])) * Convert.ToDouble(oddsArray[4])) * Convert.ToDouble(oddsArray[5]);
+                acc4 = acc4_1 + acc4_2 + acc4_3 + acc4_4 + acc4_5 + acc4_6 + acc4_7 + acc4_8 + acc4_9 + acc4_10 + acc4_11 + acc4_12 + acc4_13 + acc4_14 + acc4_15;
+
+                acc5_1 = ((((stake * Convert.ToDouble(oddsArray[0])) * Convert.ToDouble(oddsArray[1])) * Convert.ToDouble(oddsArray[2])) * Convert.ToDouble(oddsArray[3])) * Convert.ToDouble(oddsArray[4]);
+                acc5_2 = ((((stake * Convert.ToDouble(oddsArray[1])) * Convert.ToDouble(oddsArray[2])) * Convert.ToDouble(oddsArray[3])) * Convert.ToDouble(oddsArray[4])) * Convert.ToDouble(oddsArray[5]);
+                acc5_3 = ((((stake * Convert.ToDouble(oddsArray[2])) * Convert.ToDouble(oddsArray[3])) * Convert.ToDouble(oddsArray[4])) * Convert.ToDouble(oddsArray[5])) * Convert.ToDouble(oddsArray[0]);
+                acc5_4 = ((((stake * Convert.ToDouble(oddsArray[3])) * Convert.ToDouble(oddsArray[4])) * Convert.ToDouble(oddsArray[5])) * Convert.ToDouble(oddsArray[0])) * Convert.ToDouble(oddsArray[1]);
+                acc5_5 = ((((stake * Convert.ToDouble(oddsArray[4])) * Convert.ToDouble(oddsArray[5])) * Convert.ToDouble(oddsArray[0])) * Convert.ToDouble(oddsArray[1])) * Convert.ToDouble(oddsArray[2]);
+                acc5_6 = ((((stake * Convert.ToDouble(oddsArray[5])) * Convert.ToDouble(oddsArray[0])) * Convert.ToDouble(oddsArray[1])) * Convert.ToDouble(oddsArray[2])) * Convert.ToDouble(oddsArray[3]);
+                acc5 = acc5_1 + acc5_2 + acc5_3 + acc5_4 + acc5_5 + acc5_6;
+
+                acc6 = (((((stake * Convert.ToDouble(oddsArray[0])) * Convert.ToDouble(oddsArray[1])) * Convert.ToDouble(oddsArray[2])) * Convert.ToDouble(oddsArray[3])) * Convert.ToDouble(oddsArray[4])) * Convert.ToDouble(oddsArray[5]);
+
+            }
+
+            string multiBetType = (betType.ToUpper(CultureInfo.CurrentCulture)).Trim();
+
+            switch (multiBetType)
+            {
+                case "SINGLE":
+                    potentialRet = singles;
+                    Console.WriteLine("GetPotentialReturnForMultiples :Success: Potential return successfully returned for " + multiBetType);
+                    potentialRet = Math.Round(potentialRet, 2);
+                    break;
+                case "DOUBLE":
+                    potentialRet = dbls;
+                    Console.WriteLine("GetPotentialReturnForMultiples :Success: Potential return successfully returned for" + multiBetType);
+                    potentialRet = Math.Round(potentialRet, 2);
+                    break;
+                case "TREBLE":
+                    potentialRet = trebles;
+                    Console.WriteLine("GetPotentialReturnForMultiples :Success: Potential return successfully returned for" + multiBetType);
+                    potentialRet = Math.Round(potentialRet, 2);
+                    break;
+                case "ACCUMULATOR (4)":
+                    potentialRet = acc4;
+                    Console.WriteLine("GetPotentialReturnForMultiples :Success: Potential return successfully returned for" + multiBetType);
+                    potentialRet = Math.Round(potentialRet, 2);
+                    break;
+                case "TRIXIE":
+                    potentialRet = dbls + trebles;
+                    Console.WriteLine("GetPotentialReturnForMultiples :Success: Potential return successfully returned for" + multiBetType);
+                    potentialRet = Math.Round(potentialRet, 2);
+                    break;
+                case "PATENT":
+                    potentialRet = singles + dbls + trebles;
+                    Console.WriteLine("GetPotentialReturnForMultiples :Success: Potential return successfully returned for" + multiBetType);
+                    potentialRet = Math.Round(potentialRet, 2);
+                    break;
+                case "YANKEE":
+                    potentialRet = dbls + trebles + acc4;
+                    Console.WriteLine("GetPotentialReturnForMultiples :Success: Potential return successfully returned for" + multiBetType);
+                    potentialRet = Math.Round(potentialRet, 2);
+                    break;
+                case "LUCKY 15":
+                    potentialRet = singles + dbls + trebles + acc4;
+                    Console.WriteLine("GetPotentialReturnForMultiples :Success: Potential return successfully returned for" + multiBetType);
+                    potentialRet = Math.Round(potentialRet, 2);
+                    break;
+                case "CANADIAN":
+                    potentialRet = dbls + trebles + acc4 + acc5;
+                    Console.WriteLine("GetPotentialReturnForMultiples :Success: Potential return successfully returned for" + multiBetType);
+                    potentialRet = Math.Round(potentialRet, 2);
+                    break;
+                case "LUCKY 31":
+                    potentialRet = singles + dbls + trebles + acc4 + acc5;
+                    Console.WriteLine("GetPotentialReturnForMultiples :Success: Potential return successfully returned for" + multiBetType);
+                    potentialRet = Math.Round(potentialRet, 2);
+                    break;
+                case "ACCUMULATOR (5)":
+                    potentialRet = Math.Round(acc5, 2); ;
+                    break;
+                case "HEINZ":
+                    potentialRet = dbls + trebles + acc4 + acc5 + acc6;
+                    Console.WriteLine("GetPotentialReturnForMultiples :Success: Potential return successfully returned for" + multiBetType);
+                    potentialRet = Math.Round(potentialRet, 2);
+                    break;
+                case "LUCKY 63":
+                    potentialRet = singles + dbls + trebles + acc4 + acc5 + acc6;
+                    Console.WriteLine("GetPotentialReturnForMultiples :Success: Potential return successfully returned for" + multiBetType);
+                    potentialRet = Math.Round(potentialRet, 2);
+                    break;
+                case "FORECAST":
+                    break;
+                case "REVERSE FORECAST":
+                    break;
+                case "COMBINATION FORECAST":
+                    break;
+                case "TRICAST":
+                    break;
+                case "COMBINATION TRICAST":
+                    break;
+                default:
+                    //Console.WriteLine("GetPotentialReturnForMultiples : Error: Provided bet type:" + multiBetType + "not found. Please provide a valid multi bet type.");
+                    //potentialRet = singles;
+                    //potentialRet = Math.Round(potentialRet, 2);
+                    //Console.WriteLine(potentialRet);
+                    break;
+            } //end of switch
+            return potentialRet;
+        }
+
+        /// <summary>
+        /// Calculate Accumulated odds for Fraction and Decimal odds
+        /// <Author>Pradeep</Author>
+        /// <Date>26 July 2012</Date>
+        /// <param name="browser">Browser Instace</param>
+        /// <param name="oddsArray">odds array</param>
+        /// <param name="isOddsInFraction">
+        /// true- if odds in Fraction
+        /// false- if odds in Decimal
+        /// </param>
+        /// <returns>Accumlated odds</returns>
+        /// <example>CalculateAccumulatedOdds(browser,oddsArray,true)</example>
+        public double CalculateAccumulatedOdds(ISelenium browser, string[] oddsArray, bool isOddsInFraction)
+        {
+            double accumulatedOdd = 0.00;
+            switch (oddsArray.Length.ToString())
+            {
+                case "2":
+                    if (isOddsInFraction)
+                    {
+                        accumulatedOdd = (Convert.ToDouble((oddsArray[0]) + 1) * (Convert.ToDouble(oddsArray[1]) + 1));
+                    }
+                    else
+                    {
+                        accumulatedOdd = (Convert.ToDouble(oddsArray[0]) * Convert.ToDouble((oddsArray[1])));
+                    }
+                    break;
+
+                case "3":
+                    if (isOddsInFraction)
+                    {
+                        accumulatedOdd = ((Convert.ToDouble(oddsArray[0]) + 1) * (Convert.ToDouble(oddsArray[1]) + 1) * (Convert.ToDouble(oddsArray[2]) + 1));
+                    }
+                    else
+                    {
+                        accumulatedOdd = ((Convert.ToDouble(oddsArray[0])) * (Convert.ToDouble(oddsArray[1])) * (Convert.ToDouble(oddsArray[2])));
+                    }
+                    break;
+                case "4":
+                    if (isOddsInFraction)
+                    {
+                        accumulatedOdd = (Convert.ToDouble((oddsArray[0]) + 1) * (Convert.ToDouble(oddsArray[1]) + 1) * (Convert.ToDouble(oddsArray[2]) + 1) * (Convert.ToDouble(oddsArray[3]) + 1));
+                    }
+                    else
+                    {
+                        accumulatedOdd = (Convert.ToDouble(oddsArray[0]) * Convert.ToDouble(oddsArray[1]) * Convert.ToDouble(oddsArray[2]) * Convert.ToDouble(oddsArray[3]));
+                    }
+                    break;
+                case "5":
+                    if (isOddsInFraction)
+                    {
+                        accumulatedOdd = (Convert.ToDouble((oddsArray[0]) + 1) * (Convert.ToDouble(oddsArray[1]) + 1) * (Convert.ToDouble(oddsArray[2]) + 1) * (Convert.ToDouble(oddsArray[3]) + 1) * (Convert.ToDouble(oddsArray[4]) + 1));
+                    }
+                    else
+                    {
+                        accumulatedOdd = (Convert.ToDouble(oddsArray[0]) * Convert.ToDouble(oddsArray[1]) * Convert.ToDouble(oddsArray[2]) * Convert.ToDouble(oddsArray[3]) * Convert.ToDouble(oddsArray[4]));
+                    }
+                    break;
+                case "6":
+                    if (isOddsInFraction)
+                    {
+                        accumulatedOdd = ((Convert.ToDouble(oddsArray[0]) + 1) * (Convert.ToDouble(oddsArray[1]) + 1) * (Convert.ToDouble(oddsArray[2]) + 1) * (Convert.ToDouble(oddsArray[3]) + 1) * (Convert.ToDouble(oddsArray[4]) + 1) * (Convert.ToDouble(oddsArray[5]) + 1));
+                    }
+                    else
+                    {
+                        accumulatedOdd = (Convert.ToDouble(oddsArray[0]) * Convert.ToDouble(oddsArray[1]) * Convert.ToDouble(oddsArray[2]) * Convert.ToDouble(oddsArray[3]) * Convert.ToDouble(oddsArray[4]) * Convert.ToDouble(oddsArray[5]));
+                    }
+                    break;
+                case "7":
+                    if (isOddsInFraction)
+                    {
+                        accumulatedOdd = ((Convert.ToDouble(oddsArray[0]) + 1) * (Convert.ToDouble(oddsArray[1]) + 1) * (Convert.ToDouble(oddsArray[2]) + 1) * (Convert.ToDouble(oddsArray[3]) + 1) * (Convert.ToDouble(oddsArray[4]) + 1) * (Convert.ToDouble(oddsArray[5]) + 1) * (Convert.ToDouble(oddsArray[6]) + 1));
+                    }
+                    else
+                    {
+                        accumulatedOdd = (Convert.ToDouble(oddsArray[0]) * Convert.ToDouble(oddsArray[1]) * Convert.ToDouble(oddsArray[2]) * Convert.ToDouble(oddsArray[3]) * Convert.ToDouble(oddsArray[3]) * Convert.ToDouble(oddsArray[4]) * Convert.ToDouble(oddsArray[5]) * Convert.ToDouble(oddsArray[6]));
+                    }
+
+                    break;
+                case "8":
+                    if (isOddsInFraction)
+                    {
+                        accumulatedOdd = ((Convert.ToDouble(oddsArray[0]) + 1) * (Convert.ToDouble(oddsArray[1]) + 1) * (Convert.ToDouble(oddsArray[2]) + 1) * (Convert.ToDouble(oddsArray[3]) + 1) * (Convert.ToDouble(oddsArray[4]) + 1) * (Convert.ToDouble(oddsArray[5]) + 1) * (Convert.ToDouble(oddsArray[6]) + 1) * (Convert.ToDouble(oddsArray[7]) + 1));
+                    }
+                    else
+                    {
+                        accumulatedOdd = (Convert.ToDouble(oddsArray[0]) * Convert.ToDouble(oddsArray[1]) * Convert.ToDouble(oddsArray[2]) * Convert.ToDouble(oddsArray[3]) * Convert.ToDouble(oddsArray[4]) * Convert.ToDouble(oddsArray[5]) * Convert.ToDouble(oddsArray[6]) * Convert.ToDouble(oddsArray[7]));
+                    }
+                    break;
+                default:
+                    accumulatedOdd = 0.0;
+                    break;
+            }
+
+            return Math.Round(accumulatedOdd, 2);
+        }
+
+        /// <summary>
+        /// Get the expected number of bet lines
+        /// </summary>
+        /// <Author>Pradeep</Author>
+        /// <Date>26 July 2012</Date>
+        /// <param name="myBrowser">Selenium Instances</param>
+        /// <param name="selection"> Selection Name</param>
+        /// <example>betLines = CalculateBetLines("Double")</example> 
+        public int CalculateBetLines(ISelenium browser, string selection)
+        {
+            decimal numerator;
+            decimal denom;
+
+            //'Taking the betslip count for knowing the number of selections added to the betslip so that we can calculate the total stake for different bet types
+            int betSlipCount = GetBetslipCountFrmBetslipPage(browser);
+            int betLines = 0;
+
+            switch (selection)
+            {
+                case "SINGLE":
+                    return betLines = betSlipCount;
+                case "DOUBLE":
+                    numerator = Factorial(betSlipCount);
+                    denom = Factorial(2) * Factorial(betSlipCount - 2);
+                    betLines = Convert.ToInt32((numerator / denom));
+                    return betLines;
+                case "TREBLE":
+                    numerator = Factorial(betSlipCount);
+                    denom = Factorial(3) * Factorial(betSlipCount - 3);
+                    betLines = Convert.ToInt32((numerator / denom));
+                    return betLines;
+                case "ACCUMULATOR (4)":
+                    numerator = Factorial(betSlipCount);
+                    denom = Factorial(4) * Factorial(betSlipCount - 4);
+                    betLines = Convert.ToInt32((numerator / denom));
+                    return betLines;
+
+                case "TRIXIE":
+                    return betLines = 4;
+                case "PATENT":
+                    return betLines = 7;
+                case "YANKEE":
+                    return betLines = 11;
+                case "LUCKY 15":
+                    return betLines = 15;
+                case "CANADIAN":
+                    return betLines = 26;
+                case "LUCKY 31":
+                    return betLines = 31;
+                case "ACCUMULATOR (5)":
+                    numerator = Factorial(betSlipCount);
+                    denom = Factorial(5) * Factorial(betSlipCount - 5);
+                    return betLines;
+                case "HEINZ":
+                    return betLines = 57;
+                case "LUCKY 63":
+                    return betLines = 63;
+                case "FORECAST":
+                case "REVERSE FORECAST":
+                case "COMBINATION FORECAST":
+                case "TRICAST":
+                case "COMBINATION TRICAST":
+                default:
+                    return betLines = 1;
+            }
+        }
+
+        /// <summary>
+        ///  This method Calculates the factorial of a number
+        /// </summary>
+        /// <Author>Pradeep</Author>
+        /// <Date>26 July 2012</Date>
+        /// <param name="anyNum">Any Number</param>
+        /// <returns> Factorial of the given Number</returns>
+        /// <example>Factorial(9)</example>
+        public decimal Factorial(int anyNum)
+        {
+            try
+            {
+                //Non-recursive factorial for
+                //-170< anyNum >170
+                int i;
+                decimal factorial = 0;
+
+                if (anyNum < -170 || anyNum > 170)
+                {
+                    return factorial = 0;
+
+                }
+                if (System.Math.Abs(anyNum) != anyNum)
+                {
+                    factorial = -1;
+                    for (i = -2; i >= anyNum; i--)
+                    {
+                        factorial = factorial * i;
+                    }
+                    return factorial;
+                }
+                else
+                {
+                    factorial = 1;
+
+                    for (i = 2; i <= anyNum; i++)
+                    {
+                        factorial = factorial * i;
+                    }
+                    return factorial;
+                }
+            }
+            catch (AutomationException ex)
+            {
+                Console.WriteLine(ex.StackTrace);
+                return 0;
+            }
+        }
+
+        /// <summary>
+        ///  This method returns the Totalstake displayed inthe Betslip Page
+        /// </summary>
+        /// <Author>Pradeep</Author>
+        /// <Date>26 July 2012</Date>
+        /// <param name="browser">Selenium browser Instances</param>
+        /// <returns>Returns Total stake if Toatlstake exists ,on exceptions returns 0</returns>
+        /// <example>GetTotalStake(browser)</example>
+        public double GetTotalStake(ISelenium browser)
+        {
+            try
+            {
+                string[] itemArray = null;
+                IWebDriver driver = ((WebDriverBackedSelenium)browser).UnderlyingWebDriver;
+                string totalStake = driver.FindElement(By.XPath(TestRepository.ControlsRepository.BetslipControl.totalStakeID)).Text.ToString(CultureInfo.InvariantCulture);
+                itemArray = totalStake.Split('£');
+                return Convert.ToDouble(itemArray[1], CultureInfo.CurrentCulture);
+            }
+            catch (AutomationException ex)
+            {
+                Console.WriteLine(ex.StackTrace);
+                Fail(ex.Message);
+                return 0;
+            }
+        }
+
+
+        /// <summary>
+        /// This function will retrieve the min and max values of the selections that are currently added to betslip
+        /// </summary>
+        /// <Author>Pradeep</Author>
+        /// <Date>26 July 2012</Date>
+        /// <param name="selectionInformationFromBetslip">Info displayed for the selection currently added in betslip</param>
+        /// <returns>Returns list of Min and Max values if Min: and Max: strings are found in the info string.
+        /// Returns -1.0 for Min and Max values if Min: string is not found.
+        /// Retruns -1 for Max value if Max: string is not found.
+        /// </returns>
+        public List<double> GetMinMaxValues(string selectionInformationFromBetslip)
+        {
+            List<double> minMaxValues = new List<double>();
+            double minValue = 0.00;
+            double maxValue = 0.00;
+            int minIndex = 0, maxIndex = 0;
+            minIndex = selectionInformationFromBetslip.IndexOf("Min:", StringComparison.CurrentCultureIgnoreCase);
+            maxIndex = selectionInformationFromBetslip.IndexOf("Max:", StringComparison.CurrentCultureIgnoreCase);
+            //if Min: string is not found function will return Min and Max values as -1.0 to the client code.
+            if (minIndex == -1)
+            {
+                minValue = -1;
+                maxValue = -1;
+                minMaxValues.Add(minValue);
+                minMaxValues.Add(maxValue);
+                return minMaxValues;
+            }
+            minIndex += 4;
+            //if Max: is found min is calculated accordingly
+            if (maxIndex != -1)
+            {
+                minValue = Convert.ToDouble(selectionInformationFromBetslip.Substring(minIndex, (maxIndex - minIndex)), CultureInfo.CurrentCulture);
+                minMaxValues.Add(minValue);
+            }
+            else
+            {
+                for (int i = minIndex; i <= selectionInformationFromBetslip.Length - 1; i++)
+                {
+                    if (i == selectionInformationFromBetslip.Length - 1)
+                    {
+                        minValue = Convert.ToDouble(selectionInformationFromBetslip.Substring(minIndex, (i - minIndex) + 1), CultureInfo.CurrentCulture);
+                        minMaxValues.Add(minValue);
+                    }
+                    if (Char.IsDigit(selectionInformationFromBetslip[i]) || Char.IsPunctuation(selectionInformationFromBetslip[i]))
+                    {
+                        continue;
+                    }
+                    else
+                    {
+                        minValue = Convert.ToDouble(selectionInformationFromBetslip.Substring(minIndex, (i - minIndex) + 1), CultureInfo.CurrentCulture);
+                        minMaxValues.Add(minValue);
+                        break;
+                    }
+                }
+            }
+            //If Max: string is found Max value is returned appropriately
+            if (maxIndex != -1)
+            {
+                maxIndex += 4;
+                for (int i = maxIndex; i <= selectionInformationFromBetslip.Length - 1; i++)
+                {
+                    if (i == selectionInformationFromBetslip.Length - 1)
+                    {
+                        maxValue = Convert.ToDouble(selectionInformationFromBetslip.Substring(maxIndex, (i - maxIndex) + 1), CultureInfo.CurrentCulture);
+                        minMaxValues.Add(maxValue);
+                    }
+                    if (Char.IsDigit(selectionInformationFromBetslip[i]) || Char.IsPunctuation(selectionInformationFromBetslip[i]))
+                    {
+                        continue;
+                    }
+                    else
+                    {
+                        maxValue = Convert.ToDouble(selectionInformationFromBetslip.Substring(maxIndex, (i - maxIndex) + 1), CultureInfo.CurrentCulture);
+                        minMaxValues.Add(maxValue);
+                        break;
+                    }
+                }
+            }
+            //If Max: string is not found Max is returned -1.0 to the client code.
+            else
+            {
+                maxValue = -1;
+                minMaxValues.Add(maxValue);
+            }
+            return minMaxValues;
+        }
+
+
+        /// <summary>
+        /// This method will sync when navigating to a new page.
+        /// </summary>
+        /// <param name="browserObj">Browser Instance</param>
+        /// <example>PageSync(browserObj)</example>
+        public void PageSync(ISelenium browserObj)
+        {
+            WaitForLoadingIcon(browserObj, 60);
+            browserObj.WaitForPageToLoad(FrameGlobals.PageLoadTimeout);
+            WaitForLoadingIcon(browserObj, 60);
+        }
+
+        /// <summary> Extracts Number from a string
+        /// <Author>Pradeep</Author>
+        /// <Date>27 July 2012</Date>
+        /// </summary>
+        /// <param name="source">Any String</param>
+        /// <example>string source = "$234567.987"
+        /// ExtractNumberFromString(ref source)
+        /// output will be source = "23456.987"
+        /// </example>
+        /// <returns>Extracted Number From the passed String</returns>
+        public static void ExtractNumberFromString(ref string source)
+        {
+            int i = 0;
+            string extractNumFromString = "";
+            try
+            {
+                char[] characterCollection = source.ToCharArray();
+                for (i = 0; i < characterCollection.Length; i++)
+                {
+                    if (Char.IsDigit(characterCollection[i]) || Char.IsPunctuation(characterCollection[i]))
+                    {
+                        extractNumFromString = extractNumFromString + characterCollection[i];
+                    }
+                }
+                source = extractNumFromString;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.StackTrace);
+            }
+        }
+
+        /// <summary>
+        /// This method return balnce of the customer
+        /// </summary>
+        /// <Author>Anand C</Author>
+        /// <Date>01 Aug 2012</Date>
+        /// <param name="browserObj">Browser Instance</param>
+        public string getBalance(ISelenium browserObj)
+        {
+            string balance;
+            try
+            {
+                Assert.IsTrue(browserObj.IsElementPresent(TestRepository.ControlsRepository.BetslipControl.balanceText), "balance element is not displayed");
+                balance = browserObj.GetText(TestRepository.ControlsRepository.BetslipControl.balanceText);
+                string[] balanceAry = balance.Split();
+                return balanceAry[1];
+            }
+            catch (Exception)
+            {
+                Fail("Unable to fetch the balance");
+                return "false";
+            }
+        }
+
+        /// <summary>
+        /// This method return balnce of the customer
+        /// </summary>
+        /// <Author>Anand C</Author>
+        /// <Date>01 Aug 2012</Date>
+        /// <param name="browserObj">Browser Instance</param>
+        public bool clickEventINTypeAhead(ISelenium browserObj, string eventName)
+        {
+            try
+            {
+                Assert.IsTrue(browserObj.IsElementPresent(SearchControls.searchIconInHomePage), "Search link is not present in home page");
+                browserObj.Click(SearchControls.searchIconInHomePage);
+                browserObj.WaitForPageToLoad(FrameGlobals.PageLoadTimeout);
+                Assert.IsTrue(browserObj.IsElementPresent(SearchControls.searchInputField), "Search text field is not present");
+                browserObj.TypeKeys(SearchControls.searchInputField, eventName);
+                browserObj.WaitForPageToLoad(FrameGlobals.PageLoadTimeout);
+                Thread.Sleep(3000);
+                Assert.IsTrue(browserObj.IsElementPresent(SearchControls.TypeAheadResultArea), "Type Ahead area not exist");
+                IWebDriver driver = ((WebDriverBackedSelenium)browserObj).UnderlyingWebDriver;
+                ReadOnlyCollection<IWebElement> eventLinks = driver.FindElements(By.XPath(SearchControls.TypeAheadResultArea));
+                for (int iCount = 0; iCount < eventLinks.Count; iCount++)
+                {
+                    if (eventLinks[iCount].Text.ToString().Contains(eventName))
+                    {
+                        eventLinks[iCount].Click();
+                        browserObj.WaitForPageToLoad(FrameGlobals.PageLoadTimeout);
+                        return true;
+                    }
+                }
+                return false;
+            }
+            catch (Exception ex)
+            {
+                CaptureScreenshot(browserObj);
+                Fail(ex.Message);
+                return false;
+            }
+        }
+
+        /// <summary>
+        /// This method Verify the controls of TypeAhead
+        /// </summary>
+        /// <Author>Anand C</Author>
+        /// <Date>01 Aug 2012</Date>
+        /// <param name="browserObj">Browser Instance</param>
+        /// <param name="eventName">Browser Instance</eventName>
+        public bool VerifyTypeAheadCntrls(ISelenium browserObj, string eventName)
+        {
+            decimal xCordinate, yCordinate;
+            string defaultTxt, funLog = "";
+            bool funStatus = true;
+            try
+            {
+                Assert.IsTrue(browserObj.IsElementPresent(SearchControls.searchIconInHomePage), "Search link is not present in home page");
+                //finding the x,y co-ordinates
+                xCordinate = browserObj.GetElementPositionLeft(SearchControls.searchIconInHomePage);
+                yCordinate = browserObj.GetElementPositionTop(SearchControls.searchIconInHomePage);
+                //verifying x,y co-ordinates
+                if (!((xCordinate == 0) && (yCordinate > 525 && yCordinate < 700)))
+                {
+                    funStatus = false;
+                    funLog = "Though Search icon is displayed in the home page its not present in correct place" + Environment.NewLine;
+                }
+                browserObj.Click(SearchControls.searchIconInHomePage);
+                browserObj.WaitForPageToLoad(FrameGlobals.PageLoadTimeout);
+                WaitForLoadingIcon(browserObj, 60);
+                Assert.IsTrue(browserObj.IsElementPresent(SearchControls.searchInputField), "Search text field is not present");
+                Assert.IsTrue(browserObj.IsElementPresent(SearchControls.SearchCloseBtn), "Close button is not displayed in Search page");
+                //finding the x,y co-ordinates
+                xCordinate = browserObj.GetElementPositionLeft(SearchControls.SearchCloseBtn);
+                yCordinate = browserObj.GetElementPositionTop(SearchControls.SearchCloseBtn);
+                //verifying x,y co-ordinates
+                if (!(xCordinate == 0 && yCordinate == 0))
+                {
+                    funStatus = false;
+                    funLog = funLog + "Though Close button is displayed in the Search page its not present in correct place" + Environment.NewLine;
+                }
+                //finding the x,y co-ordinates
+                xCordinate = browserObj.GetElementPositionLeft(SearchControls.searchInputField);
+                yCordinate = browserObj.GetElementPositionTop(SearchControls.searchInputField);
+                //verifying x,y co-ordinates
+                if (!((xCordinate > 30  && xCordinate < 50) && (yCordinate > 45 && yCordinate < 60)))
+                {
+                    funStatus = false;
+                    funLog = funLog + "Though Close button is displayed in the Search page its not present in correct place" + Environment.NewLine;
+                }
+                IWebDriver driver = ((WebDriverBackedSelenium)browserObj).UnderlyingWebDriver;
+                defaultTxt = driver.FindElement(By.XPath(SearchControls.searchInputField)).GetAttribute("placeholder");
+                //Verifying the Default Text
+                if (!defaultTxt.Contains("Default Text"))
+                {
+                    funStatus = false;
+                    funLog = funLog + "Though Close button is displayed in the Search page its not present in correct place" + Environment.NewLine;
+                }
+                browserObj.TypeKeys(SearchControls.searchInputField, eventName);
+                browserObj.WaitForPageToLoad(FrameGlobals.PageLoadTimeout);
+                Thread.Sleep(3000);
+                Assert.IsTrue(browserObj.IsElementPresent(SearchControls.searchRemoveIcon), "Close link is not displayed in type ahead");
+                //finding the x,y co-ordinates
+                xCordinate = browserObj.GetElementPositionLeft(SearchControls.searchRemoveIcon);
+                yCordinate = browserObj.GetElementPositionTop(SearchControls.searchRemoveIcon);
+                //verifying x,y co-ordinates
+                if (!((xCordinate > 900 ) && (yCordinate > 35 && yCordinate < 60)))
+                {
+                    funStatus = false;
+                    funLog = funLog + "Though Close link is displayed in type ahead controls its not present in correct place" + Environment.NewLine;
+                }
+                //Verifying the function status
+                if (!funStatus)
+                {
+                    Fail(funLog);
+                }
+                return funStatus;
+            }
+            catch (Exception ex)
+            {
+                CaptureScreenshot(browserObj);
+                Fail(ex.Message);
+                return false;
+            }
+        }
+
+        ///<summary>
+        /// Verifying the Primary navigation functionality
+        /// </summary>
+        /// <Author>Vamsi Krishna Boyapati</Author>
+        /// <Date>10th-Aug-2012</Date>
+        /// <param Name = myBrowser>Browser Instance</param>
+        /// <param Name = searchQuery>Keyword to search</param>
+        /// <example>VerifyPrimaryNavigationFunctionality(browserObj,"Horse Racing")</example>
+
+
+        public void VerifyPrimaryNavigationFunctionality(ISelenium objSelenium, string searchQuery)
+        {
+
+            try
+            {
+                //Variables declaration
+                string expandStatus = null;
+                string tempText = null;
+                // Creting Webdrive Obj
+                IWebDriver objWebDriver = ((WebDriverBackedSelenium)objSelenium).UnderlyingWebDriver;
+
+                // Verifying the Beta login page and loging in if Exists
+                if (objSelenium.GetLocation().ToLower(CultureInfo.InvariantCulture).Contains(FrameGlobals.LadbrokesSplashPage.ToLower(CultureInfo.InvariantCulture)))
+                {
+                    Login(objSelenium, customerInfo);
+                }
+
+                //Adding test step
+                AddTestStep("Validating Primary Navigation functionality", "Primary Navigation functionality is successfull");
+                //Clicking on Menu icon in home page header section
+                Assert.IsTrue(objSelenium.IsElementPresent(TestRepository.ControlsRepository.SearchControls.menuIcon), "Menu Icon is not present in home page header section");
+                objSelenium.Click(TestRepository.ControlsRepository.SearchControls.menuIcon);
+                //Sync
+                WaitForLoadingIcon(objSelenium, 60);
+                objSelenium.WaitForPageToLoad(FrameGlobals.PageLoadTimeout);
+                //Validating Existence of Sports icon 
+                Assert.IsTrue(objSelenium.IsElementPresent(TestRepository.ControlsRepository.SearchControls.sportsIcon), "Sports Icon is not present");
+                expandStatus = objWebDriver.FindElement(By.XPath(TestRepository.ControlsRepository.SearchControls.sportsIcon)).GetAttribute("class").ToString().Trim();
+                // Expanding Sports icon if it's in collapsed mode
+                if (!expandStatus.Equals("lb-accordion on"))
+                {
+                    objSelenium.Click(TestRepository.ControlsRepository.SearchControls.sportsIcon);
+                    System.Threading.Thread.Sleep(2000);
+                }
+
+                // Getting the collection of class type
+                ReadOnlyCollection<IWebElement> classObjs = objWebDriver.FindElements(By.XPath(TestRepository.ControlsRepository.SearchControls.classNamePrimaryNavigation));
+                // Clicking the Required class link
+                foreach (IWebElement tempEle in classObjs)
+                {
+                    tempText = tempEle.Text.Trim();
+                    if (tempText.Equals(searchQuery))
+                    {
+                        tempEle.Click();
+                        break;
+                    }
+                }
+
+                //Sync
+                WaitForLoadingIcon(objSelenium, 60);
+                objSelenium.WaitForPageToLoad(FrameGlobals.PageLoadTimeout);
+                //Getting the URL
+                tempText = objSelenium.GetLocation().ToString().ToLower().Trim().Replace(" ", "");
+                //Validating whether user can be able to navigate to desire page on selecting the Class link from primary navigation
+                Assert.IsTrue(tempText.Contains(searchQuery.Trim().ToLower().Replace(" ", "")), "Not able to navigate to Horse racing Home page as Expected from Primary navigation");
+            }
+            catch (Exception ex)
+            {
+                CaptureScreenshot(objSelenium);
+                Fail(ex.Message);
+            }
+        }
+        /// <summary>
+        /// This method return stake in the footer
+        /// </summary>
+        /// <Author>Anand C</Author>
+        /// <Date>15 Aug 2012</Date>
+        /// <param name="browserObj">Browser Instance</param>
+        public string getStakeInFooter(ISelenium browserObj)
+        {
+            string stake;
+            try
+            {
+                Assert.IsTrue(browserObj.IsElementPresent(BetslipControl.BetSlipFooterLI), "Footer is not displayed in betslip page");
+                stake = browserObj.GetText("//ul[@id='BetslipFooter']/li[starts-with(@class,'total stakes')]");
+                string[] stakeAry = stake.Split('£');
+                return stakeAry[1];
+            }
+            catch (Exception)
+            {
+                Fail("Unable to fetch the stake in footer");
+                return "false";
+            }
+        }
+
+        /// <summary>
+        /// Verifying the section titles
+        /// </summary>
+        /// <param name="browser">Browser Instance</param>
+        /// <param name="titleName">Section title Name</param>
+        /// <example>GetSectionTitle(browserObj,"Foot ball")</example>
+
+        public string GetSectionTitle(ISelenium browser, string titleName)
+        {
+            string expectedTitle = "";
+            string xpathForLocatingSectionTitle = "//div[@class='ui-page ui-body-c ui-page-header-fixed ui-page-footer-fixed ui-page-active']/header/a/span[@id='lb-title' and text()='" + titleName + "']";
+            if (browser.IsElementPresent(xpathForLocatingSectionTitle))
+            {
+                expectedTitle = browser.GetText(xpathForLocatingSectionTitle);
+            }
+            return expectedTitle;
+        }
+
+        /// <summary>
+        /// This method return Freebet value in the footer
+        /// </summary>
+        /// <Author>Anand C</Author>
+        /// <Date>15 Aug 2012</Date>
+        /// <param name="browserObj">Browser Instance</param>
+        public string getFBValueInFooter(ISelenium browserObj)
+        {
+            string FBValue;
+            try
+            {
+                Assert.IsTrue(browserObj.IsElementPresent(BetslipControl.BetSlipFooterLI), "Footer is not displayed in betslip page");
+                FBValue = browserObj.GetText("//ul[@id='BetslipFooter']/li[starts-with(@class,'total freebets')]");
+                string[] FBAry = FBValue.Split('£');
+                return FBAry[1];
+            }
+            catch (Exception)
+            {
+                Fail("Unable to fetch the stake in footer");
+                return "false";
+            }
+        }
+    }
+}

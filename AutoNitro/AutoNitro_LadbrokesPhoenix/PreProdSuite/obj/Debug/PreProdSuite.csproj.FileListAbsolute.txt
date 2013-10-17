@@ -1,0 +1,10 @@
+C:\Users\Administrator\Desktop\AutoNitro_LadbrokesPhoenix\AutoNitro\AutoNitro_LadbrokesPhoenix\_output\PreProdSuite.dll
+C:\Users\Administrator\Desktop\AutoNitro_LadbrokesPhoenix\AutoNitro\AutoNitro_LadbrokesPhoenix\_output\PreProdSuite.pdb
+C:\Users\Administrator\Desktop\AutoNitro_LadbrokesPhoenix\AutoNitro\AutoNitro_LadbrokesPhoenix\PreProdSuite\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\AutoNitro_LadbrokesPhoenix\AutoNitro\AutoNitro_LadbrokesPhoenix\PreProdSuite\obj\Debug\PreProdSuite.dll
+C:\Users\Administrator\Desktop\AutoNitro_LadbrokesPhoenix\AutoNitro\AutoNitro_LadbrokesPhoenix\PreProdSuite\obj\Debug\PreProdSuite.pdb
+D:\Ladbrokes\Phoenix\Oct-16th\AutoNitro_LadbrokesPhoenix\AutoNitro\AutoNitro_LadbrokesPhoenix\_output\PreProdSuite.dll
+D:\Ladbrokes\Phoenix\Oct-16th\AutoNitro_LadbrokesPhoenix\AutoNitro\AutoNitro_LadbrokesPhoenix\_output\PreProdSuite.pdb
+D:\Ladbrokes\Phoenix\Oct-16th\AutoNitro_LadbrokesPhoenix\AutoNitro\AutoNitro_LadbrokesPhoenix\PreProdSuite\obj\Debug\ResolveAssemblyReference.cache
+D:\Ladbrokes\Phoenix\Oct-16th\AutoNitro_LadbrokesPhoenix\AutoNitro\AutoNitro_LadbrokesPhoenix\PreProdSuite\obj\Debug\PreProdSuite.dll
+D:\Ladbrokes\Phoenix\Oct-16th\AutoNitro_LadbrokesPhoenix\AutoNitro\AutoNitro_LadbrokesPhoenix\PreProdSuite\obj\Debug\PreProdSuite.pdb

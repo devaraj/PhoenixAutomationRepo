@@ -1,0 +1,325 @@
+C:\mCom_MobilePOC\MComm_CodeBase\_output\RegressionSuite.dll
+C:\mCom_MobilePOC\MComm_CodeBase\_output\RegressionSuite.pdb
+C:\mCom_MobilePOC\MComm_CodeBase\RegressionSuite\obj\Debug\ResolveAssemblyReference.cache
+C:\mCom_MobilePOC\MComm_CodeBase\RegressionSuite\obj\Debug\RegressionSuite.dll
+C:\mCom_MobilePOC\MComm_CodeBase\RegressionSuite\obj\Debug\RegressionSuite.pdb
+E:\mCom_MobilePOC\MComm_CodeBase\_output\RegressionSuite.dll
+E:\mCom_MobilePOC\MComm_CodeBase\_output\RegressionSuite.pdb
+E:\mCom_MobilePOC\MComm_CodeBase\RegressionSuite\obj\Debug\ResolveAssemblyReference.cache
+E:\mCom_MobilePOC\MComm_CodeBase\RegressionSuite\obj\Debug\RegressionSuite.dll
+E:\mCom_MobilePOC\MComm_CodeBase\RegressionSuite\obj\Debug\RegressionSuite.pdb
+C:\McomIntegration\MComm_CodeBase\_output\RegressionSuite.dll
+C:\McomIntegration\MComm_CodeBase\_output\RegressionSuite.pdb
+C:\McomIntegration\MComm_CodeBase\RegressionSuite\obj\Debug\ResolveAssemblyReference.cache
+C:\McomIntegration\MComm_CodeBase\RegressionSuite\obj\Debug\RegressionSuite.dll
+C:\McomIntegration\MComm_CodeBase\RegressionSuite\obj\Debug\RegressionSuite.pdb
+E:\New Folder (5)\MComm_CodeBase\_output\RegressionSuite.dll
+E:\New Folder (5)\MComm_CodeBase\_output\RegressionSuite.pdb
+E:\New Folder (5)\MComm_CodeBase\RegressionSuite\obj\Debug\ResolveAssemblyReference.cache
+E:\New Folder (5)\MComm_CodeBase\RegressionSuite\obj\Debug\RegressionSuite.dll
+E:\New Folder (5)\MComm_CodeBase\RegressionSuite\obj\Debug\RegressionSuite.pdb
+D:\Mcommerce AutoNitro\1st August\MComm_CodeBase\RegressionSuite\obj\Debug\ResolveAssemblyReference.cache
+D:\Mcommerce AutoNitro\1st August\MComm_CodeBase\RegressionSuite\obj\Debug\RegressionSuite.pdb
+D:\Mcommerce AutoNitro\1st August\MComm_CodeBase\_output\RegressionSuite.dll
+D:\Mcommerce AutoNitro\1st August\MComm_CodeBase\_output\RegressionSuite.pdb
+D:\Mcommerce AutoNitro\1st August\MComm_CodeBase\RegressionSuite\obj\Debug\RegressionSuite.dll
+D:\MComm\Latest\AutoNitro_MCommerce\MComm_CodeBase\RegressionSuite\obj\Debug\ResolveAssemblyReference.cache
+D:\MComm\Latest\AutoNitro_MCommerce\MComm_CodeBase\RegressionSuite\obj\Debug\RegressionSuite.pdb
+D:\MComm\Latest\AutoNitro_MCommerce\MComm_CodeBase\_output\RegressionSuite.dll
+D:\MComm\Latest\AutoNitro_MCommerce\MComm_CodeBase\_output\RegressionSuite.pdb
+D:\MComm\Latest\AutoNitro_MCommerce\MComm_CodeBase\RegressionSuite\obj\Debug\RegressionSuite.dll
+D:\Selenium\mCommerce_latest\AutoNitro_MCommerce\MComm_CodeBase\RegressionSuite\obj\Debug\ResolveAssemblyReference.cache
+D:\Selenium\mCommerce_latest\AutoNitro_MCommerce\MComm_CodeBase\RegressionSuite\obj\Debug\RegressionSuite.dll
+D:\Selenium\mCommerce_latest\AutoNitro_MCommerce\MComm_CodeBase\_output\RegressionSuite.dll
+D:\Selenium\mCommerce_latest\AutoNitro_MCommerce\MComm_CodeBase\_output\RegressionSuite.pdb
+D:\Selenium\mCommerce_latest\AutoNitro_MCommerce\MComm_CodeBase\RegressionSuite\obj\Debug\RegressionSuite.pdb
+D:\TestAN\TestMcom\AutoNitro_MCommerce\MComm_CodeBase\_output\RegressionSuite.dll
+D:\TestAN\TestMcom\AutoNitro_MCommerce\MComm_CodeBase\_output\RegressionSuite.pdb
+D:\TestAN\TestMcom\AutoNitro_MCommerce\MComm_CodeBase\RegressionSuite\obj\Debug\ResolveAssemblyReference.cache
+D:\TestAN\TestMcom\AutoNitro_MCommerce\MComm_CodeBase\RegressionSuite\obj\Debug\RegressionSuite.dll
+D:\TestAN\TestMcom\AutoNitro_MCommerce\MComm_CodeBase\RegressionSuite\obj\Debug\RegressionSuite.pdb
+D:\Ladbrokes\Code_Integration\Latest\AutoNitro_MCommerce\MComm_CodeBase\_output\RegressionSuite.dll
+D:\Ladbrokes\Code_Integration\Latest\AutoNitro_MCommerce\MComm_CodeBase\_output\RegressionSuite.pdb
+D:\Ladbrokes\Code_Integration\Latest\AutoNitro_MCommerce\MComm_CodeBase\RegressionSuite\obj\Debug\ResolveAssemblyReference.cache
+D:\Ladbrokes\Code_Integration\Latest\AutoNitro_MCommerce\MComm_CodeBase\RegressionSuite\obj\Debug\RegressionSuite.dll
+D:\Ladbrokes\Code_Integration\Latest\AutoNitro_MCommerce\MComm_CodeBase\RegressionSuite\obj\Debug\RegressionSuite.pdb
+D:\Ladbrokes\m-commerce\Aug 7th code\_output\RegressionSuite.dll
+D:\Ladbrokes\m-commerce\Aug 7th code\_output\RegressionSuite.pdb
+D:\Ladbrokes\m-commerce\Aug 7th code\RegressionSuite\obj\Debug\ResolveAssemblyReference.cache
+D:\Ladbrokes\m-commerce\Aug 7th code\RegressionSuite\obj\Debug\RegressionSuite.dll
+D:\Ladbrokes\m-commerce\Aug 7th code\RegressionSuite\obj\Debug\RegressionSuite.pdb
+C:\IntegrationFresh\MComm_CodeBase\RegressionSuite\obj\Debug\ResolveAssemblyReference.cache
+C:\IntegrationFresh\MComm_CodeBase\RegressionSuite\obj\Debug\RegressionSuite.pdb
+C:\IntegrationFresh\MComm_CodeBase\_output\RegressionSuite.dll
+C:\IntegrationFresh\MComm_CodeBase\_output\RegressionSuite.pdb
+C:\IntegrationFresh\MComm_CodeBase\RegressionSuite\obj\Debug\RegressionSuite.dll
+D:\Ladbrokes\m-commerce\Aug 8th\_output\RegressionSuite.dll
+D:\Ladbrokes\m-commerce\Aug 8th\_output\RegressionSuite.pdb
+D:\Ladbrokes\m-commerce\Aug 8th\RegressionSuite\obj\Debug\ResolveAssemblyReference.cache
+D:\Ladbrokes\m-commerce\Aug 8th\RegressionSuite\obj\Debug\RegressionSuite.dll
+D:\Ladbrokes\m-commerce\Aug 8th\RegressionSuite\obj\Debug\RegressionSuite.pdb
+D:\Ladbrokes\m-commerce\Aug 09th\_output\RegressionSuite.dll
+D:\Ladbrokes\m-commerce\Aug 09th\_output\RegressionSuite.pdb
+D:\Ladbrokes\m-commerce\Aug 09th\RegressionSuite\obj\Debug\ResolveAssemblyReference.cache
+D:\Ladbrokes\m-commerce\Aug 09th\RegressionSuite\obj\Debug\RegressionSuite.dll
+D:\Ladbrokes\m-commerce\Aug 09th\RegressionSuite\obj\Debug\RegressionSuite.pdb
+D:\Selenium\AutoNitro_MCommerce\MComm_CodeBase\RegressionSuite\obj\Debug\ResolveAssemblyReference.cache
+D:\Selenium\AutoNitro_MCommerce\MComm_CodeBase\RegressionSuite\obj\Debug\RegressionSuite.dll
+D:\Selenium\AutoNitro_MCommerce\MComm_CodeBase\RegressionSuite\obj\Debug\RegressionSuite.pdb
+D:\Selenium\AutoNitro_MCommerce\MComm_CodeBase\_output\RegressionSuite.dll
+D:\Selenium\AutoNitro_MCommerce\MComm_CodeBase\_output\RegressionSuite.pdb
+D:\MComm\SVN Integration\MComm_CodeBase\_output\RegressionSuite.dll
+D:\MComm\SVN Integration\MComm_CodeBase\_output\RegressionSuite.pdb
+D:\MComm\SVN Integration\MComm_CodeBase\RegressionSuite\obj\Debug\ResolveAssemblyReference.cache
+D:\MComm\SVN Integration\MComm_CodeBase\RegressionSuite\obj\Debug\RegressionSuite.dll
+D:\MComm\SVN Integration\MComm_CodeBase\RegressionSuite\obj\Debug\RegressionSuite.pdb
+D:\Ladbrokes\m-commerce\aug 13th\RegressionSuite\obj\Debug\ResolveAssemblyReference.cache
+D:\Ladbrokes\m-commerce\aug 13th\RegressionSuite\obj\Debug\RegressionSuite.dll
+D:\Ladbrokes\m-commerce\aug 13th\RegressionSuite\obj\Debug\RegressionSuite.pdb
+D:\Ladbrokes\m-commerce\aug 13th\_output\RegressionSuite.dll
+D:\Ladbrokes\m-commerce\aug 13th\_output\RegressionSuite.pdb
+C:\Users\Administrator\Desktop\ToDay's\Integration\AutoNitro_MCommerce\MComm_CodeBase\_output\RegressionSuite.dll
+C:\Users\Administrator\Desktop\ToDay's\Integration\AutoNitro_MCommerce\MComm_CodeBase\_output\RegressionSuite.pdb
+C:\Users\Administrator\Desktop\ToDay's\Integration\AutoNitro_MCommerce\MComm_CodeBase\RegressionSuite\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\ToDay's\Integration\AutoNitro_MCommerce\MComm_CodeBase\RegressionSuite\obj\Debug\RegressionSuite.dll
+C:\Users\Administrator\Desktop\ToDay's\Integration\AutoNitro_MCommerce\MComm_CodeBase\RegressionSuite\obj\Debug\RegressionSuite.pdb
+D:\Ladbrokes\m-commerce\Aug 16th\_output\RegressionSuite.dll
+D:\Ladbrokes\m-commerce\Aug 16th\_output\RegressionSuite.pdb
+D:\Ladbrokes\m-commerce\Aug 16th\RegressionSuite\obj\Debug\ResolveAssemblyReference.cache
+D:\Ladbrokes\m-commerce\Aug 16th\RegressionSuite\obj\Debug\RegressionSuite.dll
+D:\Ladbrokes\m-commerce\Aug 16th\RegressionSuite\obj\Debug\RegressionSuite.pdb
+E:\eComm_AutoNitro\MComm_CodeBase\_output\RegressionSuite.dll
+E:\eComm_AutoNitro\MComm_CodeBase\_output\RegressionSuite.pdb
+E:\eComm_AutoNitro\MComm_CodeBase\RegressionSuite\obj\Debug\ResolveAssemblyReference.cache
+E:\eComm_AutoNitro\MComm_CodeBase\RegressionSuite\obj\Debug\RegressionSuite.dll
+E:\eComm_AutoNitro\MComm_CodeBase\RegressionSuite\obj\Debug\RegressionSuite.pdb
+E:\New Folder (8)\MComm_CodeBase\_output\RegressionSuite.dll
+E:\New Folder (8)\MComm_CodeBase\_output\RegressionSuite.pdb
+E:\New Folder (8)\MComm_CodeBase\RegressionSuite\obj\Debug\ResolveAssemblyReference.cache
+E:\New Folder (8)\MComm_CodeBase\RegressionSuite\obj\Debug\RegressionSuite.dll
+E:\New Folder (8)\MComm_CodeBase\RegressionSuite\obj\Debug\RegressionSuite.pdb
+D:\MComm\Latest\MComm_CodeBase\RegressionSuite\obj\Debug\ResolveAssemblyReference.cache
+D:\MComm\Latest\MComm_CodeBase\RegressionSuite\obj\Debug\RegressionSuite.pdb
+D:\MComm\Latest\MComm_CodeBase\_output\RegressionSuite.dll
+D:\MComm\Latest\MComm_CodeBase\_output\RegressionSuite.pdb
+D:\MComm\Latest\MComm_CodeBase\RegressionSuite\obj\Debug\RegressionSuite.dll
+D:\Ladbrokes\m-commerce\aug 21\RegressionSuite\obj\Debug\ResolveAssemblyReference.cache
+D:\Ladbrokes\m-commerce\aug 21\RegressionSuite\obj\Debug\RegressionSuite.dll
+D:\Ladbrokes\m-commerce\aug 21\_output\RegressionSuite.dll
+D:\Ladbrokes\m-commerce\aug 21\_output\RegressionSuite.pdb
+D:\Ladbrokes\m-commerce\aug 21\RegressionSuite\obj\Debug\RegressionSuite.pdb
+D:\Ladbrokes\m-commerce\Aug 31\_output\RegressionSuite.dll
+D:\Ladbrokes\m-commerce\Aug 31\_output\RegressionSuite.pdb
+D:\Ladbrokes\m-commerce\Aug 31\RegressionSuite\obj\Debug\ResolveAssemblyReference.cache
+D:\Ladbrokes\m-commerce\Aug 31\RegressionSuite\obj\Debug\RegressionSuite.dll
+D:\Ladbrokes\m-commerce\Aug 31\RegressionSuite\obj\Debug\RegressionSuite.pdb
+E:\eComm_AutoNitro\MComm_CodeBase_New\RegressionSuite\obj\Debug\ResolveAssemblyReference.cache
+E:\eComm_AutoNitro\MComm_CodeBase_New\RegressionSuite\obj\Debug\RegressionSuite.dll
+E:\eComm_AutoNitro\MComm_CodeBase_New\_output\RegressionSuite.dll
+E:\eComm_AutoNitro\MComm_CodeBase_New\_output\RegressionSuite.pdb
+E:\eComm_AutoNitro\MComm_CodeBase_New\RegressionSuite\obj\Debug\RegressionSuite.pdb
+D:\Ladbrokes\m-commerce\Sep 3rd\RegressionSuite\obj\Debug\ResolveAssemblyReference.cache
+D:\Ladbrokes\m-commerce\Sep 3rd\RegressionSuite\obj\Debug\RegressionSuite.dll
+D:\Ladbrokes\m-commerce\Sep 3rd\_output\RegressionSuite.dll
+D:\Ladbrokes\m-commerce\Sep 3rd\_output\RegressionSuite.pdb
+D:\Ladbrokes\m-commerce\Sep 3rd\RegressionSuite\obj\Debug\RegressionSuite.pdb
+D:\M-Commerce\MComm_CodeBase\RegressionSuite\obj\Debug\ResolveAssemblyReference.cache
+D:\M-Commerce\MComm_CodeBase\RegressionSuite\obj\Debug\RegressionSuite.dll
+D:\M-Commerce\MComm_CodeBase\_output\RegressionSuite.dll
+D:\M-Commerce\MComm_CodeBase\_output\RegressionSuite.pdb
+D:\M-Commerce\MComm_CodeBase\RegressionSuite\obj\Debug\RegressionSuite.pdb
+D:\GTA\AutoNitro_MCommerce\MComm_CodeBase\_output\RegressionSuite.dll
+D:\GTA\AutoNitro_MCommerce\MComm_CodeBase\_output\RegressionSuite.pdb
+D:\GTA\AutoNitro_MCommerce\MComm_CodeBase\RegressionSuite\obj\Debug\ResolveAssemblyReference.cache
+D:\GTA\AutoNitro_MCommerce\MComm_CodeBase\RegressionSuite\obj\Debug\RegressionSuite.dll
+D:\GTA\AutoNitro_MCommerce\MComm_CodeBase\RegressionSuite\obj\Debug\RegressionSuite.pdb
+\\aditidt518\Software\FlashAutomation\AutoNitro_MCommerce\MComm_CodeBase\_output\RegressionSuite.dll
+\\aditidt518\Software\FlashAutomation\AutoNitro_MCommerce\MComm_CodeBase\_output\RegressionSuite.pdb
+\\aditidt518\Software\FlashAutomation\AutoNitro_MCommerce\MComm_CodeBase\RegressionSuite\obj\Debug\ResolveAssemblyReference.cache
+\\aditidt518\Software\FlashAutomation\AutoNitro_MCommerce\MComm_CodeBase\RegressionSuite\obj\Debug\RegressionSuite.dll
+\\aditidt518\Software\FlashAutomation\AutoNitro_MCommerce\MComm_CodeBase\RegressionSuite\obj\Debug\RegressionSuite.pdb
+E:\Anand\Software\FlashAutomation\AutoNitro_MCommerce\MComm_CodeBase\_output\RegressionSuite.dll
+E:\Anand\Software\FlashAutomation\AutoNitro_MCommerce\MComm_CodeBase\_output\RegressionSuite.pdb
+E:\Anand\Software\FlashAutomation\AutoNitro_MCommerce\MComm_CodeBase\RegressionSuite\obj\Debug\ResolveAssemblyReference.cache
+E:\Anand\Software\FlashAutomation\AutoNitro_MCommerce\MComm_CodeBase\RegressionSuite\obj\Debug\RegressionSuite.dll
+E:\Anand\Software\FlashAutomation\AutoNitro_MCommerce\MComm_CodeBase\RegressionSuite\obj\Debug\RegressionSuite.pdb
+F:\AutoNitro_MCommerce\MComm_CodeBase\_output\RegressionSuite.dll
+F:\AutoNitro_MCommerce\MComm_CodeBase\_output\RegressionSuite.pdb
+F:\AutoNitro_MCommerce\MComm_CodeBase\RegressionSuite\obj\Debug\ResolveAssemblyReference.cache
+F:\AutoNitro_MCommerce\MComm_CodeBase\RegressionSuite\obj\Debug\RegressionSuite.dll
+F:\AutoNitro_MCommerce\MComm_CodeBase\RegressionSuite\obj\Debug\RegressionSuite.pdb
+C:\Kiran\My Share\eCommerce Share\2.25\AutoNitro_MCommerce\MComm_CodeBase\_output\RegressionSuite.dll
+C:\Kiran\My Share\eCommerce Share\2.25\AutoNitro_MCommerce\MComm_CodeBase\_output\RegressionSuite.pdb
+C:\Kiran\My Share\eCommerce Share\2.25\AutoNitro_MCommerce\MComm_CodeBase\RegressionSuite\obj\Debug\ResolveAssemblyReference.cache
+C:\Kiran\My Share\eCommerce Share\2.25\AutoNitro_MCommerce\MComm_CodeBase\RegressionSuite\obj\Debug\RegressionSuite.dll
+C:\Kiran\My Share\eCommerce Share\2.25\AutoNitro_MCommerce\MComm_CodeBase\RegressionSuite\obj\Debug\RegressionSuite.pdb
+C:\Kiran\CodeBase\AutoNitro_MCommerce\MComm_CodeBase\_output\RegressionSuite.dll
+C:\Kiran\CodeBase\AutoNitro_MCommerce\MComm_CodeBase\_output\RegressionSuite.pdb
+C:\Kiran\CodeBase\AutoNitro_MCommerce\MComm_CodeBase\RegressionSuite\obj\Debug\ResolveAssemblyReference.cache
+C:\Kiran\CodeBase\AutoNitro_MCommerce\MComm_CodeBase\RegressionSuite\obj\Debug\RegressionSuite.dll
+C:\Kiran\CodeBase\AutoNitro_MCommerce\MComm_CodeBase\RegressionSuite\obj\Debug\RegressionSuite.pdb
+C:\Users\Administrator\Desktop\IPlay\MComm_CodeBase\_output\RegressionSuite.dll
+C:\Users\Administrator\Desktop\IPlay\MComm_CodeBase\_output\RegressionSuite.pdb
+C:\Users\Administrator\Desktop\IPlay\MComm_CodeBase\RegressionSuite\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\IPlay\MComm_CodeBase\RegressionSuite\obj\Debug\RegressionSuite.dll
+C:\Users\Administrator\Desktop\IPlay\MComm_CodeBase\RegressionSuite\obj\Debug\RegressionSuite.pdb
+C:\Kiran\My Share\eCommerce Share\IPlay\MComm_CodeBase\_output\RegressionSuite.dll
+C:\Kiran\My Share\eCommerce Share\IPlay\MComm_CodeBase\_output\RegressionSuite.pdb
+C:\Kiran\My Share\eCommerce Share\IPlay\MComm_CodeBase\RegressionSuite\obj\Debug\ResolveAssemblyReference.cache
+C:\Kiran\My Share\eCommerce Share\IPlay\MComm_CodeBase\RegressionSuite\obj\Debug\RegressionSuite.dll
+C:\Kiran\My Share\eCommerce Share\IPlay\MComm_CodeBase\RegressionSuite\obj\Debug\RegressionSuite.pdb
+C:\Kiran\CodeBase\IPlay\MComm_CodeBase\_output\RegressionSuite.dll
+C:\Kiran\CodeBase\IPlay\MComm_CodeBase\_output\RegressionSuite.pdb
+C:\Kiran\CodeBase\IPlay\MComm_CodeBase\RegressionSuite\obj\Debug\ResolveAssemblyReference.cache
+C:\Kiran\CodeBase\IPlay\MComm_CodeBase\RegressionSuite\obj\Debug\RegressionSuite.dll
+C:\Kiran\CodeBase\IPlay\MComm_CodeBase\RegressionSuite\obj\Debug\RegressionSuite.pdb
+D:\Amaravathi\LatestCodeIPlaymar7\IPlay\MComm_CodeBase\RegressionSuite\obj\Debug\ResolveAssemblyReference.cache
+D:\Amaravathi\LatestCodeIPlaymar7\IPlay\MComm_CodeBase\_output\RegressionSuite.dll
+D:\Amaravathi\LatestCodeIPlaymar7\IPlay\MComm_CodeBase\_output\RegressionSuite.pdb
+D:\Amaravathi\LatestCodeIPlaymar7\IPlay\MComm_CodeBase\RegressionSuite\obj\Debug\RegressionSuite.dll
+D:\Amaravathi\LatestCodeIPlaymar7\IPlay\MComm_CodeBase\RegressionSuite\obj\Debug\RegressionSuite.pdb
+F:\LatestCode_April_Final\IPlay\MComm_CodeBase\RegressionSuite\obj\Debug\ResolveAssemblyReference.cache
+F:\LatestCode_April_Final\IPlay\MComm_CodeBase\_output\RegressionSuite.dll
+F:\LatestCode_April_Final\IPlay\MComm_CodeBase\_output\RegressionSuite.pdb
+F:\LatestCode_April_Final\IPlay\MComm_CodeBase\RegressionSuite\obj\Debug\RegressionSuite.dll
+F:\LatestCode_April_Final\IPlay\MComm_CodeBase\RegressionSuite\obj\Debug\RegressionSuite.pdb
+F:\IplayLatestCode_April_Final\IPlay\MComm_CodeBase\_output\RegressionSuite.dll
+F:\IplayLatestCode_April_Final\IPlay\MComm_CodeBase\_output\RegressionSuite.pdb
+F:\IplayLatestCode_April_Final\IPlay\MComm_CodeBase\RegressionSuite\obj\Debug\ResolveAssemblyReference.cache
+F:\IplayLatestCode_April_Final\IPlay\MComm_CodeBase\RegressionSuite\obj\Debug\RegressionSuite.dll
+F:\IplayLatestCode_April_Final\IPlay\MComm_CodeBase\RegressionSuite\obj\Debug\RegressionSuite.pdb
+F:\IplayLatestCode_April_Final\IPlay\IPlay_CodeBase\RegressionSuite\obj\Debug\ResolveAssemblyReference.cache
+F:\IplayLatestCode_April_Final\IPlay\IPlay_CodeBase\_output\RegressionSuite.dll
+F:\IplayLatestCode_April_Final\IPlay\IPlay_CodeBase\_output\RegressionSuite.pdb
+F:\IplayLatestCode_April_Final\IPlay\IPlay_CodeBase\RegressionSuite\obj\Debug\RegressionSuite.dll
+F:\IplayLatestCode_April_Final\IPlay\IPlay_CodeBase\RegressionSuite\obj\Debug\RegressionSuite.pdb
+D:\Kiran\POC\iPlay\IPlay_CodeBase\RegressionSuite\obj\Debug\ResolveAssemblyReference.cache
+D:\Kiran\POC\iPlay\IPlay_CodeBase\_output\RegressionSuite.dll
+D:\Kiran\POC\iPlay\IPlay_CodeBase\_output\RegressionSuite.pdb
+D:\Kiran\POC\iPlay\IPlay_CodeBase\RegressionSuite\obj\Debug\RegressionSuite.dll
+D:\Kiran\POC\iPlay\IPlay_CodeBase\RegressionSuite\obj\Debug\RegressionSuite.pdb
+C:\Kiran\iPlay\IPlay_CodeBase\RegressionSuite\obj\Debug\ResolveAssemblyReference.cache
+C:\Kiran\iPlay\IPlay_CodeBase\_output\RegressionSuite.dll
+C:\Kiran\iPlay\IPlay_CodeBase\_output\RegressionSuite.pdb
+C:\Kiran\iPlay\IPlay_CodeBase\RegressionSuite\obj\Debug\RegressionSuite.dll
+C:\Kiran\iPlay\IPlay_CodeBase\RegressionSuite\obj\Debug\RegressionSuite.pdb
+D:\Kiran\POC\iPlay-New\IPlay_CodeBase\_output\RegressionSuite.dll
+D:\Kiran\POC\iPlay-New\IPlay_CodeBase\_output\RegressionSuite.pdb
+D:\Kiran\POC\iPlay-New\IPlay_CodeBase\RegressionSuite\obj\Debug\ResolveAssemblyReference.cache
+D:\Kiran\POC\iPlay-New\IPlay_CodeBase\RegressionSuite\obj\Debug\RegressionSuite.dll
+D:\Kiran\POC\iPlay-New\IPlay_CodeBase\RegressionSuite\obj\Debug\RegressionSuite.pdb
+D:\Kiran\POC\iPlay\New Framework\IPlay_CodeBase\_output\RegressionSuite.dll
+D:\Kiran\POC\iPlay\New Framework\IPlay_CodeBase\_output\RegressionSuite.pdb
+D:\Kiran\POC\iPlay\New Framework\IPlay_CodeBase\RegressionSuite\obj\Debug\ResolveAssemblyReference.cache
+D:\Kiran\POC\iPlay\New Framework\IPlay_CodeBase\RegressionSuite\obj\Debug\RegressionSuite.dll
+D:\Kiran\POC\iPlay\New Framework\IPlay_CodeBase\RegressionSuite\obj\Debug\RegressionSuite.pdb
+C:\Documents and Settings\Administrator\Desktop\New Framework\LadbrokesAutomation_CodeBase\_output\RegressionSuite.dll
+C:\Documents and Settings\Administrator\Desktop\New Framework\LadbrokesAutomation_CodeBase\_output\RegressionSuite.pdb
+C:\Documents and Settings\Administrator\Desktop\New Framework\LadbrokesAutomation_CodeBase\RegressionSuite\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Administrator\Desktop\New Framework\LadbrokesAutomation_CodeBase\RegressionSuite\obj\Debug\RegressionSuite.dll
+C:\Documents and Settings\Administrator\Desktop\New Framework\LadbrokesAutomation_CodeBase\RegressionSuite\obj\Debug\RegressionSuite.pdb
+D:\Kiran\POC\iPlay\New Framework\LadbrokesAutomation_CodeBase\_output\RegressionSuite.dll
+D:\Kiran\POC\iPlay\New Framework\LadbrokesAutomation_CodeBase\_output\RegressionSuite.pdb
+D:\Kiran\POC\iPlay\New Framework\LadbrokesAutomation_CodeBase\RegressionSuite\obj\Debug\ResolveAssemblyReference.cache
+D:\Kiran\POC\iPlay\New Framework\LadbrokesAutomation_CodeBase\RegressionSuite\obj\Debug\RegressionSuite.dll
+D:\Kiran\POC\iPlay\New Framework\LadbrokesAutomation_CodeBase\RegressionSuite\obj\Debug\RegressionSuite.pdb
+D:\Kiran\Phoenix\New Framework\LadbrokesAutomation_CodeBase\_output\RegressionSuite.dll
+D:\Kiran\Phoenix\New Framework\LadbrokesAutomation_CodeBase\_output\RegressionSuite.pdb
+D:\Kiran\Phoenix\New Framework\LadbrokesAutomation_CodeBase\RegressionSuite\obj\Debug\ResolveAssemblyReference.cache
+D:\Kiran\Phoenix\New Framework\LadbrokesAutomation_CodeBase\RegressionSuite\obj\Debug\RegressionSuite.dll
+D:\Kiran\Phoenix\New Framework\LadbrokesAutomation_CodeBase\RegressionSuite\obj\Debug\RegressionSuite.pdb
+D:\Kiran\Phoenix\New Framework\AutoNitro_LadbrokesPhoenix\_output\RegressionSuite.dll
+D:\Kiran\Phoenix\New Framework\AutoNitro_LadbrokesPhoenix\_output\RegressionSuite.pdb
+D:\Kiran\Phoenix\New Framework\AutoNitro_LadbrokesPhoenix\RegressionSuite\obj\Debug\ResolveAssemblyReference.cache
+D:\Kiran\Phoenix\New Framework\AutoNitro_LadbrokesPhoenix\RegressionSuite\obj\Debug\RegressionSuite.dll
+D:\Kiran\Phoenix\New Framework\AutoNitro_LadbrokesPhoenix\RegressionSuite\obj\Debug\RegressionSuite.pdb
+C:\Documents and Settings\Administrator\Desktop\New Framework\AutoNitro_LadbrokesPhoenix\_output\RegressionSuite.dll
+C:\Documents and Settings\Administrator\Desktop\New Framework\AutoNitro_LadbrokesPhoenix\_output\RegressionSuite.pdb
+C:\Documents and Settings\Administrator\Desktop\New Framework\AutoNitro_LadbrokesPhoenix\RegressionSuite\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Administrator\Desktop\New Framework\AutoNitro_LadbrokesPhoenix\RegressionSuite\obj\Debug\RegressionSuite.dll
+C:\Documents and Settings\Administrator\Desktop\New Framework\AutoNitro_LadbrokesPhoenix\RegressionSuite\obj\Debug\RegressionSuite.pdb
+C:\Documents and Settings\Administrator\Desktop\AutoNitro_LadbrokesPhoenix\AutoNitro_LadbrokesPhoenix\_output\RegressionSuite.dll
+C:\Documents and Settings\Administrator\Desktop\AutoNitro_LadbrokesPhoenix\AutoNitro_LadbrokesPhoenix\_output\RegressionSuite.pdb
+C:\Documents and Settings\Administrator\Desktop\AutoNitro_LadbrokesPhoenix\AutoNitro_LadbrokesPhoenix\RegressionSuite\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Administrator\Desktop\AutoNitro_LadbrokesPhoenix\AutoNitro_LadbrokesPhoenix\RegressionSuite\obj\Debug\RegressionSuite.dll
+C:\Documents and Settings\Administrator\Desktop\AutoNitro_LadbrokesPhoenix\AutoNitro_LadbrokesPhoenix\RegressionSuite\obj\Debug\RegressionSuite.pdb
+D:\BackUp\AutoNitro_LadbrokesPhoenix\AutoNitro_LadbrokesPhoenix\_output\RegressionSuite.dll
+D:\BackUp\AutoNitro_LadbrokesPhoenix\AutoNitro_LadbrokesPhoenix\_output\RegressionSuite.pdb
+D:\BackUp\AutoNitro_LadbrokesPhoenix\AutoNitro_LadbrokesPhoenix\RegressionSuite\obj\Debug\ResolveAssemblyReference.cache
+D:\BackUp\AutoNitro_LadbrokesPhoenix\AutoNitro_LadbrokesPhoenix\RegressionSuite\obj\Debug\RegressionSuite.dll
+D:\BackUp\AutoNitro_LadbrokesPhoenix\AutoNitro_LadbrokesPhoenix\RegressionSuite\obj\Debug\RegressionSuite.pdb
+C:\Users\Administrator\Desktop\Roopa\AutoNitro_LadbrokesPhoenix\AutoNitro_LadbrokesPhoenix\_output\RegressionSuite.dll
+C:\Users\Administrator\Desktop\Roopa\AutoNitro_LadbrokesPhoenix\AutoNitro_LadbrokesPhoenix\_output\RegressionSuite.pdb
+C:\Users\Administrator\Desktop\Roopa\AutoNitro_LadbrokesPhoenix\AutoNitro_LadbrokesPhoenix\RegressionSuite\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\Roopa\AutoNitro_LadbrokesPhoenix\AutoNitro_LadbrokesPhoenix\RegressionSuite\obj\Debug\RegressionSuite.dll
+C:\Users\Administrator\Desktop\Roopa\AutoNitro_LadbrokesPhoenix\AutoNitro_LadbrokesPhoenix\RegressionSuite\obj\Debug\RegressionSuite.pdb
+C:\Users\Administrator\Desktop\AutoNitro_LadbrokesPhoenix\AutoNitro_LadbrokesPhoenix\_output\RegressionSuite.dll
+C:\Users\Administrator\Desktop\AutoNitro_LadbrokesPhoenix\AutoNitro_LadbrokesPhoenix\_output\RegressionSuite.pdb
+C:\Users\Administrator\Desktop\AutoNitro_LadbrokesPhoenix\AutoNitro_LadbrokesPhoenix\RegressionSuite\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\AutoNitro_LadbrokesPhoenix\AutoNitro_LadbrokesPhoenix\RegressionSuite\obj\Debug\RegressionSuite.dll
+C:\Users\Administrator\Desktop\AutoNitro_LadbrokesPhoenix\AutoNitro_LadbrokesPhoenix\RegressionSuite\obj\Debug\RegressionSuite.pdb
+C:\Users\Administrator\Desktop\Latest code\AutoNitro_LadbrokesPhoenix\AutoNitro_LadbrokesPhoenix\_output\RegressionSuite.dll
+C:\Users\Administrator\Desktop\Latest code\AutoNitro_LadbrokesPhoenix\AutoNitro_LadbrokesPhoenix\_output\RegressionSuite.pdb
+C:\Users\Administrator\Desktop\Latest code\AutoNitro_LadbrokesPhoenix\AutoNitro_LadbrokesPhoenix\RegressionSuite\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\Latest code\AutoNitro_LadbrokesPhoenix\AutoNitro_LadbrokesPhoenix\RegressionSuite\obj\Debug\RegressionSuite.dll
+C:\Users\Administrator\Desktop\Latest code\AutoNitro_LadbrokesPhoenix\AutoNitro_LadbrokesPhoenix\RegressionSuite\obj\Debug\RegressionSuite.pdb
+D:\AutoNitro_LadbrokesPhoenix\AutoNitro_LadbrokesPhoenix\_output\RegressionSuite.dll
+D:\AutoNitro_LadbrokesPhoenix\AutoNitro_LadbrokesPhoenix\_output\RegressionSuite.pdb
+D:\AutoNitro_LadbrokesPhoenix\AutoNitro_LadbrokesPhoenix\RegressionSuite\obj\Debug\ResolveAssemblyReference.cache
+D:\AutoNitro_LadbrokesPhoenix\AutoNitro_LadbrokesPhoenix\RegressionSuite\obj\Debug\RegressionSuite.dll
+D:\AutoNitro_LadbrokesPhoenix\AutoNitro_LadbrokesPhoenix\RegressionSuite\obj\Debug\RegressionSuite.pdb
+C:\AutoNitro_LadbrokesPhoenix\AutoNitro_LadbrokesPhoenix\_output\RegressionSuite.dll
+C:\AutoNitro_LadbrokesPhoenix\AutoNitro_LadbrokesPhoenix\_output\RegressionSuite.pdb
+C:\AutoNitro_LadbrokesPhoenix\AutoNitro_LadbrokesPhoenix\RegressionSuite\obj\Debug\ResolveAssemblyReference.cache
+C:\AutoNitro_LadbrokesPhoenix\AutoNitro_LadbrokesPhoenix\RegressionSuite\obj\Debug\RegressionSuite.dll
+C:\AutoNitro_LadbrokesPhoenix\AutoNitro_LadbrokesPhoenix\RegressionSuite\obj\Debug\RegressionSuite.pdb
+D:\AutoNitro Phoenix\AutoNitro_LadbrokesPhoenix\AutoNitro_LadbrokesPhoenix\_output\RegressionSuite.dll
+D:\AutoNitro Phoenix\AutoNitro_LadbrokesPhoenix\AutoNitro_LadbrokesPhoenix\_output\RegressionSuite.pdb
+D:\AutoNitro Phoenix\AutoNitro_LadbrokesPhoenix\AutoNitro_LadbrokesPhoenix\RegressionSuite\obj\Debug\ResolveAssemblyReference.cache
+D:\AutoNitro Phoenix\AutoNitro_LadbrokesPhoenix\AutoNitro_LadbrokesPhoenix\RegressionSuite\obj\Debug\RegressionSuite.dll
+D:\AutoNitro Phoenix\AutoNitro_LadbrokesPhoenix\AutoNitro_LadbrokesPhoenix\RegressionSuite\obj\Debug\RegressionSuite.pdb
+D:\Ladbrokes\Phoenix\Sep-23\AutoNitro_LadbrokesPhoenix\AutoNitro_LadbrokesPhoenix\_output\RegressionSuite.dll
+D:\Ladbrokes\Phoenix\Sep-23\AutoNitro_LadbrokesPhoenix\AutoNitro_LadbrokesPhoenix\_output\RegressionSuite.pdb
+D:\Ladbrokes\Phoenix\Sep-23\AutoNitro_LadbrokesPhoenix\AutoNitro_LadbrokesPhoenix\RegressionSuite\obj\Debug\ResolveAssemblyReference.cache
+D:\Ladbrokes\Phoenix\Sep-23\AutoNitro_LadbrokesPhoenix\AutoNitro_LadbrokesPhoenix\RegressionSuite\obj\Debug\RegressionSuite.dll
+D:\Ladbrokes\Phoenix\Sep-23\AutoNitro_LadbrokesPhoenix\AutoNitro_LadbrokesPhoenix\RegressionSuite\obj\Debug\RegressionSuite.pdb
+C:\Users\Administrator\Desktop\New Code Base\AutoNitro_LadbrokesPhoenix\AutoNitro_LadbrokesPhoenix\_output\RegressionSuite.dll
+C:\Users\Administrator\Desktop\New Code Base\AutoNitro_LadbrokesPhoenix\AutoNitro_LadbrokesPhoenix\_output\RegressionSuite.pdb
+C:\Users\Administrator\Desktop\New Code Base\AutoNitro_LadbrokesPhoenix\AutoNitro_LadbrokesPhoenix\RegressionSuite\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\New Code Base\AutoNitro_LadbrokesPhoenix\AutoNitro_LadbrokesPhoenix\RegressionSuite\obj\Debug\RegressionSuite.dll
+C:\Users\Administrator\Desktop\New Code Base\AutoNitro_LadbrokesPhoenix\AutoNitro_LadbrokesPhoenix\RegressionSuite\obj\Debug\RegressionSuite.pdb
+C:\Users\Administrator\Desktop\Farringdon farewell\AutoNitro_LadbrokesPhoenix\AutoNitro_LadbrokesPhoenix\_output\RegressionSuite.dll
+C:\Users\Administrator\Desktop\Farringdon farewell\AutoNitro_LadbrokesPhoenix\AutoNitro_LadbrokesPhoenix\_output\RegressionSuite.pdb
+C:\Users\Administrator\Desktop\Farringdon farewell\AutoNitro_LadbrokesPhoenix\AutoNitro_LadbrokesPhoenix\RegressionSuite\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\Farringdon farewell\AutoNitro_LadbrokesPhoenix\AutoNitro_LadbrokesPhoenix\RegressionSuite\obj\Debug\RegressionSuite.dll
+C:\Users\Administrator\Desktop\Farringdon farewell\AutoNitro_LadbrokesPhoenix\AutoNitro_LadbrokesPhoenix\RegressionSuite\obj\Debug\RegressionSuite.pdb
+D:\Ladbrokes\Phoenix\Oct-3rd\AutoNitro_LadbrokesPhoenix\AutoNitro_LadbrokesPhoenix\_output\RegressionSuite.dll
+D:\Ladbrokes\Phoenix\Oct-3rd\AutoNitro_LadbrokesPhoenix\AutoNitro_LadbrokesPhoenix\_output\RegressionSuite.pdb
+D:\Ladbrokes\Phoenix\Oct-3rd\AutoNitro_LadbrokesPhoenix\AutoNitro_LadbrokesPhoenix\RegressionSuite\obj\Debug\ResolveAssemblyReference.cache
+D:\Ladbrokes\Phoenix\Oct-3rd\AutoNitro_LadbrokesPhoenix\AutoNitro_LadbrokesPhoenix\RegressionSuite\obj\Debug\RegressionSuite.dll
+D:\Ladbrokes\Phoenix\Oct-3rd\AutoNitro_LadbrokesPhoenix\AutoNitro_LadbrokesPhoenix\RegressionSuite\obj\Debug\RegressionSuite.pdb
+C:\Users\Administrator\Desktop\AutoNitro_LadbrokesPhoenix_SANITY\AutoNitro_LadbrokesPhoenix\_output\RegressionSuite.dll
+C:\Users\Administrator\Desktop\AutoNitro_LadbrokesPhoenix_SANITY\AutoNitro_LadbrokesPhoenix\_output\RegressionSuite.pdb
+C:\Users\Administrator\Desktop\AutoNitro_LadbrokesPhoenix_SANITY\AutoNitro_LadbrokesPhoenix\RegressionSuite\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\AutoNitro_LadbrokesPhoenix_SANITY\AutoNitro_LadbrokesPhoenix\RegressionSuite\obj\Debug\RegressionSuite.dll
+C:\Users\Administrator\Desktop\AutoNitro_LadbrokesPhoenix_SANITY\AutoNitro_LadbrokesPhoenix\RegressionSuite\obj\Debug\RegressionSuite.pdb
+D:\Ladbrokes\Phoenix\Oct-9th\AutoNitro_LadbrokesPhoenix\AutoNitro_LadbrokesPhoenix\_output\RegressionSuite.dll
+D:\Ladbrokes\Phoenix\Oct-9th\AutoNitro_LadbrokesPhoenix\AutoNitro_LadbrokesPhoenix\_output\RegressionSuite.pdb
+D:\Ladbrokes\Phoenix\Oct-9th\AutoNitro_LadbrokesPhoenix\AutoNitro_LadbrokesPhoenix\RegressionSuite\obj\Debug\ResolveAssemblyReference.cache
+D:\Ladbrokes\Phoenix\Oct-9th\AutoNitro_LadbrokesPhoenix\AutoNitro_LadbrokesPhoenix\RegressionSuite\obj\Debug\RegressionSuite.dll
+D:\Ladbrokes\Phoenix\Oct-9th\AutoNitro_LadbrokesPhoenix\AutoNitro_LadbrokesPhoenix\RegressionSuite\obj\Debug\RegressionSuite.pdb
+D:\Ladbrokes\Phoenix\Oct-11th\AutoNitro_LadbrokesPhoenix\AutoNitro_LadbrokesPhoenix\RegressionSuite\obj\Debug\ResolveAssemblyReference.cache
+D:\Ladbrokes\Phoenix\Oct-11th\AutoNitro_LadbrokesPhoenix\AutoNitro_LadbrokesPhoenix\RegressionSuite\obj\Debug\RegressionSuite.dll
+D:\Ladbrokes\Phoenix\Oct-11th\AutoNitro_LadbrokesPhoenix\AutoNitro_LadbrokesPhoenix\_output\RegressionSuite.dll
+D:\Ladbrokes\Phoenix\Oct-11th\AutoNitro_LadbrokesPhoenix\AutoNitro_LadbrokesPhoenix\_output\RegressionSuite.pdb
+D:\Ladbrokes\Phoenix\Oct-11th\AutoNitro_LadbrokesPhoenix\AutoNitro_LadbrokesPhoenix\RegressionSuite\obj\Debug\RegressionSuite.pdb
+D:\Ladbrokes\Phoenix\Oct-15th\AutoNitro_LadbrokesPhoenix\AutoNitro_LadbrokesPhoenix\_output\RegressionSuite.dll
+D:\Ladbrokes\Phoenix\Oct-15th\AutoNitro_LadbrokesPhoenix\AutoNitro_LadbrokesPhoenix\_output\RegressionSuite.pdb
+D:\Ladbrokes\Phoenix\Oct-15th\AutoNitro_LadbrokesPhoenix\AutoNitro_LadbrokesPhoenix\RegressionSuite\obj\Debug\ResolveAssemblyReference.cache
+D:\Ladbrokes\Phoenix\Oct-15th\AutoNitro_LadbrokesPhoenix\AutoNitro_LadbrokesPhoenix\RegressionSuite\obj\Debug\RegressionSuite.dll
+D:\Ladbrokes\Phoenix\Oct-15th\AutoNitro_LadbrokesPhoenix\AutoNitro_LadbrokesPhoenix\RegressionSuite\obj\Debug\RegressionSuite.pdb
+C:\Users\Administrator\Desktop\AutoNitro_LadbrokesPhoenix\AutoNitro\AutoNitro_LadbrokesPhoenix\_output\RegressionSuite.dll
+C:\Users\Administrator\Desktop\AutoNitro_LadbrokesPhoenix\AutoNitro\AutoNitro_LadbrokesPhoenix\_output\RegressionSuite.pdb
+C:\Users\Administrator\Desktop\AutoNitro_LadbrokesPhoenix\AutoNitro\AutoNitro_LadbrokesPhoenix\RegressionSuite\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\AutoNitro_LadbrokesPhoenix\AutoNitro\AutoNitro_LadbrokesPhoenix\RegressionSuite\obj\Debug\RegressionSuite.dll
+C:\Users\Administrator\Desktop\AutoNitro_LadbrokesPhoenix\AutoNitro\AutoNitro_LadbrokesPhoenix\RegressionSuite\obj\Debug\RegressionSuite.pdb

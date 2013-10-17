@@ -1,0 +1,528 @@
+C:\mCom_MobilePOC\MComm_CodeBase\_output\AdminSuite.dll
+C:\mCom_MobilePOC\MComm_CodeBase\_output\AdminSuite.pdb
+C:\mCom_MobilePOC\MComm_CodeBase\AdminSuite\obj\Debug\ResolveAssemblyReference.cache
+C:\mCom_MobilePOC\MComm_CodeBase\AdminSuite\obj\Debug\AdminSuite.Resources.Customers.resources
+C:\mCom_MobilePOC\MComm_CodeBase\AdminSuite\obj\Debug\GenerateResource.read.1.tlog
+C:\mCom_MobilePOC\MComm_CodeBase\AdminSuite\obj\Debug\GenerateResource.write.1.tlog
+C:\mCom_MobilePOC\MComm_CodeBase\AdminSuite\obj\Debug\AdminSuite.dll
+C:\mCom_MobilePOC\MComm_CodeBase\AdminSuite\obj\Debug\AdminSuite.pdb
+E:\mCom_MobilePOC\MComm_CodeBase\_output\AdminSuite.dll
+E:\mCom_MobilePOC\MComm_CodeBase\_output\AdminSuite.pdb
+E:\mCom_MobilePOC\MComm_CodeBase\AdminSuite\obj\Debug\ResolveAssemblyReference.cache
+E:\mCom_MobilePOC\MComm_CodeBase\AdminSuite\obj\Debug\AdminSuite.Resources.Customers.resources
+E:\mCom_MobilePOC\MComm_CodeBase\AdminSuite\obj\Debug\GenerateResource.read.1.tlog
+E:\mCom_MobilePOC\MComm_CodeBase\AdminSuite\obj\Debug\GenerateResource.write.1.tlog
+E:\mCom_MobilePOC\MComm_CodeBase\AdminSuite\obj\Debug\AdminSuite.dll
+E:\mCom_MobilePOC\MComm_CodeBase\AdminSuite\obj\Debug\AdminSuite.pdb
+C:\McomIntegration\MComm_CodeBase\_output\AdminSuite.dll
+C:\McomIntegration\MComm_CodeBase\_output\AdminSuite.pdb
+C:\McomIntegration\MComm_CodeBase\AdminSuite\obj\Debug\ResolveAssemblyReference.cache
+C:\McomIntegration\MComm_CodeBase\AdminSuite\obj\Debug\AdminSuite.Resources.Customers.resources
+C:\McomIntegration\MComm_CodeBase\AdminSuite\obj\Debug\GenerateResource.read.1.tlog
+C:\McomIntegration\MComm_CodeBase\AdminSuite\obj\Debug\GenerateResource.write.1.tlog
+C:\McomIntegration\MComm_CodeBase\AdminSuite\obj\Debug\AdminSuite.dll
+C:\McomIntegration\MComm_CodeBase\AdminSuite\obj\Debug\AdminSuite.pdb
+E:\New Folder (5)\MComm_CodeBase\_output\AdminSuite.dll
+E:\New Folder (5)\MComm_CodeBase\_output\AdminSuite.pdb
+E:\New Folder (5)\MComm_CodeBase\AdminSuite\obj\Debug\ResolveAssemblyReference.cache
+E:\New Folder (5)\MComm_CodeBase\AdminSuite\obj\Debug\AdminSuite.Resources.Customers.resources
+E:\New Folder (5)\MComm_CodeBase\AdminSuite\obj\Debug\GenerateResource.read.1.tlog
+E:\New Folder (5)\MComm_CodeBase\AdminSuite\obj\Debug\GenerateResource.write.1.tlog
+E:\New Folder (5)\MComm_CodeBase\AdminSuite\obj\Debug\AdminSuite.dll
+E:\New Folder (5)\MComm_CodeBase\AdminSuite\obj\Debug\AdminSuite.pdb
+D:\Mcommerce AutoNitro\1st August\MComm_CodeBase\_output\AdminSuite.dll
+D:\Mcommerce AutoNitro\1st August\MComm_CodeBase\_output\AdminSuite.pdb
+D:\Mcommerce AutoNitro\1st August\MComm_CodeBase\AdminSuite\obj\Debug\ResolveAssemblyReference.cache
+D:\Mcommerce AutoNitro\1st August\MComm_CodeBase\AdminSuite\obj\Debug\AdminSuite.Resources.Customers.resources
+D:\Mcommerce AutoNitro\1st August\MComm_CodeBase\AdminSuite\obj\Debug\GenerateResource.read.1.tlog
+D:\Mcommerce AutoNitro\1st August\MComm_CodeBase\AdminSuite\obj\Debug\GenerateResource.write.1.tlog
+D:\Mcommerce AutoNitro\1st August\MComm_CodeBase\AdminSuite\obj\Debug\AdminSuite.dll
+D:\Mcommerce AutoNitro\1st August\MComm_CodeBase\AdminSuite\obj\Debug\AdminSuite.pdb
+D:\MComm\Latest\AutoNitro_MCommerce\MComm_CodeBase\_output\AdminSuite.dll
+D:\MComm\Latest\AutoNitro_MCommerce\MComm_CodeBase\_output\AdminSuite.pdb
+D:\MComm\Latest\AutoNitro_MCommerce\MComm_CodeBase\AdminSuite\obj\Debug\ResolveAssemblyReference.cache
+D:\MComm\Latest\AutoNitro_MCommerce\MComm_CodeBase\AdminSuite\obj\Debug\AdminSuite.Resources.Customers.resources
+D:\MComm\Latest\AutoNitro_MCommerce\MComm_CodeBase\AdminSuite\obj\Debug\GenerateResource.read.1.tlog
+D:\MComm\Latest\AutoNitro_MCommerce\MComm_CodeBase\AdminSuite\obj\Debug\GenerateResource.write.1.tlog
+D:\MComm\Latest\AutoNitro_MCommerce\MComm_CodeBase\AdminSuite\obj\Debug\AdminSuite.dll
+D:\MComm\Latest\AutoNitro_MCommerce\MComm_CodeBase\AdminSuite\obj\Debug\AdminSuite.pdb
+D:\Selenium\mCommerce_latest\AutoNitro_MCommerce\MComm_CodeBase\AdminSuite\obj\Debug\ResolveAssemblyReference.cache
+D:\Selenium\mCommerce_latest\AutoNitro_MCommerce\MComm_CodeBase\AdminSuite\obj\Debug\AdminSuite.Resources.Customers.resources
+D:\Selenium\mCommerce_latest\AutoNitro_MCommerce\MComm_CodeBase\AdminSuite\obj\Debug\GenerateResource.read.1.tlog
+D:\Selenium\mCommerce_latest\AutoNitro_MCommerce\MComm_CodeBase\AdminSuite\obj\Debug\GenerateResource.write.1.tlog
+D:\Selenium\mCommerce_latest\AutoNitro_MCommerce\MComm_CodeBase\AdminSuite\obj\Debug\AdminSuite.dll
+D:\Selenium\mCommerce_latest\AutoNitro_MCommerce\MComm_CodeBase\_output\AdminSuite.dll
+D:\Selenium\mCommerce_latest\AutoNitro_MCommerce\MComm_CodeBase\_output\AdminSuite.pdb
+D:\Selenium\mCommerce_latest\AutoNitro_MCommerce\MComm_CodeBase\AdminSuite\obj\Debug\AdminSuite.pdb
+D:\TestAN\TestMcom\AutoNitro_MCommerce\MComm_CodeBase\_output\AdminSuite.dll
+D:\TestAN\TestMcom\AutoNitro_MCommerce\MComm_CodeBase\_output\AdminSuite.pdb
+D:\TestAN\TestMcom\AutoNitro_MCommerce\MComm_CodeBase\AdminSuite\obj\Debug\ResolveAssemblyReference.cache
+D:\TestAN\TestMcom\AutoNitro_MCommerce\MComm_CodeBase\AdminSuite\obj\Debug\AdminSuite.Resources.Customers.resources
+D:\TestAN\TestMcom\AutoNitro_MCommerce\MComm_CodeBase\AdminSuite\obj\Debug\GenerateResource.read.1.tlog
+D:\TestAN\TestMcom\AutoNitro_MCommerce\MComm_CodeBase\AdminSuite\obj\Debug\GenerateResource.write.1.tlog
+D:\TestAN\TestMcom\AutoNitro_MCommerce\MComm_CodeBase\AdminSuite\obj\Debug\AdminSuite.dll
+D:\TestAN\TestMcom\AutoNitro_MCommerce\MComm_CodeBase\AdminSuite\obj\Debug\AdminSuite.pdb
+D:\Ladbrokes\Code_Integration\Latest\AutoNitro_MCommerce\MComm_CodeBase\_output\AdminSuite.dll
+D:\Ladbrokes\Code_Integration\Latest\AutoNitro_MCommerce\MComm_CodeBase\_output\AdminSuite.pdb
+D:\Ladbrokes\Code_Integration\Latest\AutoNitro_MCommerce\MComm_CodeBase\AdminSuite\obj\Debug\ResolveAssemblyReference.cache
+D:\Ladbrokes\Code_Integration\Latest\AutoNitro_MCommerce\MComm_CodeBase\AdminSuite\obj\Debug\AdminSuite.Resources.Customers.resources
+D:\Ladbrokes\Code_Integration\Latest\AutoNitro_MCommerce\MComm_CodeBase\AdminSuite\obj\Debug\GenerateResource.read.1.tlog
+D:\Ladbrokes\Code_Integration\Latest\AutoNitro_MCommerce\MComm_CodeBase\AdminSuite\obj\Debug\GenerateResource.write.1.tlog
+D:\Ladbrokes\Code_Integration\Latest\AutoNitro_MCommerce\MComm_CodeBase\AdminSuite\obj\Debug\AdminSuite.dll
+D:\Ladbrokes\Code_Integration\Latest\AutoNitro_MCommerce\MComm_CodeBase\AdminSuite\obj\Debug\AdminSuite.pdb
+D:\Ladbrokes\m-commerce\Aug 7th code\_output\AdminSuite.dll
+D:\Ladbrokes\m-commerce\Aug 7th code\_output\AdminSuite.pdb
+D:\Ladbrokes\m-commerce\Aug 7th code\AdminSuite\obj\Debug\ResolveAssemblyReference.cache
+D:\Ladbrokes\m-commerce\Aug 7th code\AdminSuite\obj\Debug\AdminSuite.Resources.Customers.resources
+D:\Ladbrokes\m-commerce\Aug 7th code\AdminSuite\obj\Debug\GenerateResource.read.1.tlog
+D:\Ladbrokes\m-commerce\Aug 7th code\AdminSuite\obj\Debug\GenerateResource.write.1.tlog
+D:\Ladbrokes\m-commerce\Aug 7th code\AdminSuite\obj\Debug\AdminSuite.dll
+D:\Ladbrokes\m-commerce\Aug 7th code\AdminSuite\obj\Debug\AdminSuite.pdb
+C:\IntegrationFresh\MComm_CodeBase\_output\AdminSuite.dll
+C:\IntegrationFresh\MComm_CodeBase\_output\AdminSuite.pdb
+C:\IntegrationFresh\MComm_CodeBase\AdminSuite\obj\Debug\ResolveAssemblyReference.cache
+C:\IntegrationFresh\MComm_CodeBase\AdminSuite\obj\Debug\AdminSuite.Resources.Customers.resources
+C:\IntegrationFresh\MComm_CodeBase\AdminSuite\obj\Debug\GenerateResource.read.1.tlog
+C:\IntegrationFresh\MComm_CodeBase\AdminSuite\obj\Debug\GenerateResource.write.1.tlog
+C:\IntegrationFresh\MComm_CodeBase\AdminSuite\obj\Debug\AdminSuite.dll
+C:\IntegrationFresh\MComm_CodeBase\AdminSuite\obj\Debug\AdminSuite.pdb
+D:\Ladbrokes\m-commerce\Aug 8th\_output\AdminSuite.dll
+D:\Ladbrokes\m-commerce\Aug 8th\_output\AdminSuite.pdb
+D:\Ladbrokes\m-commerce\Aug 8th\AdminSuite\obj\Debug\ResolveAssemblyReference.cache
+D:\Ladbrokes\m-commerce\Aug 8th\AdminSuite\obj\Debug\AdminSuite.Resources.Customers.resources
+D:\Ladbrokes\m-commerce\Aug 8th\AdminSuite\obj\Debug\GenerateResource.read.1.tlog
+D:\Ladbrokes\m-commerce\Aug 8th\AdminSuite\obj\Debug\GenerateResource.write.1.tlog
+D:\Ladbrokes\m-commerce\Aug 8th\AdminSuite\obj\Debug\AdminSuite.dll
+D:\Ladbrokes\m-commerce\Aug 8th\AdminSuite\obj\Debug\AdminSuite.pdb
+D:\Ladbrokes\m-commerce\Aug 09th\_output\AdminSuite.dll
+D:\Ladbrokes\m-commerce\Aug 09th\_output\AdminSuite.pdb
+D:\Ladbrokes\m-commerce\Aug 09th\AdminSuite\obj\Debug\ResolveAssemblyReference.cache
+D:\Ladbrokes\m-commerce\Aug 09th\AdminSuite\obj\Debug\AdminSuite.Resources.Customers.resources
+D:\Ladbrokes\m-commerce\Aug 09th\AdminSuite\obj\Debug\GenerateResource.read.1.tlog
+D:\Ladbrokes\m-commerce\Aug 09th\AdminSuite\obj\Debug\GenerateResource.write.1.tlog
+D:\Ladbrokes\m-commerce\Aug 09th\AdminSuite\obj\Debug\AdminSuite.dll
+D:\Ladbrokes\m-commerce\Aug 09th\AdminSuite\obj\Debug\AdminSuite.pdb
+D:\Selenium\AutoNitro_MCommerce\MComm_CodeBase\_output\AdminSuite.dll
+D:\Selenium\AutoNitro_MCommerce\MComm_CodeBase\_output\AdminSuite.pdb
+D:\Selenium\AutoNitro_MCommerce\MComm_CodeBase\AdminSuite\obj\Debug\ResolveAssemblyReference.cache
+D:\Selenium\AutoNitro_MCommerce\MComm_CodeBase\AdminSuite\obj\Debug\AdminSuite.Resources.Customers.resources
+D:\Selenium\AutoNitro_MCommerce\MComm_CodeBase\AdminSuite\obj\Debug\GenerateResource.read.1.tlog
+D:\Selenium\AutoNitro_MCommerce\MComm_CodeBase\AdminSuite\obj\Debug\GenerateResource.write.1.tlog
+D:\Selenium\AutoNitro_MCommerce\MComm_CodeBase\AdminSuite\obj\Debug\AdminSuite.dll
+D:\Selenium\AutoNitro_MCommerce\MComm_CodeBase\AdminSuite\obj\Debug\AdminSuite.pdb
+D:\MComm\SVN Integration\MComm_CodeBase\_output\AdminSuite.dll
+D:\MComm\SVN Integration\MComm_CodeBase\_output\AdminSuite.pdb
+D:\MComm\SVN Integration\MComm_CodeBase\AdminSuite\obj\Debug\ResolveAssemblyReference.cache
+D:\MComm\SVN Integration\MComm_CodeBase\AdminSuite\obj\Debug\AdminSuite.Resources.Customers.resources
+D:\MComm\SVN Integration\MComm_CodeBase\AdminSuite\obj\Debug\GenerateResource.read.1.tlog
+D:\MComm\SVN Integration\MComm_CodeBase\AdminSuite\obj\Debug\GenerateResource.write.1.tlog
+D:\MComm\SVN Integration\MComm_CodeBase\AdminSuite\obj\Debug\AdminSuite.dll
+D:\MComm\SVN Integration\MComm_CodeBase\AdminSuite\obj\Debug\AdminSuite.pdb
+D:\Ladbrokes\m-commerce\aug 13th\_output\AdminSuite.dll
+D:\Ladbrokes\m-commerce\aug 13th\_output\AdminSuite.pdb
+D:\Ladbrokes\m-commerce\aug 13th\AdminSuite\obj\Debug\ResolveAssemblyReference.cache
+D:\Ladbrokes\m-commerce\aug 13th\AdminSuite\obj\Debug\AdminSuite.Resources.Customers.resources
+D:\Ladbrokes\m-commerce\aug 13th\AdminSuite\obj\Debug\GenerateResource.read.1.tlog
+D:\Ladbrokes\m-commerce\aug 13th\AdminSuite\obj\Debug\GenerateResource.write.1.tlog
+D:\Ladbrokes\m-commerce\aug 13th\AdminSuite\obj\Debug\AdminSuite.dll
+D:\Ladbrokes\m-commerce\aug 13th\AdminSuite\obj\Debug\AdminSuite.pdb
+C:\Users\Administrator\Desktop\ToDay's\Integration\AutoNitro_MCommerce\MComm_CodeBase\_output\AdminSuite.dll
+C:\Users\Administrator\Desktop\ToDay's\Integration\AutoNitro_MCommerce\MComm_CodeBase\_output\AdminSuite.pdb
+C:\Users\Administrator\Desktop\ToDay's\Integration\AutoNitro_MCommerce\MComm_CodeBase\AdminSuite\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\ToDay's\Integration\AutoNitro_MCommerce\MComm_CodeBase\AdminSuite\obj\Debug\AdminSuite.Resources.Customers.resources
+C:\Users\Administrator\Desktop\ToDay's\Integration\AutoNitro_MCommerce\MComm_CodeBase\AdminSuite\obj\Debug\GenerateResource.read.1.tlog
+C:\Users\Administrator\Desktop\ToDay's\Integration\AutoNitro_MCommerce\MComm_CodeBase\AdminSuite\obj\Debug\GenerateResource.write.1.tlog
+C:\Users\Administrator\Desktop\ToDay's\Integration\AutoNitro_MCommerce\MComm_CodeBase\AdminSuite\obj\Debug\AdminSuite.dll
+C:\Users\Administrator\Desktop\ToDay's\Integration\AutoNitro_MCommerce\MComm_CodeBase\AdminSuite\obj\Debug\AdminSuite.pdb
+D:\Ladbrokes\m-commerce\Aug 16th\_output\AdminSuite.dll
+D:\Ladbrokes\m-commerce\Aug 16th\_output\AdminSuite.pdb
+D:\Ladbrokes\m-commerce\Aug 16th\AdminSuite\obj\Debug\ResolveAssemblyReference.cache
+D:\Ladbrokes\m-commerce\Aug 16th\AdminSuite\obj\Debug\AdminSuite.Resources.Customers.resources
+D:\Ladbrokes\m-commerce\Aug 16th\AdminSuite\obj\Debug\GenerateResource.read.1.tlog
+D:\Ladbrokes\m-commerce\Aug 16th\AdminSuite\obj\Debug\GenerateResource.write.1.tlog
+D:\Ladbrokes\m-commerce\Aug 16th\AdminSuite\obj\Debug\AdminSuite.dll
+D:\Ladbrokes\m-commerce\Aug 16th\AdminSuite\obj\Debug\AdminSuite.pdb
+E:\eComm_AutoNitro\MComm_CodeBase\_output\AdminSuite.dll
+E:\eComm_AutoNitro\MComm_CodeBase\_output\AdminSuite.pdb
+E:\eComm_AutoNitro\MComm_CodeBase\AdminSuite\obj\Debug\ResolveAssemblyReference.cache
+E:\eComm_AutoNitro\MComm_CodeBase\AdminSuite\obj\Debug\AdminSuite.Resources.Customers.resources
+E:\eComm_AutoNitro\MComm_CodeBase\AdminSuite\obj\Debug\GenerateResource.read.1.tlog
+E:\eComm_AutoNitro\MComm_CodeBase\AdminSuite\obj\Debug\GenerateResource.write.1.tlog
+E:\eComm_AutoNitro\MComm_CodeBase\AdminSuite\obj\Debug\AdminSuite.dll
+E:\eComm_AutoNitro\MComm_CodeBase\AdminSuite\obj\Debug\AdminSuite.pdb
+E:\New Folder (8)\MComm_CodeBase\_output\AdminSuite.dll
+E:\New Folder (8)\MComm_CodeBase\_output\AdminSuite.pdb
+E:\New Folder (8)\MComm_CodeBase\AdminSuite\obj\Debug\ResolveAssemblyReference.cache
+E:\New Folder (8)\MComm_CodeBase\AdminSuite\obj\Debug\AdminSuite.Resources.Customers.resources
+E:\New Folder (8)\MComm_CodeBase\AdminSuite\obj\Debug\GenerateResource.read.1.tlog
+E:\New Folder (8)\MComm_CodeBase\AdminSuite\obj\Debug\GenerateResource.write.1.tlog
+E:\New Folder (8)\MComm_CodeBase\AdminSuite\obj\Debug\AdminSuite.dll
+E:\New Folder (8)\MComm_CodeBase\AdminSuite\obj\Debug\AdminSuite.pdb
+D:\MComm\Latest\MComm_CodeBase\_output\AdminSuite.dll
+D:\MComm\Latest\MComm_CodeBase\_output\AdminSuite.pdb
+D:\MComm\Latest\MComm_CodeBase\AdminSuite\obj\Debug\ResolveAssemblyReference.cache
+D:\MComm\Latest\MComm_CodeBase\AdminSuite\obj\Debug\AdminSuite.Resources.Customers.resources
+D:\MComm\Latest\MComm_CodeBase\AdminSuite\obj\Debug\GenerateResource.read.1.tlog
+D:\MComm\Latest\MComm_CodeBase\AdminSuite\obj\Debug\GenerateResource.write.1.tlog
+D:\MComm\Latest\MComm_CodeBase\AdminSuite\obj\Debug\AdminSuite.dll
+D:\MComm\Latest\MComm_CodeBase\AdminSuite\obj\Debug\AdminSuite.pdb
+D:\Ladbrokes\m-commerce\aug 21\_output\AdminSuite.dll
+D:\Ladbrokes\m-commerce\aug 21\_output\AdminSuite.pdb
+D:\Ladbrokes\m-commerce\aug 21\AdminSuite\obj\Debug\ResolveAssemblyReference.cache
+D:\Ladbrokes\m-commerce\aug 21\AdminSuite\obj\Debug\AdminSuite.Resources.Customers.resources
+D:\Ladbrokes\m-commerce\aug 21\AdminSuite\obj\Debug\GenerateResource.read.1.tlog
+D:\Ladbrokes\m-commerce\aug 21\AdminSuite\obj\Debug\GenerateResource.write.1.tlog
+D:\Ladbrokes\m-commerce\aug 21\AdminSuite\obj\Debug\AdminSuite.dll
+D:\Ladbrokes\m-commerce\aug 21\AdminSuite\obj\Debug\AdminSuite.pdb
+D:\Ladbrokes\m-commerce\Aug 31\_output\AdminSuite.dll
+D:\Ladbrokes\m-commerce\Aug 31\_output\AdminSuite.pdb
+D:\Ladbrokes\m-commerce\Aug 31\AdminSuite\obj\Debug\ResolveAssemblyReference.cache
+D:\Ladbrokes\m-commerce\Aug 31\AdminSuite\obj\Debug\AdminSuite.Resources.Customers.resources
+D:\Ladbrokes\m-commerce\Aug 31\AdminSuite\obj\Debug\GenerateResource.read.1.tlog
+D:\Ladbrokes\m-commerce\Aug 31\AdminSuite\obj\Debug\GenerateResource.write.1.tlog
+D:\Ladbrokes\m-commerce\Aug 31\AdminSuite\obj\Debug\AdminSuite.dll
+D:\Ladbrokes\m-commerce\Aug 31\AdminSuite\obj\Debug\AdminSuite.pdb
+E:\eComm_AutoNitro\MComm_CodeBase_New\_output\AdminSuite.dll
+E:\eComm_AutoNitro\MComm_CodeBase_New\_output\AdminSuite.pdb
+E:\eComm_AutoNitro\MComm_CodeBase_New\AdminSuite\obj\Debug\ResolveAssemblyReference.cache
+E:\eComm_AutoNitro\MComm_CodeBase_New\AdminSuite\obj\Debug\AdminSuite.Resources.Customers.resources
+E:\eComm_AutoNitro\MComm_CodeBase_New\AdminSuite\obj\Debug\GenerateResource.read.1.tlog
+E:\eComm_AutoNitro\MComm_CodeBase_New\AdminSuite\obj\Debug\GenerateResource.write.1.tlog
+E:\eComm_AutoNitro\MComm_CodeBase_New\AdminSuite\obj\Debug\AdminSuite.dll
+E:\eComm_AutoNitro\MComm_CodeBase_New\AdminSuite\obj\Debug\AdminSuite.pdb
+D:\Ladbrokes\m-commerce\Sep 3rd\_output\AdminSuite.dll
+D:\Ladbrokes\m-commerce\Sep 3rd\_output\AdminSuite.pdb
+D:\Ladbrokes\m-commerce\Sep 3rd\AdminSuite\obj\Debug\ResolveAssemblyReference.cache
+D:\Ladbrokes\m-commerce\Sep 3rd\AdminSuite\obj\Debug\AdminSuite.Resources.Customers.resources
+D:\Ladbrokes\m-commerce\Sep 3rd\AdminSuite\obj\Debug\GenerateResource.read.1.tlog
+D:\Ladbrokes\m-commerce\Sep 3rd\AdminSuite\obj\Debug\GenerateResource.write.1.tlog
+D:\Ladbrokes\m-commerce\Sep 3rd\AdminSuite\obj\Debug\AdminSuite.dll
+D:\Ladbrokes\m-commerce\Sep 3rd\AdminSuite\obj\Debug\AdminSuite.pdb
+D:\M-Commerce\MComm_CodeBase\_output\AdminSuite.dll
+D:\M-Commerce\MComm_CodeBase\_output\AdminSuite.pdb
+D:\M-Commerce\MComm_CodeBase\AdminSuite\obj\Debug\ResolveAssemblyReference.cache
+D:\M-Commerce\MComm_CodeBase\AdminSuite\obj\Debug\AdminSuite.Resources.Customers.resources
+D:\M-Commerce\MComm_CodeBase\AdminSuite\obj\Debug\GenerateResource.read.1.tlog
+D:\M-Commerce\MComm_CodeBase\AdminSuite\obj\Debug\GenerateResource.write.1.tlog
+D:\M-Commerce\MComm_CodeBase\AdminSuite\obj\Debug\AdminSuite.dll
+D:\M-Commerce\MComm_CodeBase\AdminSuite\obj\Debug\AdminSuite.pdb
+D:\GTA\AutoNitro_MCommerce\MComm_CodeBase\_output\AdminSuite.dll
+D:\GTA\AutoNitro_MCommerce\MComm_CodeBase\_output\AdminSuite.pdb
+D:\GTA\AutoNitro_MCommerce\MComm_CodeBase\AdminSuite\obj\Debug\ResolveAssemblyReference.cache
+D:\GTA\AutoNitro_MCommerce\MComm_CodeBase\AdminSuite\obj\Debug\AdminSuite.Resources.Customers.resources
+D:\GTA\AutoNitro_MCommerce\MComm_CodeBase\AdminSuite\obj\Debug\GenerateResource.read.1.tlog
+D:\GTA\AutoNitro_MCommerce\MComm_CodeBase\AdminSuite\obj\Debug\GenerateResource.write.1.tlog
+D:\GTA\AutoNitro_MCommerce\MComm_CodeBase\AdminSuite\obj\Debug\AdminSuite.dll
+D:\GTA\AutoNitro_MCommerce\MComm_CodeBase\AdminSuite\obj\Debug\AdminSuite.pdb
+\\aditidt518\Software\FlashAutomation\AutoNitro_MCommerce\MComm_CodeBase\_output\AdminSuite.dll
+\\aditidt518\Software\FlashAutomation\AutoNitro_MCommerce\MComm_CodeBase\_output\AdminSuite.pdb
+\\aditidt518\Software\FlashAutomation\AutoNitro_MCommerce\MComm_CodeBase\AdminSuite\obj\Debug\ResolveAssemblyReference.cache
+\\aditidt518\Software\FlashAutomation\AutoNitro_MCommerce\MComm_CodeBase\AdminSuite\obj\Debug\AdminSuite.Resources.Customers.resources
+\\aditidt518\Software\FlashAutomation\AutoNitro_MCommerce\MComm_CodeBase\AdminSuite\obj\Debug\GenerateResource.read.1.tlog
+\\aditidt518\Software\FlashAutomation\AutoNitro_MCommerce\MComm_CodeBase\AdminSuite\obj\Debug\GenerateResource.write.1.tlog
+\\aditidt518\Software\FlashAutomation\AutoNitro_MCommerce\MComm_CodeBase\AdminSuite\obj\Debug\AdminSuite.dll
+\\aditidt518\Software\FlashAutomation\AutoNitro_MCommerce\MComm_CodeBase\AdminSuite\obj\Debug\AdminSuite.pdb
+E:\Anand\Software\FlashAutomation\AutoNitro_MCommerce\MComm_CodeBase\_output\AdminSuite.dll
+E:\Anand\Software\FlashAutomation\AutoNitro_MCommerce\MComm_CodeBase\_output\AdminSuite.pdb
+E:\Anand\Software\FlashAutomation\AutoNitro_MCommerce\MComm_CodeBase\AdminSuite\obj\Debug\ResolveAssemblyReference.cache
+E:\Anand\Software\FlashAutomation\AutoNitro_MCommerce\MComm_CodeBase\AdminSuite\obj\Debug\AdminSuite.Resources.Customers.resources
+E:\Anand\Software\FlashAutomation\AutoNitro_MCommerce\MComm_CodeBase\AdminSuite\obj\Debug\GenerateResource.read.1.tlog
+E:\Anand\Software\FlashAutomation\AutoNitro_MCommerce\MComm_CodeBase\AdminSuite\obj\Debug\GenerateResource.write.1.tlog
+E:\Anand\Software\FlashAutomation\AutoNitro_MCommerce\MComm_CodeBase\AdminSuite\obj\Debug\AdminSuite.dll
+E:\Anand\Software\FlashAutomation\AutoNitro_MCommerce\MComm_CodeBase\AdminSuite\obj\Debug\AdminSuite.pdb
+F:\AutoNitro_MCommerce\MComm_CodeBase\_output\AdminSuite.dll
+F:\AutoNitro_MCommerce\MComm_CodeBase\_output\AdminSuite.pdb
+F:\AutoNitro_MCommerce\MComm_CodeBase\AdminSuite\obj\Debug\ResolveAssemblyReference.cache
+F:\AutoNitro_MCommerce\MComm_CodeBase\AdminSuite\obj\Debug\AdminSuite.Resources.Customers.resources
+F:\AutoNitro_MCommerce\MComm_CodeBase\AdminSuite\obj\Debug\GenerateResource.read.1.tlog
+F:\AutoNitro_MCommerce\MComm_CodeBase\AdminSuite\obj\Debug\GenerateResource.write.1.tlog
+F:\AutoNitro_MCommerce\MComm_CodeBase\AdminSuite\obj\Debug\AdminSuite.dll
+F:\AutoNitro_MCommerce\MComm_CodeBase\AdminSuite\obj\Debug\AdminSuite.pdb
+C:\Kiran\My Share\eCommerce Share\2.25\AutoNitro_MCommerce\MComm_CodeBase\_output\AdminSuite.dll
+C:\Kiran\My Share\eCommerce Share\2.25\AutoNitro_MCommerce\MComm_CodeBase\_output\AdminSuite.pdb
+C:\Kiran\My Share\eCommerce Share\2.25\AutoNitro_MCommerce\MComm_CodeBase\AdminSuite\obj\Debug\ResolveAssemblyReference.cache
+C:\Kiran\My Share\eCommerce Share\2.25\AutoNitro_MCommerce\MComm_CodeBase\AdminSuite\obj\Debug\AdminSuite.Resources.Customers.resources
+C:\Kiran\My Share\eCommerce Share\2.25\AutoNitro_MCommerce\MComm_CodeBase\AdminSuite\obj\Debug\GenerateResource.read.1.tlog
+C:\Kiran\My Share\eCommerce Share\2.25\AutoNitro_MCommerce\MComm_CodeBase\AdminSuite\obj\Debug\GenerateResource.write.1.tlog
+C:\Kiran\My Share\eCommerce Share\2.25\AutoNitro_MCommerce\MComm_CodeBase\AdminSuite\obj\Debug\AdminSuite.dll
+C:\Kiran\My Share\eCommerce Share\2.25\AutoNitro_MCommerce\MComm_CodeBase\AdminSuite\obj\Debug\AdminSuite.pdb
+C:\Kiran\CodeBase\AutoNitro_MCommerce\MComm_CodeBase\_output\AdminSuite.dll
+C:\Kiran\CodeBase\AutoNitro_MCommerce\MComm_CodeBase\_output\AdminSuite.pdb
+C:\Kiran\CodeBase\AutoNitro_MCommerce\MComm_CodeBase\AdminSuite\obj\Debug\ResolveAssemblyReference.cache
+C:\Kiran\CodeBase\AutoNitro_MCommerce\MComm_CodeBase\AdminSuite\obj\Debug\AdminSuite.Resources.Customers.resources
+C:\Kiran\CodeBase\AutoNitro_MCommerce\MComm_CodeBase\AdminSuite\obj\Debug\GenerateResource.read.1.tlog
+C:\Kiran\CodeBase\AutoNitro_MCommerce\MComm_CodeBase\AdminSuite\obj\Debug\GenerateResource.write.1.tlog
+C:\Kiran\CodeBase\AutoNitro_MCommerce\MComm_CodeBase\AdminSuite\obj\Debug\AdminSuite.dll
+C:\Kiran\CodeBase\AutoNitro_MCommerce\MComm_CodeBase\AdminSuite\obj\Debug\AdminSuite.pdb
+C:\Users\Administrator\Desktop\IPlay\MComm_CodeBase\_output\AdminSuite.dll
+C:\Users\Administrator\Desktop\IPlay\MComm_CodeBase\_output\AdminSuite.pdb
+C:\Users\Administrator\Desktop\IPlay\MComm_CodeBase\AdminSuite\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\IPlay\MComm_CodeBase\AdminSuite\obj\Debug\AdminSuite.Resources.Customers.resources
+C:\Users\Administrator\Desktop\IPlay\MComm_CodeBase\AdminSuite\obj\Debug\GenerateResource.read.1.tlog
+C:\Users\Administrator\Desktop\IPlay\MComm_CodeBase\AdminSuite\obj\Debug\GenerateResource.write.1.tlog
+C:\Users\Administrator\Desktop\IPlay\MComm_CodeBase\AdminSuite\obj\Debug\AdminSuite.dll
+C:\Users\Administrator\Desktop\IPlay\MComm_CodeBase\AdminSuite\obj\Debug\AdminSuite.pdb
+C:\Kiran\My Share\eCommerce Share\IPlay\MComm_CodeBase\_output\AdminSuite.dll
+C:\Kiran\My Share\eCommerce Share\IPlay\MComm_CodeBase\_output\AdminSuite.pdb
+C:\Kiran\My Share\eCommerce Share\IPlay\MComm_CodeBase\AdminSuite\obj\Debug\ResolveAssemblyReference.cache
+C:\Kiran\My Share\eCommerce Share\IPlay\MComm_CodeBase\AdminSuite\obj\Debug\AdminSuite.Resources.Customers.resources
+C:\Kiran\My Share\eCommerce Share\IPlay\MComm_CodeBase\AdminSuite\obj\Debug\GenerateResource.read.1.tlog
+C:\Kiran\My Share\eCommerce Share\IPlay\MComm_CodeBase\AdminSuite\obj\Debug\GenerateResource.write.1.tlog
+C:\Kiran\My Share\eCommerce Share\IPlay\MComm_CodeBase\AdminSuite\obj\Debug\AdminSuite.dll
+C:\Kiran\My Share\eCommerce Share\IPlay\MComm_CodeBase\AdminSuite\obj\Debug\AdminSuite.pdb
+C:\Kiran\CodeBase\IPlay\MComm_CodeBase\_output\AdminSuite.dll
+C:\Kiran\CodeBase\IPlay\MComm_CodeBase\_output\AdminSuite.pdb
+C:\Kiran\CodeBase\IPlay\MComm_CodeBase\AdminSuite\obj\Debug\ResolveAssemblyReference.cache
+C:\Kiran\CodeBase\IPlay\MComm_CodeBase\AdminSuite\obj\Debug\AdminSuite.Resources.Customers.resources
+C:\Kiran\CodeBase\IPlay\MComm_CodeBase\AdminSuite\obj\Debug\GenerateResource.read.1.tlog
+C:\Kiran\CodeBase\IPlay\MComm_CodeBase\AdminSuite\obj\Debug\GenerateResource.write.1.tlog
+C:\Kiran\CodeBase\IPlay\MComm_CodeBase\AdminSuite\obj\Debug\AdminSuite.dll
+C:\Kiran\CodeBase\IPlay\MComm_CodeBase\AdminSuite\obj\Debug\AdminSuite.pdb
+D:\Amaravathi\LatestCodeIPlaymar7\IPlay\MComm_CodeBase\AdminSuite\obj\Debug\ResolveAssemblyReference.cache
+D:\Amaravathi\LatestCodeIPlaymar7\IPlay\MComm_CodeBase\AdminSuite\obj\Debug\AdminSuite.Resources.Customers.resources
+D:\Amaravathi\LatestCodeIPlaymar7\IPlay\MComm_CodeBase\AdminSuite\obj\Debug\GenerateResource.read.1.tlog
+D:\Amaravathi\LatestCodeIPlaymar7\IPlay\MComm_CodeBase\AdminSuite\obj\Debug\GenerateResource.write.1.tlog
+D:\Amaravathi\LatestCodeIPlaymar7\IPlay\MComm_CodeBase\_output\AdminSuite.dll
+D:\Amaravathi\LatestCodeIPlaymar7\IPlay\MComm_CodeBase\_output\AdminSuite.pdb
+D:\Amaravathi\LatestCodeIPlaymar7\IPlay\MComm_CodeBase\AdminSuite\obj\Debug\AdminSuite.dll
+D:\Amaravathi\LatestCodeIPlaymar7\IPlay\MComm_CodeBase\AdminSuite\obj\Debug\AdminSuite.pdb
+F:\LatestCode_April_Final\IPlay\MComm_CodeBase\AdminSuite\obj\Debug\ResolveAssemblyReference.cache
+F:\LatestCode_April_Final\IPlay\MComm_CodeBase\AdminSuite\obj\Debug\AdminSuite.Resources.Customers.resources
+F:\LatestCode_April_Final\IPlay\MComm_CodeBase\AdminSuite\obj\Debug\GenerateResource.read.1.tlog
+F:\LatestCode_April_Final\IPlay\MComm_CodeBase\AdminSuite\obj\Debug\GenerateResource.write.1.tlog
+F:\LatestCode_April_Final\IPlay\MComm_CodeBase\_output\AdminSuite.dll
+F:\LatestCode_April_Final\IPlay\MComm_CodeBase\_output\AdminSuite.pdb
+F:\LatestCode_April_Final\IPlay\MComm_CodeBase\AdminSuite\obj\Debug\AdminSuite.dll
+F:\LatestCode_April_Final\IPlay\MComm_CodeBase\AdminSuite\obj\Debug\AdminSuite.pdb
+F:\IplayLatestCode_April_Final\IPlay\MComm_CodeBase\AdminSuite\obj\Debug\ResolveAssemblyReference.cache
+F:\IplayLatestCode_April_Final\IPlay\MComm_CodeBase\AdminSuite\obj\Debug\AdminSuite.Resources.Customers.resources
+F:\IplayLatestCode_April_Final\IPlay\MComm_CodeBase\AdminSuite\obj\Debug\GenerateResource.read.1.tlog
+F:\IplayLatestCode_April_Final\IPlay\MComm_CodeBase\AdminSuite\obj\Debug\GenerateResource.write.1.tlog
+F:\IplayLatestCode_April_Final\IPlay\MComm_CodeBase\_output\AdminSuite.dll
+F:\IplayLatestCode_April_Final\IPlay\MComm_CodeBase\_output\AdminSuite.pdb
+F:\IplayLatestCode_April_Final\IPlay\MComm_CodeBase\AdminSuite\obj\Debug\AdminSuite.dll
+F:\IplayLatestCode_April_Final\IPlay\MComm_CodeBase\AdminSuite\obj\Debug\AdminSuite.pdb
+F:\IplayLatestCode_April_Final\IPlay\IPlay_CodeBase\AdminSuite\obj\Debug\ResolveAssemblyReference.cache
+F:\IplayLatestCode_April_Final\IPlay\IPlay_CodeBase\AdminSuite\obj\Debug\AdminSuite.Resources.Customers.resources
+F:\IplayLatestCode_April_Final\IPlay\IPlay_CodeBase\AdminSuite\obj\Debug\GenerateResource.read.1.tlog
+F:\IplayLatestCode_April_Final\IPlay\IPlay_CodeBase\AdminSuite\obj\Debug\GenerateResource.write.1.tlog
+F:\IplayLatestCode_April_Final\IPlay\IPlay_CodeBase\_output\AdminSuite.dll
+F:\IplayLatestCode_April_Final\IPlay\IPlay_CodeBase\_output\AdminSuite.pdb
+F:\IplayLatestCode_April_Final\IPlay\IPlay_CodeBase\AdminSuite\obj\Debug\AdminSuite.dll
+F:\IplayLatestCode_April_Final\IPlay\IPlay_CodeBase\AdminSuite\obj\Debug\AdminSuite.pdb
+D:\Kiran\POC\iPlay\IPlay_CodeBase\AdminSuite\obj\Debug\ResolveAssemblyReference.cache
+D:\Kiran\POC\iPlay\IPlay_CodeBase\AdminSuite\obj\Debug\AdminSuite.Resources.Customers.resources
+D:\Kiran\POC\iPlay\IPlay_CodeBase\AdminSuite\obj\Debug\GenerateResource.read.1.tlog
+D:\Kiran\POC\iPlay\IPlay_CodeBase\AdminSuite\obj\Debug\GenerateResource.write.1.tlog
+D:\Kiran\POC\iPlay\IPlay_CodeBase\_output\AdminSuite.dll
+D:\Kiran\POC\iPlay\IPlay_CodeBase\_output\AdminSuite.pdb
+D:\Kiran\POC\iPlay\IPlay_CodeBase\AdminSuite\obj\Debug\AdminSuite.dll
+D:\Kiran\POC\iPlay\IPlay_CodeBase\AdminSuite\obj\Debug\AdminSuite.pdb
+C:\Kiran\iPlay\IPlay_CodeBase\_output\AdminSuite.dll
+C:\Kiran\iPlay\IPlay_CodeBase\_output\AdminSuite.pdb
+C:\Kiran\iPlay\IPlay_CodeBase\AdminSuite\obj\Debug\ResolveAssemblyReference.cache
+C:\Kiran\iPlay\IPlay_CodeBase\AdminSuite\obj\Debug\AdminSuite.Resources.Customers.resources
+C:\Kiran\iPlay\IPlay_CodeBase\AdminSuite\obj\Debug\GenerateResource.read.1.tlog
+C:\Kiran\iPlay\IPlay_CodeBase\AdminSuite\obj\Debug\GenerateResource.write.1.tlog
+C:\Kiran\iPlay\IPlay_CodeBase\AdminSuite\obj\Debug\AdminSuite.dll
+C:\Kiran\iPlay\IPlay_CodeBase\AdminSuite\obj\Debug\AdminSuite.pdb
+D:\Kiran\POC\iPlay-New\IPlay_CodeBase\_output\AdminSuite.dll
+D:\Kiran\POC\iPlay-New\IPlay_CodeBase\_output\AdminSuite.pdb
+D:\Kiran\POC\iPlay-New\IPlay_CodeBase\AdminSuite\obj\Debug\ResolveAssemblyReference.cache
+D:\Kiran\POC\iPlay-New\IPlay_CodeBase\AdminSuite\obj\Debug\AdminSuite.Resources.Customers.resources
+D:\Kiran\POC\iPlay-New\IPlay_CodeBase\AdminSuite\obj\Debug\GenerateResource.read.1.tlog
+D:\Kiran\POC\iPlay-New\IPlay_CodeBase\AdminSuite\obj\Debug\GenerateResource.write.1.tlog
+D:\Kiran\POC\iPlay-New\IPlay_CodeBase\AdminSuite\obj\Debug\AdminSuite.dll
+D:\Kiran\POC\iPlay-New\IPlay_CodeBase\AdminSuite\obj\Debug\AdminSuite.pdb
+D:\Kiran\POC\iPlay\New Framework\IPlay_CodeBase\_output\AdminSuite.dll
+D:\Kiran\POC\iPlay\New Framework\IPlay_CodeBase\_output\AdminSuite.pdb
+D:\Kiran\POC\iPlay\New Framework\IPlay_CodeBase\AdminSuite\obj\Debug\ResolveAssemblyReference.cache
+D:\Kiran\POC\iPlay\New Framework\IPlay_CodeBase\AdminSuite\obj\Debug\AdminSuite.Resources.Customers.resources
+D:\Kiran\POC\iPlay\New Framework\IPlay_CodeBase\AdminSuite\obj\Debug\GenerateResource.read.1.tlog
+D:\Kiran\POC\iPlay\New Framework\IPlay_CodeBase\AdminSuite\obj\Debug\GenerateResource.write.1.tlog
+D:\Kiran\POC\iPlay\New Framework\IPlay_CodeBase\AdminSuite\obj\Debug\AdminSuite.dll
+D:\Kiran\POC\iPlay\New Framework\IPlay_CodeBase\AdminSuite\obj\Debug\AdminSuite.pdb
+C:\Documents and Settings\Administrator\Desktop\New Framework\LadbrokesAutomation_CodeBase\_output\AdminSuite.dll
+C:\Documents and Settings\Administrator\Desktop\New Framework\LadbrokesAutomation_CodeBase\_output\AdminSuite.pdb
+C:\Documents and Settings\Administrator\Desktop\New Framework\LadbrokesAutomation_CodeBase\AdminSuite\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Administrator\Desktop\New Framework\LadbrokesAutomation_CodeBase\AdminSuite\obj\Debug\AdminSuite.Resources.Customers.resources
+C:\Documents and Settings\Administrator\Desktop\New Framework\LadbrokesAutomation_CodeBase\AdminSuite\obj\Debug\GenerateResource.read.1.tlog
+C:\Documents and Settings\Administrator\Desktop\New Framework\LadbrokesAutomation_CodeBase\AdminSuite\obj\Debug\GenerateResource.write.1.tlog
+C:\Documents and Settings\Administrator\Desktop\New Framework\LadbrokesAutomation_CodeBase\AdminSuite\obj\Debug\AdminSuite.dll
+C:\Documents and Settings\Administrator\Desktop\New Framework\LadbrokesAutomation_CodeBase\AdminSuite\obj\Debug\AdminSuite.pdb
+D:\Kiran\POC\iPlay\New Framework\LadbrokesAutomation_CodeBase\_output\AdminSuite.dll
+D:\Kiran\POC\iPlay\New Framework\LadbrokesAutomation_CodeBase\_output\AdminSuite.pdb
+D:\Kiran\POC\iPlay\New Framework\LadbrokesAutomation_CodeBase\AdminSuite\obj\Debug\ResolveAssemblyReference.cache
+D:\Kiran\POC\iPlay\New Framework\LadbrokesAutomation_CodeBase\AdminSuite\obj\Debug\AdminSuite.Resources.Customers.resources
+D:\Kiran\POC\iPlay\New Framework\LadbrokesAutomation_CodeBase\AdminSuite\obj\Debug\GenerateResource.read.1.tlog
+D:\Kiran\POC\iPlay\New Framework\LadbrokesAutomation_CodeBase\AdminSuite\obj\Debug\GenerateResource.write.1.tlog
+D:\Kiran\POC\iPlay\New Framework\LadbrokesAutomation_CodeBase\AdminSuite\obj\Debug\AdminSuite.dll
+D:\Kiran\POC\iPlay\New Framework\LadbrokesAutomation_CodeBase\AdminSuite\obj\Debug\AdminSuite.pdb
+D:\Kiran\Phoenix\New Framework\LadbrokesAutomation_CodeBase\_output\AdminSuite.dll
+D:\Kiran\Phoenix\New Framework\LadbrokesAutomation_CodeBase\_output\AdminSuite.pdb
+D:\Kiran\Phoenix\New Framework\LadbrokesAutomation_CodeBase\AdminSuite\obj\Debug\ResolveAssemblyReference.cache
+D:\Kiran\Phoenix\New Framework\LadbrokesAutomation_CodeBase\AdminSuite\obj\Debug\AdminSuite.Resources.Customers.resources
+D:\Kiran\Phoenix\New Framework\LadbrokesAutomation_CodeBase\AdminSuite\obj\Debug\GenerateResource.read.1.tlog
+D:\Kiran\Phoenix\New Framework\LadbrokesAutomation_CodeBase\AdminSuite\obj\Debug\GenerateResource.write.1.tlog
+D:\Kiran\Phoenix\New Framework\LadbrokesAutomation_CodeBase\AdminSuite\obj\Debug\AdminSuite.dll
+D:\Kiran\Phoenix\New Framework\LadbrokesAutomation_CodeBase\AdminSuite\obj\Debug\AdminSuite.pdb
+D:\Kiran\Phoenix\New Framework\AutoNitro_LadbrokesPhoenix\_output\AdminSuite.dll
+D:\Kiran\Phoenix\New Framework\AutoNitro_LadbrokesPhoenix\_output\AdminSuite.pdb
+D:\Kiran\Phoenix\New Framework\AutoNitro_LadbrokesPhoenix\AdminSuite\obj\Debug\ResolveAssemblyReference.cache
+D:\Kiran\Phoenix\New Framework\AutoNitro_LadbrokesPhoenix\AdminSuite\obj\Debug\AdminSuite.Resources.Customers.resources
+D:\Kiran\Phoenix\New Framework\AutoNitro_LadbrokesPhoenix\AdminSuite\obj\Debug\GenerateResource.read.1.tlog
+D:\Kiran\Phoenix\New Framework\AutoNitro_LadbrokesPhoenix\AdminSuite\obj\Debug\GenerateResource.write.1.tlog
+D:\Kiran\Phoenix\New Framework\AutoNitro_LadbrokesPhoenix\AdminSuite\obj\Debug\AdminSuite.dll
+D:\Kiran\Phoenix\New Framework\AutoNitro_LadbrokesPhoenix\AdminSuite\obj\Debug\AdminSuite.pdb
+C:\Documents and Settings\Administrator\Desktop\New Framework\AutoNitro_LadbrokesPhoenix\_output\AdminSuite.dll
+C:\Documents and Settings\Administrator\Desktop\New Framework\AutoNitro_LadbrokesPhoenix\_output\AdminSuite.pdb
+C:\Documents and Settings\Administrator\Desktop\New Framework\AutoNitro_LadbrokesPhoenix\AdminSuite\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Administrator\Desktop\New Framework\AutoNitro_LadbrokesPhoenix\AdminSuite\obj\Debug\AdminSuite.Resources.Customers.resources
+C:\Documents and Settings\Administrator\Desktop\New Framework\AutoNitro_LadbrokesPhoenix\AdminSuite\obj\Debug\GenerateResource.read.1.tlog
+C:\Documents and Settings\Administrator\Desktop\New Framework\AutoNitro_LadbrokesPhoenix\AdminSuite\obj\Debug\GenerateResource.write.1.tlog
+C:\Documents and Settings\Administrator\Desktop\New Framework\AutoNitro_LadbrokesPhoenix\AdminSuite\obj\Debug\AdminSuite.dll
+C:\Documents and Settings\Administrator\Desktop\New Framework\AutoNitro_LadbrokesPhoenix\AdminSuite\obj\Debug\AdminSuite.pdb
+C:\Documents and Settings\Administrator\Desktop\AutoNitro_LadbrokesPhoenix\AutoNitro_LadbrokesPhoenix\_output\AdminSuite.dll
+C:\Documents and Settings\Administrator\Desktop\AutoNitro_LadbrokesPhoenix\AutoNitro_LadbrokesPhoenix\_output\AdminSuite.pdb
+C:\Documents and Settings\Administrator\Desktop\AutoNitro_LadbrokesPhoenix\AutoNitro_LadbrokesPhoenix\AdminSuite\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Administrator\Desktop\AutoNitro_LadbrokesPhoenix\AutoNitro_LadbrokesPhoenix\AdminSuite\obj\Debug\AdminSuite.Resources.Customers.resources
+C:\Documents and Settings\Administrator\Desktop\AutoNitro_LadbrokesPhoenix\AutoNitro_LadbrokesPhoenix\AdminSuite\obj\Debug\GenerateResource.read.1.tlog
+C:\Documents and Settings\Administrator\Desktop\AutoNitro_LadbrokesPhoenix\AutoNitro_LadbrokesPhoenix\AdminSuite\obj\Debug\GenerateResource.write.1.tlog
+C:\Documents and Settings\Administrator\Desktop\AutoNitro_LadbrokesPhoenix\AutoNitro_LadbrokesPhoenix\AdminSuite\obj\Debug\AdminSuite.dll
+C:\Documents and Settings\Administrator\Desktop\AutoNitro_LadbrokesPhoenix\AutoNitro_LadbrokesPhoenix\AdminSuite\obj\Debug\AdminSuite.pdb
+D:\BackUp\AutoNitro_LadbrokesPhoenix\AutoNitro_LadbrokesPhoenix\_output\AdminSuite.dll
+D:\BackUp\AutoNitro_LadbrokesPhoenix\AutoNitro_LadbrokesPhoenix\_output\AdminSuite.pdb
+D:\BackUp\AutoNitro_LadbrokesPhoenix\AutoNitro_LadbrokesPhoenix\AdminSuite\obj\Debug\ResolveAssemblyReference.cache
+D:\BackUp\AutoNitro_LadbrokesPhoenix\AutoNitro_LadbrokesPhoenix\AdminSuite\obj\Debug\AdminSuite.Resources.Customers.resources
+D:\BackUp\AutoNitro_LadbrokesPhoenix\AutoNitro_LadbrokesPhoenix\AdminSuite\obj\Debug\GenerateResource.read.1.tlog
+D:\BackUp\AutoNitro_LadbrokesPhoenix\AutoNitro_LadbrokesPhoenix\AdminSuite\obj\Debug\GenerateResource.write.1.tlog
+D:\BackUp\AutoNitro_LadbrokesPhoenix\AutoNitro_LadbrokesPhoenix\AdminSuite\obj\Debug\AdminSuite.dll
+D:\BackUp\AutoNitro_LadbrokesPhoenix\AutoNitro_LadbrokesPhoenix\AdminSuite\obj\Debug\AdminSuite.pdb
+C:\Users\Administrator\Desktop\Roopa\AutoNitro_LadbrokesPhoenix\AutoNitro_LadbrokesPhoenix\_output\AdminSuite.dll
+C:\Users\Administrator\Desktop\Roopa\AutoNitro_LadbrokesPhoenix\AutoNitro_LadbrokesPhoenix\_output\AdminSuite.pdb
+C:\Users\Administrator\Desktop\Roopa\AutoNitro_LadbrokesPhoenix\AutoNitro_LadbrokesPhoenix\AdminSuite\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\Roopa\AutoNitro_LadbrokesPhoenix\AutoNitro_LadbrokesPhoenix\AdminSuite\obj\Debug\AdminSuite.Resources.Customers.resources
+C:\Users\Administrator\Desktop\Roopa\AutoNitro_LadbrokesPhoenix\AutoNitro_LadbrokesPhoenix\AdminSuite\obj\Debug\GenerateResource.read.1.tlog
+C:\Users\Administrator\Desktop\Roopa\AutoNitro_LadbrokesPhoenix\AutoNitro_LadbrokesPhoenix\AdminSuite\obj\Debug\GenerateResource.write.1.tlog
+C:\Users\Administrator\Desktop\Roopa\AutoNitro_LadbrokesPhoenix\AutoNitro_LadbrokesPhoenix\AdminSuite\obj\Debug\AdminSuite.dll
+C:\Users\Administrator\Desktop\Roopa\AutoNitro_LadbrokesPhoenix\AutoNitro_LadbrokesPhoenix\AdminSuite\obj\Debug\AdminSuite.pdb
+C:\Users\Administrator\Desktop\AutoNitro_LadbrokesPhoenix\AutoNitro_LadbrokesPhoenix\_output\AdminSuite.dll
+C:\Users\Administrator\Desktop\AutoNitro_LadbrokesPhoenix\AutoNitro_LadbrokesPhoenix\_output\AdminSuite.pdb
+C:\Users\Administrator\Desktop\AutoNitro_LadbrokesPhoenix\AutoNitro_LadbrokesPhoenix\AdminSuite\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\AutoNitro_LadbrokesPhoenix\AutoNitro_LadbrokesPhoenix\AdminSuite\obj\Debug\AdminSuite.Resources.Customers.resources
+C:\Users\Administrator\Desktop\AutoNitro_LadbrokesPhoenix\AutoNitro_LadbrokesPhoenix\AdminSuite\obj\Debug\GenerateResource.read.1.tlog
+C:\Users\Administrator\Desktop\AutoNitro_LadbrokesPhoenix\AutoNitro_LadbrokesPhoenix\AdminSuite\obj\Debug\GenerateResource.write.1.tlog
+C:\Users\Administrator\Desktop\AutoNitro_LadbrokesPhoenix\AutoNitro_LadbrokesPhoenix\AdminSuite\obj\Debug\AdminSuite.dll
+C:\Users\Administrator\Desktop\AutoNitro_LadbrokesPhoenix\AutoNitro_LadbrokesPhoenix\AdminSuite\obj\Debug\AdminSuite.pdb
+C:\Users\Administrator\Desktop\Latest code\AutoNitro_LadbrokesPhoenix\AutoNitro_LadbrokesPhoenix\AdminSuite\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\Latest code\AutoNitro_LadbrokesPhoenix\AutoNitro_LadbrokesPhoenix\AdminSuite\obj\Debug\AdminSuite.Resources.Customers.resources
+C:\Users\Administrator\Desktop\Latest code\AutoNitro_LadbrokesPhoenix\AutoNitro_LadbrokesPhoenix\AdminSuite\obj\Debug\GenerateResource.read.1.tlog
+C:\Users\Administrator\Desktop\Latest code\AutoNitro_LadbrokesPhoenix\AutoNitro_LadbrokesPhoenix\AdminSuite\obj\Debug\GenerateResource.write.1.tlog
+C:\Users\Administrator\Desktop\Latest code\AutoNitro_LadbrokesPhoenix\AutoNitro_LadbrokesPhoenix\AdminSuite\obj\Debug\AdminSuite.dll
+C:\Users\Administrator\Desktop\Latest code\AutoNitro_LadbrokesPhoenix\AutoNitro_LadbrokesPhoenix\_output\AdminSuite.dll
+C:\Users\Administrator\Desktop\Latest code\AutoNitro_LadbrokesPhoenix\AutoNitro_LadbrokesPhoenix\_output\AdminSuite.pdb
+C:\Users\Administrator\Desktop\Latest code\AutoNitro_LadbrokesPhoenix\AutoNitro_LadbrokesPhoenix\AdminSuite\obj\Debug\AdminSuite.pdb
+D:\AutoNitro_LadbrokesPhoenix\AutoNitro_LadbrokesPhoenix\_output\AdminSuite.dll
+D:\AutoNitro_LadbrokesPhoenix\AutoNitro_LadbrokesPhoenix\_output\AdminSuite.pdb
+D:\AutoNitro_LadbrokesPhoenix\AutoNitro_LadbrokesPhoenix\AdminSuite\obj\Debug\ResolveAssemblyReference.cache
+D:\AutoNitro_LadbrokesPhoenix\AutoNitro_LadbrokesPhoenix\AdminSuite\obj\Debug\AdminSuite.Resources.Customers.resources
+D:\AutoNitro_LadbrokesPhoenix\AutoNitro_LadbrokesPhoenix\AdminSuite\obj\Debug\GenerateResource.read.1.tlog
+D:\AutoNitro_LadbrokesPhoenix\AutoNitro_LadbrokesPhoenix\AdminSuite\obj\Debug\GenerateResource.write.1.tlog
+D:\AutoNitro_LadbrokesPhoenix\AutoNitro_LadbrokesPhoenix\AdminSuite\obj\Debug\AdminSuite.dll
+D:\AutoNitro_LadbrokesPhoenix\AutoNitro_LadbrokesPhoenix\AdminSuite\obj\Debug\AdminSuite.pdb
+C:\AutoNitro_LadbrokesPhoenix\AutoNitro_LadbrokesPhoenix\_output\AdminSuite.dll
+C:\AutoNitro_LadbrokesPhoenix\AutoNitro_LadbrokesPhoenix\_output\AdminSuite.pdb
+C:\AutoNitro_LadbrokesPhoenix\AutoNitro_LadbrokesPhoenix\AdminSuite\obj\Debug\ResolveAssemblyReference.cache
+C:\AutoNitro_LadbrokesPhoenix\AutoNitro_LadbrokesPhoenix\AdminSuite\obj\Debug\AdminSuite.Resources.Customers.resources
+C:\AutoNitro_LadbrokesPhoenix\AutoNitro_LadbrokesPhoenix\AdminSuite\obj\Debug\GenerateResource.read.1.tlog
+C:\AutoNitro_LadbrokesPhoenix\AutoNitro_LadbrokesPhoenix\AdminSuite\obj\Debug\GenerateResource.write.1.tlog
+C:\AutoNitro_LadbrokesPhoenix\AutoNitro_LadbrokesPhoenix\AdminSuite\obj\Debug\AdminSuite.dll
+C:\AutoNitro_LadbrokesPhoenix\AutoNitro_LadbrokesPhoenix\AdminSuite\obj\Debug\AdminSuite.pdb
+D:\AutoNitro Phoenix\AutoNitro_LadbrokesPhoenix\AutoNitro_LadbrokesPhoenix\_output\AdminSuite.dll
+D:\AutoNitro Phoenix\AutoNitro_LadbrokesPhoenix\AutoNitro_LadbrokesPhoenix\_output\AdminSuite.pdb
+D:\AutoNitro Phoenix\AutoNitro_LadbrokesPhoenix\AutoNitro_LadbrokesPhoenix\AdminSuite\obj\Debug\ResolveAssemblyReference.cache
+D:\AutoNitro Phoenix\AutoNitro_LadbrokesPhoenix\AutoNitro_LadbrokesPhoenix\AdminSuite\obj\Debug\AdminSuite.Resources.Customers.resources
+D:\AutoNitro Phoenix\AutoNitro_LadbrokesPhoenix\AutoNitro_LadbrokesPhoenix\AdminSuite\obj\Debug\GenerateResource.read.1.tlog
+D:\AutoNitro Phoenix\AutoNitro_LadbrokesPhoenix\AutoNitro_LadbrokesPhoenix\AdminSuite\obj\Debug\GenerateResource.write.1.tlog
+D:\AutoNitro Phoenix\AutoNitro_LadbrokesPhoenix\AutoNitro_LadbrokesPhoenix\AdminSuite\obj\Debug\AdminSuite.dll
+D:\AutoNitro Phoenix\AutoNitro_LadbrokesPhoenix\AutoNitro_LadbrokesPhoenix\AdminSuite\obj\Debug\AdminSuite.pdb
+D:\Ladbrokes\Phoenix\Sep-23\AutoNitro_LadbrokesPhoenix\AutoNitro_LadbrokesPhoenix\_output\AdminSuite.dll
+D:\Ladbrokes\Phoenix\Sep-23\AutoNitro_LadbrokesPhoenix\AutoNitro_LadbrokesPhoenix\_output\AdminSuite.pdb
+D:\Ladbrokes\Phoenix\Sep-23\AutoNitro_LadbrokesPhoenix\AutoNitro_LadbrokesPhoenix\AdminSuite\obj\Debug\ResolveAssemblyReference.cache
+D:\Ladbrokes\Phoenix\Sep-23\AutoNitro_LadbrokesPhoenix\AutoNitro_LadbrokesPhoenix\AdminSuite\obj\Debug\AdminSuite.Resources.Customers.resources
+D:\Ladbrokes\Phoenix\Sep-23\AutoNitro_LadbrokesPhoenix\AutoNitro_LadbrokesPhoenix\AdminSuite\obj\Debug\GenerateResource.read.1.tlog
+D:\Ladbrokes\Phoenix\Sep-23\AutoNitro_LadbrokesPhoenix\AutoNitro_LadbrokesPhoenix\AdminSuite\obj\Debug\GenerateResource.write.1.tlog
+D:\Ladbrokes\Phoenix\Sep-23\AutoNitro_LadbrokesPhoenix\AutoNitro_LadbrokesPhoenix\AdminSuite\obj\Debug\AdminSuite.dll
+D:\Ladbrokes\Phoenix\Sep-23\AutoNitro_LadbrokesPhoenix\AutoNitro_LadbrokesPhoenix\AdminSuite\obj\Debug\AdminSuite.pdb
+C:\Users\Administrator\Desktop\New Code Base\AutoNitro_LadbrokesPhoenix\AutoNitro_LadbrokesPhoenix\_output\AdminSuite.dll
+C:\Users\Administrator\Desktop\New Code Base\AutoNitro_LadbrokesPhoenix\AutoNitro_LadbrokesPhoenix\_output\AdminSuite.pdb
+C:\Users\Administrator\Desktop\New Code Base\AutoNitro_LadbrokesPhoenix\AutoNitro_LadbrokesPhoenix\AdminSuite\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\New Code Base\AutoNitro_LadbrokesPhoenix\AutoNitro_LadbrokesPhoenix\AdminSuite\obj\Debug\AdminSuite.Resources.Customers.resources
+C:\Users\Administrator\Desktop\New Code Base\AutoNitro_LadbrokesPhoenix\AutoNitro_LadbrokesPhoenix\AdminSuite\obj\Debug\GenerateResource.read.1.tlog
+C:\Users\Administrator\Desktop\New Code Base\AutoNitro_LadbrokesPhoenix\AutoNitro_LadbrokesPhoenix\AdminSuite\obj\Debug\GenerateResource.write.1.tlog
+C:\Users\Administrator\Desktop\New Code Base\AutoNitro_LadbrokesPhoenix\AutoNitro_LadbrokesPhoenix\AdminSuite\obj\Debug\AdminSuite.dll
+C:\Users\Administrator\Desktop\New Code Base\AutoNitro_LadbrokesPhoenix\AutoNitro_LadbrokesPhoenix\AdminSuite\obj\Debug\AdminSuite.pdb
+C:\Users\Administrator\Desktop\Farringdon farewell\AutoNitro_LadbrokesPhoenix\AutoNitro_LadbrokesPhoenix\_output\AdminSuite.dll
+C:\Users\Administrator\Desktop\Farringdon farewell\AutoNitro_LadbrokesPhoenix\AutoNitro_LadbrokesPhoenix\_output\AdminSuite.pdb
+C:\Users\Administrator\Desktop\Farringdon farewell\AutoNitro_LadbrokesPhoenix\AutoNitro_LadbrokesPhoenix\AdminSuite\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\Farringdon farewell\AutoNitro_LadbrokesPhoenix\AutoNitro_LadbrokesPhoenix\AdminSuite\obj\Debug\AdminSuite.Resources.Customers.resources
+C:\Users\Administrator\Desktop\Farringdon farewell\AutoNitro_LadbrokesPhoenix\AutoNitro_LadbrokesPhoenix\AdminSuite\obj\Debug\GenerateResource.read.1.tlog
+C:\Users\Administrator\Desktop\Farringdon farewell\AutoNitro_LadbrokesPhoenix\AutoNitro_LadbrokesPhoenix\AdminSuite\obj\Debug\GenerateResource.write.1.tlog
+C:\Users\Administrator\Desktop\Farringdon farewell\AutoNitro_LadbrokesPhoenix\AutoNitro_LadbrokesPhoenix\AdminSuite\obj\Debug\AdminSuite.dll
+C:\Users\Administrator\Desktop\Farringdon farewell\AutoNitro_LadbrokesPhoenix\AutoNitro_LadbrokesPhoenix\AdminSuite\obj\Debug\AdminSuite.pdb
+D:\Ladbrokes\Phoenix\Oct-3rd\AutoNitro_LadbrokesPhoenix\AutoNitro_LadbrokesPhoenix\_output\AdminSuite.dll
+D:\Ladbrokes\Phoenix\Oct-3rd\AutoNitro_LadbrokesPhoenix\AutoNitro_LadbrokesPhoenix\_output\AdminSuite.pdb
+D:\Ladbrokes\Phoenix\Oct-3rd\AutoNitro_LadbrokesPhoenix\AutoNitro_LadbrokesPhoenix\AdminSuite\obj\Debug\ResolveAssemblyReference.cache
+D:\Ladbrokes\Phoenix\Oct-3rd\AutoNitro_LadbrokesPhoenix\AutoNitro_LadbrokesPhoenix\AdminSuite\obj\Debug\AdminSuite.Resources.Customers.resources
+D:\Ladbrokes\Phoenix\Oct-3rd\AutoNitro_LadbrokesPhoenix\AutoNitro_LadbrokesPhoenix\AdminSuite\obj\Debug\GenerateResource.read.1.tlog
+D:\Ladbrokes\Phoenix\Oct-3rd\AutoNitro_LadbrokesPhoenix\AutoNitro_LadbrokesPhoenix\AdminSuite\obj\Debug\GenerateResource.write.1.tlog
+D:\Ladbrokes\Phoenix\Oct-3rd\AutoNitro_LadbrokesPhoenix\AutoNitro_LadbrokesPhoenix\AdminSuite\obj\Debug\AdminSuite.dll
+D:\Ladbrokes\Phoenix\Oct-3rd\AutoNitro_LadbrokesPhoenix\AutoNitro_LadbrokesPhoenix\AdminSuite\obj\Debug\AdminSuite.pdb
+C:\Users\Administrator\Desktop\AutoNitro_LadbrokesPhoenix_SANITY\AutoNitro_LadbrokesPhoenix\_output\AdminSuite.dll
+C:\Users\Administrator\Desktop\AutoNitro_LadbrokesPhoenix_SANITY\AutoNitro_LadbrokesPhoenix\_output\AdminSuite.pdb
+C:\Users\Administrator\Desktop\AutoNitro_LadbrokesPhoenix_SANITY\AutoNitro_LadbrokesPhoenix\AdminSuite\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\AutoNitro_LadbrokesPhoenix_SANITY\AutoNitro_LadbrokesPhoenix\AdminSuite\obj\Debug\AdminSuite.Resources.Customers.resources
+C:\Users\Administrator\Desktop\AutoNitro_LadbrokesPhoenix_SANITY\AutoNitro_LadbrokesPhoenix\AdminSuite\obj\Debug\GenerateResource.read.1.tlog
+C:\Users\Administrator\Desktop\AutoNitro_LadbrokesPhoenix_SANITY\AutoNitro_LadbrokesPhoenix\AdminSuite\obj\Debug\GenerateResource.write.1.tlog
+C:\Users\Administrator\Desktop\AutoNitro_LadbrokesPhoenix_SANITY\AutoNitro_LadbrokesPhoenix\AdminSuite\obj\Debug\AdminSuite.dll
+C:\Users\Administrator\Desktop\AutoNitro_LadbrokesPhoenix_SANITY\AutoNitro_LadbrokesPhoenix\AdminSuite\obj\Debug\AdminSuite.pdb
+D:\Ladbrokes\Phoenix\Oct-9th\AutoNitro_LadbrokesPhoenix\AutoNitro_LadbrokesPhoenix\_output\AdminSuite.dll
+D:\Ladbrokes\Phoenix\Oct-9th\AutoNitro_LadbrokesPhoenix\AutoNitro_LadbrokesPhoenix\_output\AdminSuite.pdb
+D:\Ladbrokes\Phoenix\Oct-9th\AutoNitro_LadbrokesPhoenix\AutoNitro_LadbrokesPhoenix\AdminSuite\obj\Debug\ResolveAssemblyReference.cache
+D:\Ladbrokes\Phoenix\Oct-9th\AutoNitro_LadbrokesPhoenix\AutoNitro_LadbrokesPhoenix\AdminSuite\obj\Debug\AdminSuite.Resources.Customers.resources
+D:\Ladbrokes\Phoenix\Oct-9th\AutoNitro_LadbrokesPhoenix\AutoNitro_LadbrokesPhoenix\AdminSuite\obj\Debug\GenerateResource.read.1.tlog
+D:\Ladbrokes\Phoenix\Oct-9th\AutoNitro_LadbrokesPhoenix\AutoNitro_LadbrokesPhoenix\AdminSuite\obj\Debug\GenerateResource.write.1.tlog
+D:\Ladbrokes\Phoenix\Oct-9th\AutoNitro_LadbrokesPhoenix\AutoNitro_LadbrokesPhoenix\AdminSuite\obj\Debug\AdminSuite.dll
+D:\Ladbrokes\Phoenix\Oct-9th\AutoNitro_LadbrokesPhoenix\AutoNitro_LadbrokesPhoenix\AdminSuite\obj\Debug\AdminSuite.pdb
+D:\Ladbrokes\Phoenix\Oct-11th\AutoNitro_LadbrokesPhoenix\AutoNitro_LadbrokesPhoenix\_output\AdminSuite.dll
+D:\Ladbrokes\Phoenix\Oct-11th\AutoNitro_LadbrokesPhoenix\AutoNitro_LadbrokesPhoenix\_output\AdminSuite.pdb
+D:\Ladbrokes\Phoenix\Oct-11th\AutoNitro_LadbrokesPhoenix\AutoNitro_LadbrokesPhoenix\AdminSuite\obj\Debug\ResolveAssemblyReference.cache
+D:\Ladbrokes\Phoenix\Oct-11th\AutoNitro_LadbrokesPhoenix\AutoNitro_LadbrokesPhoenix\AdminSuite\obj\Debug\AdminSuite.Resources.Customers.resources
+D:\Ladbrokes\Phoenix\Oct-11th\AutoNitro_LadbrokesPhoenix\AutoNitro_LadbrokesPhoenix\AdminSuite\obj\Debug\GenerateResource.read.1.tlog
+D:\Ladbrokes\Phoenix\Oct-11th\AutoNitro_LadbrokesPhoenix\AutoNitro_LadbrokesPhoenix\AdminSuite\obj\Debug\GenerateResource.write.1.tlog
+D:\Ladbrokes\Phoenix\Oct-11th\AutoNitro_LadbrokesPhoenix\AutoNitro_LadbrokesPhoenix\AdminSuite\obj\Debug\AdminSuite.dll
+D:\Ladbrokes\Phoenix\Oct-11th\AutoNitro_LadbrokesPhoenix\AutoNitro_LadbrokesPhoenix\AdminSuite\obj\Debug\AdminSuite.pdb
+D:\Ladbrokes\Phoenix\Oct-15th\AutoNitro_LadbrokesPhoenix\AutoNitro_LadbrokesPhoenix\_output\AdminSuite.dll
+D:\Ladbrokes\Phoenix\Oct-15th\AutoNitro_LadbrokesPhoenix\AutoNitro_LadbrokesPhoenix\_output\AdminSuite.pdb
+D:\Ladbrokes\Phoenix\Oct-15th\AutoNitro_LadbrokesPhoenix\AutoNitro_LadbrokesPhoenix\AdminSuite\obj\Debug\ResolveAssemblyReference.cache
+D:\Ladbrokes\Phoenix\Oct-15th\AutoNitro_LadbrokesPhoenix\AutoNitro_LadbrokesPhoenix\AdminSuite\obj\Debug\AdminSuite.Resources.Customers.resources
+D:\Ladbrokes\Phoenix\Oct-15th\AutoNitro_LadbrokesPhoenix\AutoNitro_LadbrokesPhoenix\AdminSuite\obj\Debug\GenerateResource.read.1.tlog
+D:\Ladbrokes\Phoenix\Oct-15th\AutoNitro_LadbrokesPhoenix\AutoNitro_LadbrokesPhoenix\AdminSuite\obj\Debug\GenerateResource.write.1.tlog
+D:\Ladbrokes\Phoenix\Oct-15th\AutoNitro_LadbrokesPhoenix\AutoNitro_LadbrokesPhoenix\AdminSuite\obj\Debug\AdminSuite.dll
+D:\Ladbrokes\Phoenix\Oct-15th\AutoNitro_LadbrokesPhoenix\AutoNitro_LadbrokesPhoenix\AdminSuite\obj\Debug\AdminSuite.pdb
+C:\Users\Administrator\Desktop\AutoNitro_LadbrokesPhoenix\AutoNitro\AutoNitro_LadbrokesPhoenix\_output\AdminSuite.dll
+C:\Users\Administrator\Desktop\AutoNitro_LadbrokesPhoenix\AutoNitro\AutoNitro_LadbrokesPhoenix\_output\AdminSuite.pdb
+C:\Users\Administrator\Desktop\AutoNitro_LadbrokesPhoenix\AutoNitro\AutoNitro_LadbrokesPhoenix\AdminSuite\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\AutoNitro_LadbrokesPhoenix\AutoNitro\AutoNitro_LadbrokesPhoenix\AdminSuite\obj\Debug\AdminSuite.Resources.Customers.resources
+C:\Users\Administrator\Desktop\AutoNitro_LadbrokesPhoenix\AutoNitro\AutoNitro_LadbrokesPhoenix\AdminSuite\obj\Debug\GenerateResource.read.1.tlog
+C:\Users\Administrator\Desktop\AutoNitro_LadbrokesPhoenix\AutoNitro\AutoNitro_LadbrokesPhoenix\AdminSuite\obj\Debug\GenerateResource.write.1.tlog
+C:\Users\Administrator\Desktop\AutoNitro_LadbrokesPhoenix\AutoNitro\AutoNitro_LadbrokesPhoenix\AdminSuite\obj\Debug\AdminSuite.dll
+C:\Users\Administrator\Desktop\AutoNitro_LadbrokesPhoenix\AutoNitro\AutoNitro_LadbrokesPhoenix\AdminSuite\obj\Debug\AdminSuite.pdb
+D:\Ladbrokes\Phoenix\Oct-16th\AutoNitro_LadbrokesPhoenix\AutoNitro\AutoNitro_LadbrokesPhoenix\_output\AdminSuite.dll
+D:\Ladbrokes\Phoenix\Oct-16th\AutoNitro_LadbrokesPhoenix\AutoNitro\AutoNitro_LadbrokesPhoenix\_output\AdminSuite.pdb
+D:\Ladbrokes\Phoenix\Oct-16th\AutoNitro_LadbrokesPhoenix\AutoNitro\AutoNitro_LadbrokesPhoenix\AdminSuite\obj\Debug\ResolveAssemblyReference.cache
+D:\Ladbrokes\Phoenix\Oct-16th\AutoNitro_LadbrokesPhoenix\AutoNitro\AutoNitro_LadbrokesPhoenix\AdminSuite\obj\Debug\AdminSuite.Resources.Customers.resources
+D:\Ladbrokes\Phoenix\Oct-16th\AutoNitro_LadbrokesPhoenix\AutoNitro\AutoNitro_LadbrokesPhoenix\AdminSuite\obj\Debug\GenerateResource.read.1.tlog
+D:\Ladbrokes\Phoenix\Oct-16th\AutoNitro_LadbrokesPhoenix\AutoNitro\AutoNitro_LadbrokesPhoenix\AdminSuite\obj\Debug\GenerateResource.write.1.tlog
+D:\Ladbrokes\Phoenix\Oct-16th\AutoNitro_LadbrokesPhoenix\AutoNitro\AutoNitro_LadbrokesPhoenix\AdminSuite\obj\Debug\AdminSuite.dll
+D:\Ladbrokes\Phoenix\Oct-16th\AutoNitro_LadbrokesPhoenix\AutoNitro\AutoNitro_LadbrokesPhoenix\AdminSuite\obj\Debug\AdminSuite.pdb

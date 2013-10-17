@@ -1,0 +1,14 @@
+CATEGORY,CLASS,TYPE,NAME,DATE/TIME,MARKET,STATUS,DISPLAYED,DISPORDER,TAX RATE,LIVE PRICE,STARTING PRICE,FORECAST,TRICAST,EACH-WAY,PLACE,NUM PLACES,PLACE FRACTION,TERMS WITH BET,ACC MIN,ACC MAX,HANDICAP,LIAB LIMIT,EXT KEY,CHANNELS,AP,BET_IN_RUN,RIGHT_NOW,AUTO-GENERATE SELECTIONS,EVENT DATE
+SOCCER,|Football|,|English|,Auto_Event1_Football_910_1429,2013-10-25 13:50:00,|Cup Winner|,Active,Yes,1,,Yes,No,,,,,,,,1,25,,2500, ,I;M,,,,,Future
+SOCCER,|Football|,|Finnish|,Auto_Event2_Football_910_1429,2013-10-25 13:50:00,|Win-Draw-Win|,Active,Yes,1,,Yes,No,,,,,,,,1,25,,2500, ,I;M,,,,,Future
+SOCCER,|Football|,|Asian|,Auto_Event3_Football_910_1429,2013-10-25 13:50:00,|Asian Line Handicap|,Active,Yes,1,,Yes,No,,,,,,,,1,25,1,2500, ,I;M,,,,,Future
+SOCCER,|Football|,|African|,Auto_Event4_Football_910_1429,2013-10-25 13:50:00,|1st Goalscorer|,Active,Yes,1,,Yes,No,,,,,,,,1,25,,2500, ,I;M,,,,,Future
+SPORTS,|Cricket|,|England| |vs| |India|,Auto_Event_Cricket_910_1429,2013-10-25 13:50:00,|Series winner|,Active,Yes,1,,Yes,No,,,Yes,,2, 1/4,,1,25,,2500, ,I;M,,,,,Future
+RACING,|Future Horse Racing|,|Galway Plate|,Auto_Event_FHR_910_1429,2013-10-25 13:50:00,|Ante Post|,Active,Yes,1,,Yes,Yes,Yes,Yes,Yes,,2, 1/4,,1,25,,2500, ,I;M,,,,,Future
+RACING,|Future Greyhounds|,|Gold Collar|,Auto_Event_FGH_910_1429,2013-10-25 13:50:00,|Win or each way|,Active,Yes,1,,Yes,No,Yes,Yes,Yes,,2, 1/4,,1,25,,2500, ,I;M,,,,,Future
+RACING,|Horse Racing|,|Agen|,Auto_Event1_HR_910_1429,2013-10-09 23:00:00,|Race Winner|,Active,Yes,1,,Yes,Yes,Yes,Yes,Yes,,2, 1/4,,1,25,,2500, ,I;M,,Yes,,,Today
+RACING,|Horse Racing|,|Kempton|,Auto_Event2_HR_910_1429,2013-10-10 13:45:00,|Place Betting|,Active,Yes,1,,Yes,Yes,Yes,Yes,Yes,,2, 1/4,,1,25,,2500, ,I;M,,Yes,,,Tomorrow
+RACING,|Horse Racing|,|Aintree|,Auto_Event3_HR_910_1429,2013-10-09 23:00:00,|Win Only|,Active,Yes,1,,Yes,Yes,Yes,Yes,Yes,,2, 1/4,,1,25,,2500, ,I;M,,Yes,,,Today
+RACING,|Horse Racing|,|Beverley|,Auto_Event4_HR_910_1429,2013-10-09 23:00:00,|Race Winner|,Active,Yes,1,,Yes,Yes,Yes,Yes,Yes,,2, 1/4,,1,25,,2500, ,I;M,,Yes,,,Today
+RACING,|Horse Racing|,|Kranji|,Auto_Event_Live_HR_910_1429,2013-10-09 15:29:52,|Race Winner|,Active,Yes,1,,Yes,Yes,Yes,Yes,Yes,,2, 1/4,,1,25,,2500, ,I;M,,Yes,Yes,,Live
+SPORTS,|Boxing|,|Upcoming Fights|,Auto_Event_Boxing_910_1429,2013-10-25 13:50:00,|Fight Result|,Active,Yes,1,,Yes,No,,,Yes,,2, 1/4,,1,25,,2500, ,I;M,,,,,Future

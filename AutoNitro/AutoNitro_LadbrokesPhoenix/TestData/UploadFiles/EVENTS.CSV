@@ -1,0 +1,14 @@
+CATEGORY,CLASS,TYPE,SUBTYPE,NAME,DATE/TIME,COUNTRY,VENUE,SORT,STATUS,DISPLAYED,DISPORDER,SUSPEND AT,URL,TAX RATE,MIN BET,MAX BET,FB RISK CAT,FB DOM/INT,EXT KEY,MULT KEY,CLASS SORT,HOME TEAM,AWAY TEAM,CHANNELS,EVENT DATE
+SOCCER,|Football|,|English|,|FA Cup|,Auto_Event1_Football_910_1429,10/25/2013 13:50, ,,,Active,Yes,0,,,,0.1,260,,, , ,,FB1,FB2,I;M,Future
+SOCCER,|Football|,|Finnish|,|Veikkausliiga|,Auto_Event2_Football_910_1429,10/25/2013 13:50, ,,,Active,Yes,0,,,,0.1,260,,, , ,,FB1,FB2,I;M,Future
+SOCCER,|Football|,|Asian|,|AFC Cup|,Auto_Event3_Football_910_1429,10/25/2013 13:50, ,,,Active,Yes,0,,,,0.1,260,,, , ,,FB1,FB2,I;M,Future
+SOCCER,|Football|,|African|,|Algerian Cup|,Auto_Event4_Football_910_1429,10/25/2013 13:50, ,,,Active,Yes,0,,,,0.1,260,,, , ,,FB1,FB2,I;M,Future
+SPORTS,|Cricket|,|England| |vs| |India|,,Auto_Event_Cricket_910_1429,10/25/2013 13:50, ,,,Active,Yes,0,,,,0.1,260,,, , ,,,,I;M,Future
+RACING,|Future Horse Racing|,|Galway Plate|,,Auto_Event_FHR_910_1429,10/25/2013 13:50, ,,,Active,Yes,0,,,,0.1,260,,, , ,,,,I;M,Future
+RACING,|Future Greyhounds|,|Gold Collar|,,Auto_Event_FGH_910_1429,10/25/2013 13:50, ,,,Active,Yes,0,,,,0.1,260,,, , ,,,,I;M,Future
+RACING,|Horse Racing|,|Agen|,,Auto_Event1_HR_910_1429,10/9/2013 23:00,,,,Active,Yes,0,,,,0.1,260,,, , ,,,,I;M,Today
+RACING,|Horse Racing|,|Kempton|,,Auto_Event2_HR_910_1429,10/10/2013 13:45,,,,Active,Yes,0,,,,0.1,260,,, , ,,,,I;M,Tomorrow
+RACING,|Horse Racing|,|Aintree|,,Auto_Event3_HR_910_1429,10/9/2013 23:00,,,,Active,Yes,0,,,,0.1,260,,, , ,,,,I;M,Today
+RACING,|Horse Racing|,|Beverley|,,Auto_Event4_HR_910_1429,10/9/2013 23:00,,,,Active,Yes,0,,,,0.1,260,,, , ,,,,I;M,Today
+RACING,|Horse Racing|,|Kranji|,,Auto_Event_Live_HR_910_1429,10/9/2013 15:29,,,,Active,Yes,0,10/11/2013 15:29,,,0.1,260,,, , ,,,,I;M,Live
+SPORTS,|Boxing|,|Upcoming Fights|,,Auto_Event_Boxing_910_1429,10/25/2013 13:50,,,,Active,Yes,0,,,,0.1,260,,,,,,,,I;M,Future
